@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\VicCharacter\\VicCharacter.csproj": {}
+    "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\VicCharacter\\VicCharacter.csproj": {
+    "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj": {
       "version": "0.2.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\VicCharacter\\VicCharacter.csproj",
+        "projectUniqueName": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
         "projectName": "VicCharacter",
-        "projectPath": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\VicCharacter\\VicCharacter.csproj",
+        "projectPath": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
         "packagesPath": "C:\\Users\\conce\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\VicCharacter\\obj\\",
+        "outputPath": "C:\\Users\\conce\\Desktop\\VicCharacter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\conce\\AppData\\Roaming\\NuGet\\NuGet.Config",

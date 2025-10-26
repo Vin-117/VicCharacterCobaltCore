@@ -12,7 +12,7 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("VicCharacter")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("0.2.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.2.0+94f706f6241414daba70caa6ca2f01644a591287")]
 [assembly: System.Reflection.AssemblyProductAttribute("VicCharacter")]

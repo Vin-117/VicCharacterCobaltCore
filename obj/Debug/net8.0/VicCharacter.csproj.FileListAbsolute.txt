@@ -16,3 +16,13 @@ C:\Users\conce\OneDrive\Desktop\Cobalt Core Mods\VicCharacter\obj\Debug\net8.0\V
 C:\Users\conce\OneDrive\Desktop\Cobalt Core Mods\VicCharacter\bin\Debug\net8.0\VicCharacter.dll.config
 C:\Users\conce\OneDrive\Desktop\Cobalt Core Mods\VicCharacter\bin\Debug\net8.0\VicCharacter.deps.json
 C:\Users\conce\OneDrive\Desktop\Cobalt Core Mods\VicCharacter\bin\Debug\net8.0\VicCharacter.dll
+C:\Users\conce\Desktop\VicCharacter\bin\Debug\net8.0\VicCharacter.dll.config
+C:\Users\conce\Desktop\VicCharacter\bin\Debug\net8.0\VicCharacter.deps.json
+C:\Users\conce\Desktop\VicCharacter\bin\Debug\net8.0\VicCharacter.dll
+C:\Users\conce\Desktop\VicCharacter\obj\Debug\net8.0\VicCharacter.csproj.AssemblyReference.cache
+C:\Users\conce\Desktop\VicCharacter\obj\Debug\net8.0\VicCharacter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\conce\Desktop\VicCharacter\obj\Debug\net8.0\VicCharacter.AssemblyInfoInputs.cache
+C:\Users\conce\Desktop\VicCharacter\obj\Debug\net8.0\VicCharacter.AssemblyInfo.cs
+C:\Users\conce\Desktop\VicCharacter\obj\Debug\net8.0\VicCharacter.csproj.CoreCompileInputs.cache
+C:\Users\conce\Desktop\VicCharacter\obj\Debug\net8.0\VicCharacter.sourcelink.json
+C:\Users\conce\Desktop\VicCharacter\obj\Debug\net8.0\VicCharacter.dll
