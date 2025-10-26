@@ -1,0 +1,206 @@
+﻿{
+    "character": {
+        "name": "Garrus",
+        "desc": ["<c=C8C8C8>GARRUS</c>", "A seasoned veteran. His cards create <c=boldPink>midrow</c> objects and add other <c=boldPink>temporary</c> cards to your deck."]
+    },
+    "status": {
+		"VicAuxPower": {
+            "name": "Auxiliary Power",
+            "desc": "At the start of every turn, add {0} <c=card>Auxiliary</c> Cards to your hand."
+        },
+        "VicAuxSurge": {
+            "name": "Auxiliary Surge",
+            "desc": "At the start of every turn, add {0} <c=card>Auxiliary B</c> Cards to your hand."
+        },
+		"VicRowControlStatus": {
+            "name": "Row Control",
+            "desc": "At the start of every turn, gain {0} <c=midrow>Droneshift</c>."
+        },
+
+    },
+    "action": {
+    },
+    "card": {
+		"VicEngineBoosterCard": {
+            "name": "Engine Booster"
+        },
+        "VicManeuver": {
+            "name": "Maneuver",
+			"desc": "Add a <c=card>Glide</c> to your hand.",
+			"descA": "Add a <c=card>Glide A</c> to your hand.",
+            "descB": "Add a <c=card>Glide B</c> to your draw pile."
+        },
+        "VicMobileMine": {
+            "name": "Mobile Mine"
+        },
+		"VicGlide": {
+            "name": "Glide"
+        },
+		"VicCalmUnderPressure": {
+            "name": "Calm Under Pressure",
+			"desc": "Add a <c=card>Plan</c> to your hand.",
+			"descA": "Add a <c=card>Plan A</c> to your hand.",
+            "descB": "Add a <c=card>Plan B</c> to your draw pile."
+		},
+		"VicPlan": {
+            "name": "Plan"
+		},
+        "VicMinefield": {
+            "name": "Small Minefield"
+		},
+		"VicCrisisManagement": {
+            "name": "Crisis Management",
+			"desc": "Add a <c=card>Lockdown</c> to your draw pile.",
+			"descA": "Add a <c=card>Lockdown A</c> to your draw pile.",
+            "descB": "Add a <c=card>Lockdown</c> to your discard pile."
+		},
+		"VicLockdown": {
+            "name": "Lockdown"
+		},
+		"VicRowControl": {
+            "name": "Row Control",
+			"desc": "Add a <c=card>Phasor</c> to your hand.",
+			"descA": "Add a <c=card>Phasor</c> to your hand.",
+            "descB": "Add 2 <c=card>Phasors</c> to your draw pile."
+		},
+		"VicPhasor": {
+            "name": "Phasor"
+		},
+		"VicSeekerSwarm": {
+            "name": "Seeker Salvo"
+		},
+		"VicSensorOverload": {
+            "name": "Sensor Overload"
+		},
+		"VicMisdirection": {
+            "name": "Misdirection"
+		},
+		"VicDualDeploy": {
+            "name": "Dual Deploy"
+		},
+		"VicTrapCharge": {
+            "name": "Trap Charge"
+		},
+		"VicBlockade": {
+            "name": "Blockade",
+			"desc": "Add 3 <c=card>Trap Charges</c> to your hand.",
+			"descA": "Add 3 <c=card>Trap Charges</c> to your hand and gain 2 <c=status>droneshift</c>.",
+            "descB": "Add 3 <c=card>Trap Charges</c> to your hand and 2 to your discard pile."
+		},
+		"VicSiphon": {
+            "name": "Siphon Power",
+			"desc": "Exhaust a card in hand. Gain 1 <c=status>Auxiliary A</c> to hand.",
+			"descA": "Exhaust a card in hand. Gain 1 <c=status>Auxiliary A</c> to hand.",
+            "descB": "Exhaust a card in draw or discard pile. Gain 1 <c=status>Auxiliary A</c> to hand."
+		},
+		"VicPoisonMissile": {
+            "name": "Acid Missile"
+		},
+		"VicAux": {
+            "name": "Auxiliary"
+		},
+		"VicPassiveThrusters": {
+            "name": "Passive Thrusters",
+			"desc": "Add 1 <c=card>Drift</c> to your draw and discard pile.",
+			"descA": "Add 1 <c=card>Drift A</c> to your hand and draw pile.",
+            "descB": "Add 3 <c=card>Drifts</c> to your draw pile and 1 <c=card>Fumes</c> to your discard pile."
+		},
+		"VicDrift": {
+            "name": "Drift"
+		},
+		"VicAuxiliaryPower": {
+            "name": "Auxiliary Power"
+		},
+		"VicKineticBarrier": {
+            "name": "Kinetic Barrier"
+		},
+		"VicThanix": {
+            "name": "Thanix Cannon"
+		},
+		"VicRecalibrate": {
+            "name": "Recalibrate",
+			"desc": "Add a <c=card>Thanix Cannon A</c> to your draw pile.",
+			"descA": "Add 2 <c=card>Thanix Cannon Bs</c> to your draw pile.",
+            "descB": "Add"
+		},
+		"VicCalibrate": {
+            "name": "Calibrate",
+			"desc": "Add a <c=card>Thanix Cannon</c> to your discard pile.",
+			"descA": "Add a <c=card>Thanix Cannon</c> to your draw pile.",
+            "descB": "Add a <c=card>Recalibrate</c> to your discard pile."
+		},
+		"VicTorpedoCard": {
+            "name": "Torpedo"
+        },
+		"VicRemember": {
+            "name": "Remember",
+			"desc": "Choose a <c=status>temporary</c> card in your deck. It becomes permanent.",
+			"descA": "Choose 2 cards in your deck. They gain <c=status>Retain</c> permanently.",
+            "descB": "Choose a card with <c=status>exhaust</c> in your deck. It no longer exhausts."
+		},
+		"VicSignalAmplifierCard": {
+            "name": "Signal Amplifier"
+        },
+        "VicCatEXECard": {
+            "name": "Garrus.EXE",
+			"desc": "Add 1 of 2 <c=cardtrait>discount, temp</c> <c=C8C8C8>Garrus</c> cards to your hand.",
+			"descA": "Add 1 of 2 <c=cardtrait>discount, temp</c> <c=C8C8C8>Garrus</c> cards to your hand.",
+            "descB": "Add 1 of 3 <c=cardtrait>discount, temp</c> <c=C8C8C8>Garrus</c> cards to your hand."
+		}
+    },
+	
+	"artifact": {
+		"VicRadioSystem" : {
+			"name" : "Spare Satellite",
+			"desc": "Start each combat with a <c=status>Bubbled</c> <c=midrow>Signal Amplifier</c> near your ship."
+		},
+        "VicSidelink" : {
+			"name" : "Sidelink",
+			"desc": "Every 3 midrow objects deployed, gain 1 <c=status>Evade</c>."
+		},
+        "VicRegenExhaust" : {
+			"name" : "Engine Accelerator",
+			"desc": "At the start of combat, add a <c=card>Drift A</c> to your hand."
+		},
+        "VicOverclockedMissileBay" : {
+			"name" : "Overclocked Missile Bay",
+			"desc": "Gain 1 extra Energy every turn. Every other turn, deploy a <c=midrow>Seeker</c> aimed at yourself."
+		},
+        "VicLevelheaded" : {
+			"name" : "Temporary Booster",
+			"desc": "The first 2 times you play a <c=status>Temporary</c> card each turn, draw 1 card."
+		},
+	},
+	
+	"midrow": {
+    "KineticBarrier": {
+      "Normal": {
+        "name": "Kinetic Barrier",
+        "description": "A highly reflective field of energy. It's <c=boldPink>Indesctructible</c>. Attacking it will damage its attacker for <c=damage>1</c>."
+      }
+    },
+	"EngineBooster": {
+      "Normal": {
+        "name": "Engine Booster",
+        "description": "Beams <c=status>1 EVADE</c> at its target once per turn."
+      }
+    },
+	"Torpedo": {
+      "Normal": {
+        "name": "Torpedo",
+        "description": "This missile is going to deal <c=damage>2</c> DMG and apply <c=damage>1</c> <c=status>ENGINE LOCK</c>."
+      }
+    },
+    "VicSmallSpaceMine": {
+      "Normal": {
+        "name": "Small Space Mine",
+        "description": "Destroying it will damage it's destroyer for <c=damage>1</c>."
+      }
+    },
+	"SignalAmplifier": {
+      "Normal": {
+        "name": "Signal Amplifier",
+        "description": "Beams <c=status>1 DRAW NEXT TURN</c> at its target once per turn."
+      }
+    },
+}

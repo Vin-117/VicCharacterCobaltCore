@@ -1,0 +1,15 @@
+{
+  "UniqueName": "Vintage.VicCharacter",
+  "Version": "0.2.0",
+  "Author": "Vintage",
+  "Description": "A mod that adds a new playable character to the video game Cobalt Core.",
+  "RequiredApiVersion": "1.5.7",
+  "EntryPointAssembly": "VicCharacter.dll",
+  "LoadPhase": "AfterDbInit",
+  "Dependencies": [
+    {
+      "UniqueName": "Shockah.Kokoro",
+      "Version": "1.12.1"
+    }
+  ]
+}
