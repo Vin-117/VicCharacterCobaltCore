@@ -22,7 +22,7 @@ public class VicMinefield : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicMinefield", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicMeteor.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicDrone.png")).Sprite,
         });
     }
 
@@ -90,7 +90,8 @@ public class VicMinefield : Card, IRegisterable
                             {
                                 yAnimation = 0.0
                             },
-                            offset = -1
+                            offset = -1,
+                            dialogueSelector = ".VicSmallMinefield"
                         }
                     };
                 }
@@ -118,7 +119,8 @@ public class VicMinefield : Card, IRegisterable
                             {
                                 yAnimation = 0.0
                             },
-                            offset = -1
+                            offset = -1,
+                            dialogueSelector = ".VicSmallMinefield"
                         }
                     };
                 }
@@ -143,7 +145,8 @@ public class VicMinefield : Card, IRegisterable
                             thing = new VicSmallSpaceMine
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            dialogueSelector = ".VicSmallMinefield"
                         },
                     };
                 }
@@ -162,7 +165,8 @@ public class VicMinefield : Card, IRegisterable
                             thing = new VicSmallSpaceMine
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            dialogueSelector = ".VicSmallMinefield"
                         }
                     };
                 }

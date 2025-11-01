@@ -52,10 +52,10 @@ public class VicLockdown : Card, IRegisterable
                 {
                     return new CardData 
                     {
-                        cost = 1,
+                        cost = 0,
                         temporary = true,
-                        retain = true,
-                        infinite = true
+                        retain = false,
+                        exhaust = true
                     };
                 }
             default:

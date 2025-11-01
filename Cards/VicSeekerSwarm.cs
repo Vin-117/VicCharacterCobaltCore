@@ -21,7 +21,7 @@ public class VicSeekerSwarm : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicSeekerSwarm", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicMeteor.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png")).Sprite,
         });
     }
 
@@ -34,7 +34,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                     return new CardData
                     {
                         cost = 2,
-                        infinite = false
+                        infinite = false,
+                        //artTint = "9944de"
                     };
                 }
             case Upgrade.A:
@@ -42,7 +43,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                     return new CardData
                     {
                         cost = 2,
-                        infinite = false
+                        infinite = false,
+                        //artTint = "9944de"
                     };
                 }
             case Upgrade.B:
@@ -50,7 +52,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                     return new CardData
                     {
                         cost = 1,
-                        infinite = true
+                        infinite = true,
+                        //artTint = "9944de"
                     };
                 }
             default:
@@ -58,7 +61,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                     return new CardData
                     {
                         cost = 2,
-                        infinite = false
+                        infinite = false,
+                        //artTint = "9944de"
                     };
                 }
         }
@@ -88,7 +92,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                                 yAnimation = 0.0,
                                 missileType = MissileType.seeker
                             },
-                            offset = 1
+                            offset = 1,
+                            dialogueSelector = ".VicSeekerSwarm"
                         }
                     };
                 }
@@ -120,7 +125,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                                 yAnimation = 0.0,
                                 missileType = MissileType.seeker
                             },
-                            offset = -1
+                            offset = -1,
+                            dialogueSelector = ".VicSeekerSwarm"
                         }
                     };
                 }
@@ -140,7 +146,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 missileType = MissileType.seeker
-                            }
+                            },
+                            dialogueSelector = ".VicSeekerSwarm"
                         }
                     };
                 }
@@ -164,7 +171,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                                 yAnimation = 0.0,
                                 missileType = MissileType.seeker
                             },
-                            offset = -1
+                            offset = -1,
+                            dialogueSelector = ".VicSeekerSwarm"
                         }
                     };
                 }

@@ -51,8 +51,8 @@ public class VicPoisonMissile : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
-                        exhaust = false,
+                        cost = 2,
+                        exhaust = true,
                         artTint = "24ff4f"
                     };
                 }
@@ -91,12 +91,6 @@ public class VicPoisonMissile : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AStatus
-                        {
-                            status = Status.droneShift,
-                            statusAmount = 1,
-                            targetPlayer = true
-                        },
                         new ASpawn
                         {
                             thing = new Missile
@@ -117,7 +111,17 @@ public class VicPoisonMissile : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 missileType = MissileType.corrode
-                            }
+                            },
+                            offset = -1
+                        },
+                        new ASpawn
+                        {
+                            thing = new Missile
+                            {
+                                yAnimation = 0.0,
+                                missileType = MissileType.corrode
+                            },
+                            offset = 1
                         }
                     };
                 }

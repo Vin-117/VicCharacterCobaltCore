@@ -21,7 +21,7 @@ public class VicRemember : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicRemember", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicRemember.png")).Sprite,
         });
     }
 
@@ -85,7 +85,8 @@ public class VicRemember : Card, IRegisterable
                             browseAction = new ChooseACardToMakePermanent(),
                             browseSource = CardBrowse.Source.Deck,
                             filterTemporary = true,
-                            allowCloseOverride = true
+                            allowCloseOverride = true,
+                            dialogueSelector = ".VicRemember"
                         }
                     };
                 }

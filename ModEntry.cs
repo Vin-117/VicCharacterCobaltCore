@@ -6,8 +6,10 @@ using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
+using System.Reflection;
 using VicCharacter.Artifacts;
 using VicCharacter.Cards;
+using VicCharacter.Conversation;
 using VicCharacter.External;
 using VicCharacter.Features;
 
@@ -36,14 +38,13 @@ internal class ModEntry : SimpleMod
     internal IStatusEntry VicAuxPower;
     internal IStatusEntry VicAuxSurge;
     internal IStatusEntry VicRowControlStatus;
-    internal IStatusEntry KnowledgeStatus;
-    internal IStatusEntry LessonStatus;
 
     internal static ModEntry Instance { get; private set; } = null!;
     internal Harmony Harmony;
     internal IKokoroApi.IV2 KokoroApi;
     internal IDeckEntry VicCharacter;
-    
+    public LocalDB localDB { get; set; } = null!;
+
     internal ILocalizationProvider<IReadOnlyList<string>> AnyLocalizations { get; }
     internal ILocaleBoundNonNullLocalizationProvider<IReadOnlyList<string>> Localizations { get; }
 
@@ -90,6 +91,9 @@ internal class ModEntry : SimpleMod
     private static List<Type> VicCharacterEXECardTypes = [
         typeof(VicCatEXE)
         ];
+    private static List<Type> VicCharacterDialogueTypes = [
+        typeof(NewCombatDialogue)
+    ];
     private static IEnumerable<Type> VicCharacterFullModCardTypes =
         VicCharacterCommonCardTypes
             .Concat(VicCharacterUncommonCardTypes)
@@ -112,7 +116,8 @@ internal class ModEntry : SimpleMod
 
     private static IEnumerable<Type> AllRegisterableTypes =
         VicCharacterFullModCardTypes
-            .Concat(VicCharacterFullModArtifactTypes);
+            .Concat(VicCharacterFullModArtifactTypes)
+            .Concat(VicCharacterDialogueTypes);
 
     public ModEntry(IPluginPackage<IModManifest> package, IModHelper helper, ILogger logger) : base(package, helper, logger)
     {
@@ -148,6 +153,22 @@ internal class ModEntry : SimpleMod
             new CurrentLocaleOrEnglishLocalizationProvider<IReadOnlyList<string>>(AnyLocalizations)
         );
 
+        helper.Events.OnModLoadPhaseFinished += (_, phase) =>
+        {
+            if (phase == ModLoadPhase.AfterDbInit)
+            {
+                localDB = new(helper, package);
+            }
+        };
+
+        helper.Events.OnLoadStringsForLocale += (_, thing) =>
+        {
+            foreach (KeyValuePair<string, string> entry in localDB.GetLocalizationResults())
+            {
+                thing.Localizations[entry.Key] = entry.Value;
+            }
+        };
+
         /*
          * Define character deck
          */
@@ -179,7 +200,9 @@ internal class ModEntry : SimpleMod
          * Define character sprites
          */
         RegisterAnimation(package, "neutral", "assets/Animation/Neutral/VicNeutral", 1);
+        RegisterAnimation(package, "neutraltalk", "assets/Animation/Neutral/VicNeutral", 4);
         RegisterAnimation(package, "squint", "assets/Animation/Squint/VicSquint", 4);
+        RegisterAnimation(package, "annoyed", "assets/Animation/Annoyed/VicAnnoyed", 1);
         Instance.Helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2
         {
             CharacterType = VicCharacter.Deck.Key(),
@@ -257,31 +280,6 @@ internal class ModEntry : SimpleMod
         });
 
         _ = new VicRowControlStatusManager();
-
-        KnowledgeStatus = helper.Content.Statuses.RegisterStatus("Knowledge", new StatusConfiguration
-        {
-            Definition = new StatusDef
-            {
-                isGood = true,
-                affectedByTimestop = false,
-                color = new Color("fbb954"),
-                icon = RegisterSprite(package, "assets/knowledge.png").Sprite
-            },
-            Name = AnyLocalizations.Bind(["status", "knowledge", "name"]).Localize,
-            Description = AnyLocalizations.Bind(["status", "knowledge", "desc"]).Localize
-        });
-        LessonStatus = helper.Content.Statuses.RegisterStatus("Lesson", new StatusConfiguration
-        {
-            Definition = new StatusDef
-            {
-                isGood = true,
-                affectedByTimestop = false,
-                color = new Color("c7dcd0"),
-                icon = RegisterSprite(package, "assets/lesson.png").Sprite
-            },
-            Name = AnyLocalizations.Bind(["status", "lesson", "name"]).Localize,
-            Description = AnyLocalizations.Bind(["status", "lesson", "desc"]).Localize
-        });
     }
 
     public static ISpriteEntry RegisterSprite(IPluginPackage<IModManifest> package, string dir)

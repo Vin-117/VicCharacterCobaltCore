@@ -21,7 +21,7 @@ public class VicCalibrate : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicCalibrate", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicLockdown.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicCalibrate.png")).Sprite,
         });
     }
 
@@ -43,7 +43,7 @@ public class VicCalibrate : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         buoyant = true,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalibrate", "descA"]))
@@ -99,7 +99,7 @@ public class VicCalibrate : Card, IRegisterable
                             card = new VicThanix()
                             {
                             },
-                            destination = CardDestination.Discard,
+                            destination = CardDestination.Deck,
                             amount = 1,
                         }
                     };

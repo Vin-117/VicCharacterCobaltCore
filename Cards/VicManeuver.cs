@@ -22,7 +22,7 @@ public class VicManeuver : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicManeuver", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/basicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicManuever.png")).Sprite,
         });
     }
 
@@ -50,7 +50,7 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicManeuver", "descB"])),
                         exhaust = true
                     };
@@ -94,10 +94,18 @@ public class VicManeuver : Card, IRegisterable
                         {
                             card = new VicGlide()
                             {
-                                upgrade = Upgrade.A
                             },
                             destination = CardDestination.Hand,
                             amount = 1,
+                        },
+                        new AAddCard()
+                        {
+                            card = new VicGlide()
+                            {
+                            },
+                            destination = CardDestination.Deck,
+                            amount = 1,
+                            omitFromTooltips = true
                         }
                     };
                 }
@@ -111,7 +119,7 @@ public class VicManeuver : Card, IRegisterable
                             {
                                 upgrade = Upgrade.B
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Hand,
                             amount = 1
                         }
                     };

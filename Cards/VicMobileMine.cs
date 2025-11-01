@@ -21,7 +21,7 @@ public class VicMobileMine : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicMobileMine", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicMeteor.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicDrone.png")).Sprite,
         });
     }
 
@@ -53,7 +53,8 @@ public class VicMobileMine : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 bigMine = true
-                            }
+                            },
+                            dialogueSelector = ".VicMobileMine"
                         }
                     };
                 }
@@ -73,7 +74,8 @@ public class VicMobileMine : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 bigMine = true
-                            }
+                            },
+                            dialogueSelector = ".VicMobileMine"
                         }
                     };
                 }
@@ -99,7 +101,8 @@ public class VicMobileMine : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 bigMine = true
-                            }
+                            },
+                            dialogueSelector = ".VicMobileMine"
                         }
                     };
                 }
@@ -119,7 +122,8 @@ public class VicMobileMine : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 bigMine = true
-                            }
+                            },
+                            dialogueSelector = ".VicMobileMine"
                         }
                     };
                 }

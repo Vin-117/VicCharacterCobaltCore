@@ -54,8 +54,8 @@ public class VicPlan : Card, IRegisterable
                 {
                     return new CardData 
                     {
-                        cost = 1,
-                        exhaust = false,
+                        cost = 0,
+                        exhaust = true,
                         temporary = true,
                         retain = true
                     };
@@ -103,7 +103,16 @@ public class VicPlan : Card, IRegisterable
                     {
                         new ADrawCard
                         {
-                            count = 6
+                            count = 2
+                        },
+                        new AAddCard()
+                        {
+                            card = new VicPlan()
+                            {
+                                upgrade = Upgrade.B
+                            },
+                            destination = CardDestination.Deck,
+                            amount = 1,
                         }
                     };
                 }

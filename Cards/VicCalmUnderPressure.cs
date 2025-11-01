@@ -22,7 +22,7 @@ public class VicCalmUnderPressure : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicCalmUnderPressure", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/basicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicCalm.png")).Sprite,
         });
     }
 
@@ -51,7 +51,7 @@ public class VicCalmUnderPressure : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0,
+                        cost = 1,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalmUnderPressure", "descB"]))
                     };
@@ -112,7 +112,7 @@ public class VicCalmUnderPressure : Card, IRegisterable
                             {
                                 upgrade = Upgrade.B
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Hand,
                             amount = 1,
                         }
                     };

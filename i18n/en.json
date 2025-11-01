@@ -27,8 +27,8 @@
         "VicManeuver": {
             "name": "Maneuver",
 			"desc": "Add a <c=card>Glide</c> to your hand.",
-			"descA": "Add a <c=card>Glide A</c> to your hand.",
-            "descB": "Add a <c=card>Glide B</c> to your draw pile."
+			"descA": "Add a <c=card>Glide</c> to your hand and draw pile.",
+            "descB": "Add a <c=card>Glide B</c> to your hand."
         },
         "VicMobileMine": {
             "name": "Mobile Mine"
@@ -40,7 +40,7 @@
             "name": "Calm Under Pressure",
 			"desc": "Add a <c=card>Plan</c> to your hand.",
 			"descA": "Add a <c=card>Plan A</c> to your hand.",
-            "descB": "Add a <c=card>Plan B</c> to your draw pile."
+            "descB": "Add a <c=card>Plan B</c> to your hand."
 		},
 		"VicPlan": {
             "name": "Plan"
@@ -52,7 +52,7 @@
             "name": "Crisis Management",
 			"desc": "Add a <c=card>Lockdown</c> to your draw pile.",
 			"descA": "Add a <c=card>Lockdown A</c> to your draw pile.",
-            "descB": "Add a <c=card>Lockdown</c> to your discard pile."
+            "descB": "Draw 2. Add a <c=card>Lockdown B</c> to your draw pile."
 		},
 		"VicLockdown": {
             "name": "Lockdown"
@@ -73,7 +73,7 @@
             "name": "Sensor Overload"
 		},
 		"VicMisdirection": {
-            "name": "Misdirection"
+            "name": "Missile Jammer"
 		},
 		"VicDualDeploy": {
             "name": "Dual Deploy"
@@ -102,8 +102,8 @@
 		"VicPassiveThrusters": {
             "name": "Passive Thrusters",
 			"desc": "Add 1 <c=card>Drift</c> to your draw and discard pile.",
-			"descA": "Add 1 <c=card>Drift A</c> to your hand and draw pile.",
-            "descB": "Add 3 <c=card>Drifts</c> to your draw pile and 1 <c=card>Fumes</c> to your discard pile."
+			"descA": "Add 1 <c=card>Drift A</c> to your hand and discard pile.",
+            "descB": "Add 3 <c=card>Drifts</c> and 1 <c=card>Fumes</c> to your draw pile."
 		},
 		"VicDrift": {
             "name": "Drift"

@@ -22,7 +22,7 @@ public class VicTorpedoCard : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicTorpedoCard", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
         });
     }
 
@@ -34,28 +34,32 @@ public class VicTorpedoCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1
+                        cost = 1,
+                        artTint = "00FFFF"
                     };
                 }
             case Upgrade.A:
                 {
                     return new CardData
                     {
-                        cost = 1
+                        cost = 1,
+                        artTint = "00FFFF"
                     };
                 }
             case Upgrade.B:
                 {
                     return new CardData
                     {
-                        cost = 2
+                        cost = 2,
+                        artTint = "00FFFF"
                     };
                 }
             default:
                 {
                     return new CardData
                     {
-                        cost = 1
+                        cost = 1,
+                        artTint = "00FFFF"
                     };
                 }
         }
@@ -74,7 +78,8 @@ public class VicTorpedoCard : Card, IRegisterable
                             thing = new VicTorpedo
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            dialogueSelector = ".VicTorpedoLaunch"
                         }
                     };
                 }

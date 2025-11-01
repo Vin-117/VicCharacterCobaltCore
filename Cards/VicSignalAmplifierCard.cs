@@ -22,7 +22,7 @@ public class VicSignalAmplifierCard : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicSignalAmplifierCard", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicDrone.png")).Sprite,
         });
     }
 
@@ -76,7 +76,8 @@ public class VicSignalAmplifierCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = true
-                            }
+                            },
+                            dialogueSelector = ".VicSatellite"
                         }
                     };
                 }
@@ -90,7 +91,8 @@ public class VicSignalAmplifierCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = true
-                            }
+                            },
+                            dialogueSelector = ".VicSatellite"
                         }
                     };
                 }
@@ -114,7 +116,8 @@ public class VicSignalAmplifierCard : Card, IRegisterable
                                 yAnimation = 0.0,
                                 targetPlayer = true
                             },
-                            offset = 1
+                            offset = 1,
+                            dialogueSelector = ".VicSatellite"
                         },
                     };
                 }

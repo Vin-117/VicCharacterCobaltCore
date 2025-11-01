@@ -47,7 +47,7 @@ public class VicGlide : Card, IRegisterable
                     {
                         cost = 0,
                         temporary = true,
-                        exhaust = true,
+                        exhaust = false,
                         retain = true,
                         flippable = true
                     };
@@ -98,7 +98,17 @@ public class VicGlide : Card, IRegisterable
                     {
                         new AMove
                         {
-                            dir = -3,
+                            dir = -1,
+                            targetPlayer = true
+                        },
+                        new AMove
+                        {
+                            dir = -1,
+                            targetPlayer = true
+                        },
+                        new AMove
+                        {
+                            dir = -1,
                             targetPlayer = true
                         }
                     };

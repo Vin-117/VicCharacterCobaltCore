@@ -23,7 +23,7 @@ public class VicSiphon : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicSiphon", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSiphon.png")).Sprite,
         });
     }
 
@@ -36,7 +36,7 @@ public class VicSiphon : Card, IRegisterable
                     return new CardData
                     {
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicSiphon", "desc"])),
-                        cost = 0
+                        cost = 1
                     };
                 }
             case Upgrade.A:
@@ -45,7 +45,7 @@ public class VicSiphon : Card, IRegisterable
                     {
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicSiphon", "descA"])),
                         cost = 0,
-                        retain = true
+                        retain = false
                     };
                 }
             case Upgrade.B:

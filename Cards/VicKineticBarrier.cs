@@ -22,7 +22,7 @@ public class VicKineticBarrier : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicKineticBarrier", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicAnerniumAsteroid.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicDrone.png")).Sprite,
         });
     }
 
@@ -52,7 +52,8 @@ public class VicKineticBarrier : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 4,
+                        cost = 5,
+                        flippable = true,
                         exhaust = true
                     };
                 }
@@ -80,7 +81,8 @@ public class VicKineticBarrier : Card, IRegisterable
                             thing = new KineticBarrier
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            dialogueSelector = ".VicKineticBarrierUp"
                         }
                     };
                 }
@@ -93,7 +95,8 @@ public class VicKineticBarrier : Card, IRegisterable
                             thing = new KineticBarrier
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            dialogueSelector = ".VicKineticBarrierUp"
                         }
                     };
                 }
@@ -101,11 +104,14 @@ public class VicKineticBarrier : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AStatus
+                        new ASpawn
                         {
-                            status = Status.droneShift,
-                            statusAmount = 3,
-                            targetPlayer = true
+                            thing = new KineticBarrier
+                            {
+                                yAnimation = 0.0
+                            },
+                            dialogueSelector = ".VicKineticBarrierUp",
+                            offset = -1
                         },
                         new ASpawn
                         {
@@ -125,7 +131,8 @@ public class VicKineticBarrier : Card, IRegisterable
                             thing = new KineticBarrier
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            dialogueSelector = ".VicKineticBarrierUp"
                         }
                     };
                 }

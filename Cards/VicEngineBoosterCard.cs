@@ -22,7 +22,7 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicEngineBoosterCard", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicDrone.png")).Sprite,
         });
     }
 
@@ -41,7 +41,7 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1
+                        cost = 2
                     };
                 }
             case Upgrade.B:
@@ -76,7 +76,8 @@ public class VicEngineBoosterCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = true
-                            }
+                            },
+                            dialogueSelector = ".VicEngineBooster"
                         }
                     };
                 }
@@ -84,13 +85,20 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
+                        new AStatus
+                        {
+                            status = Status.evade,
+                            statusAmount = 1,
+                            targetPlayer = true
+                        },
                         new ASpawn
                         {
                             thing = new EngineBooster
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = true
-                            }
+                            },
+                            dialogueSelector = ".VicEngineBooster"
                         }
                     };
                 }
@@ -106,6 +114,7 @@ public class VicEngineBoosterCard : Card, IRegisterable
                                 targetPlayer = true,
                                 bubbleShield = true
                             },
+                            dialogueSelector = ".VicEngineBooster"
                         }
                     };
                 }
@@ -119,7 +128,8 @@ public class VicEngineBoosterCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = true
-                            }
+                            },
+                            dialogueSelector = ".VicEngineBooster"
                         }
                     };
                 }

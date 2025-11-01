@@ -22,7 +22,7 @@ public class VicCrisisManagement : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicCrisisManagement", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/basicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicCrisis.png")).Sprite,
         });
     }
 
@@ -34,7 +34,7 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "desc"]))
                     };
@@ -43,7 +43,7 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "descA"]))
                     };
@@ -52,8 +52,8 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0,
-                        exhaust = true,
+                        cost = 1,
+                        exhaust = false,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "descB"]))
                     };
                 }
@@ -108,12 +108,18 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
+                        
+                        new ADrawCard()
+                        {
+                            count = 2
+                        },
                         new AAddCard()
                         {
                             card = new VicLockdown()
                             {
+                                upgrade = Upgrade.B
                             },
-                            destination = CardDestination.Discard,
+                            destination = CardDestination.Deck,
                             amount = 1,
                         }
                     };
@@ -127,7 +133,7 @@ public class VicCrisisManagement : Card, IRegisterable
                             card = new VicLockdown()
                             {
                             },
-                            destination = CardDestination.Hand,
+                            destination = CardDestination.Discard,
                             amount = 1,
                         }
                     };

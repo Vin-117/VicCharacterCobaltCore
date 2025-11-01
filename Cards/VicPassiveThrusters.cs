@@ -22,7 +22,7 @@ public class VicPassiveThrusters : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicPassiveThrusters", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/basicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicManuever.png")).Sprite,
         });
     }
 
@@ -89,6 +89,7 @@ public class VicPassiveThrusters : Card, IRegisterable
                             },
                             destination = CardDestination.Discard,
                             amount = 1,
+                            omitFromTooltips = true
                         }
                     };
                 }
@@ -111,8 +112,9 @@ public class VicPassiveThrusters : Card, IRegisterable
                             {
                                 upgrade = Upgrade.A
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Discard,
                             amount = 1,
+                            omitFromTooltips = true
                         }
 
                     };
@@ -134,7 +136,7 @@ public class VicPassiveThrusters : Card, IRegisterable
                             card = new TrashFumes()
                             {
                             },
-                            destination = CardDestination.Discard,
+                            destination = CardDestination.Deck,
                             amount = 1,
                         }
                     };

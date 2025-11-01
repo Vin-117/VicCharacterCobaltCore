@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework.Media;
+using Nanoray.PluginManager;
+using Nickel;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 using VicCharacter.External;
-using Nanoray.PluginManager;
-using Nickel;
 
 namespace VicCharacter.Cards;
 
@@ -22,7 +23,7 @@ public class VicRowControl : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicRowControl", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/basicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicRowControl.png")).Sprite,
         });
     }
 
@@ -36,7 +37,8 @@ public class VicRowControl : Card, IRegisterable
                     {
                         cost = 1,
                         buoyant = false,
-                        exhaust = true
+                        exhaust = true,
+                        artTint = "59f790"
                     };
                 }
             case Upgrade.A:
@@ -45,7 +47,8 @@ public class VicRowControl : Card, IRegisterable
                     {
                         cost = 1,
                         buoyant = false,
-                        exhaust = true
+                        exhaust = true,
+                        artTint = "59f790"
                     };
                 }
             case Upgrade.B:
@@ -54,7 +57,8 @@ public class VicRowControl : Card, IRegisterable
                     {
                         cost = 1,
                         buoyant = false,
-                        exhaust = true
+                        exhaust = true,
+                        artTint = "59f790"
                     };
                 }
             default:
@@ -63,7 +67,8 @@ public class VicRowControl : Card, IRegisterable
                     {
                         cost = 1,
                         buoyant = false,
-                        exhaust = true
+                        exhaust = true,
+                        artTint = "59f790"
                     };
                 }
         }
