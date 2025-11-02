@@ -1,7 +1,8 @@
-﻿using System.Collections.Generic;
-using System.Reflection;
-using Nanoray.PluginManager;
+﻿using Nanoray.PluginManager;
 using Nickel;
+using System.Collections.Generic;
+using System.Reflection;
+using VicCharacter.Actions;
 
 namespace VicCharacter.Cards;
 

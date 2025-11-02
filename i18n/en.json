@@ -6,15 +6,15 @@
     "status": {
 		"VicAuxPower": {
             "name": "Auxiliary Power",
-            "desc": "At the start of every turn, add {0} <c=card>Auxiliary</c> Cards to your hand."
+            "desc": "Gain {0} <c=card>Auxiliary</c> to your hand at the start of every turn."
         },
         "VicAuxSurge": {
             "name": "Auxiliary Surge",
-            "desc": "At the start of every turn, add {0} <c=card>Auxiliary B</c> Cards to your hand."
+            "desc": "Gain {0} <c=card>Auxiliary B</c> to your hand at the start of every turn."
         },
 		"VicRowControlStatus": {
             "name": "Row Control",
-            "desc": "At the start of every turn, gain {0} <c=midrow>Droneshift</c>."
+            "desc": "Gain {0} <c=midrow>Droneshift</c> every turn."
         },
 
     },
@@ -151,23 +151,23 @@
 	
 	"artifact": {
 		"VicRadioSystem" : {
-			"name" : "Spare Satellite",
+			"name" : "SPARE SATELLITE",
 			"desc": "Start each combat with a <c=status>Bubbled</c> <c=midrow>Signal Amplifier</c> near your ship."
 		},
         "VicSidelink" : {
-			"name" : "Sidelink",
+			"name" : "SIDELINK",
 			"desc": "Every 3 midrow objects deployed, gain 1 <c=status>Evade</c>."
 		},
         "VicRegenExhaust" : {
-			"name" : "Engine Accelerator",
-			"desc": "At the start of combat, add a <c=card>Drift A</c> to your hand."
+			"name" : "ENGINE ACCELERATOR",
+			"desc": "At the start of combat, gain a <c=card>Drift A</c>."
 		},
         "VicOverclockedMissileBay" : {
-			"name" : "Overclocked Missile Bay",
+			"name" : "OVERCLOCKED MISSILE BAY",
 			"desc": "Gain 1 extra Energy every turn. Every other turn, deploy a <c=midrow>Seeker</c> aimed at yourself."
 		},
         "VicLevelheaded" : {
-			"name" : "Temporary Booster",
+			"name" : "TEMPORARY BOOSTER",
 			"desc": "The first 2 times you play a <c=status>Temporary</c> card each turn, draw 1 card."
 		},
 	},

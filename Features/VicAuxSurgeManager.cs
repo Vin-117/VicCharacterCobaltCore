@@ -24,6 +24,13 @@ public class VicAuxSurgeStatusManager : IKokoroApi.IV2.IStatusLogicApi.IHook, IK
         ModEntry.Instance.KokoroApi.StatusRendering.RegisterHook(this, 0);
     }
 
+    public IReadOnlyList<Tooltip> OverrideStatusTooltips(IKokoroApi.IV2.IStatusRenderingApi.IHook.IOverrideStatusTooltipsArgs args)
+        => args.Status == ModEntry.Instance.VicAuxSurge.Status
+            ? [
+                .. args.Tooltips,
+                new TTCard { card = new VicAux(){ upgrade = Upgrade.B }, }
+            ] : args.Tooltips;
+
     public bool HandleStatusTurnAutoStep(IHandleStatusTurnAutoStepArgs args)
     {
         if (args.Status != ModEntry.Instance.VicAuxSurge.Status)

@@ -180,7 +180,7 @@ internal class ModEntry : SimpleMod
                 /*
                  * Define character colour
                  */
-                color = new Color("C8C8C8"),
+                color = new Color("c8c8c8"),
 
                 titleColor = new Color("000000")
             },

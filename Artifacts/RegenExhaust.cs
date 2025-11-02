@@ -26,6 +26,20 @@ public class VicRegenExhaust : Artifact, IRegisterable
         });
     }
 
+    public override List<Tooltip>? GetExtraTooltips()
+    {
+        return new List<Tooltip>
+        {
+            new TTCard
+            {
+                card = new VicDrift()
+                {
+                    upgrade = Upgrade.A
+                }
+            }
+        };
+    }
+
     public override void OnCombatStart(State state, Combat combat)
     {
         combat.QueueImmediate(new AAddCard

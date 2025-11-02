@@ -4,6 +4,7 @@ using Nickel;
 using System.Collections.Generic;
 using System.Reflection;
 using VicCharacter.Features;
+using VicCharacter.Actions;
 
 namespace VicCharacter.Cards;
 
@@ -81,7 +82,7 @@ public class VicSiphon : Card, IRegisterable
                             browseSource = CardBrowse.Source.Hand,
                             browseAction = new ExhaustCardBrowseAction
                             {
-                                OnSuccess = 
+                                OnSuccess =
                                 [new AAddCard
                                 {
                                     card = new VicAux()
@@ -92,6 +93,17 @@ public class VicSiphon : Card, IRegisterable
                                     amount = 1
                                 }]
                             }
+                        },
+                        new ATooltipAction 
+                        { Tooltips = new AAddCard
+                        {
+                            card = new VicAux()
+                            {
+                                upgrade = Upgrade.A
+                            },
+                            destination = CardDestination.Hand,
+                            amount = 1
+                        }.GetTooltips(s) 
                         }
                     };
                 }
@@ -115,6 +127,17 @@ public class VicSiphon : Card, IRegisterable
                                     amount = 1
                                 }]
                             }
+                        },
+                        new ATooltipAction
+                        { Tooltips = new AAddCard
+                        {
+                            card = new VicAux()
+                            {
+                                upgrade = Upgrade.A
+                            },
+                            destination = CardDestination.Hand,
+                            amount = 1
+                        }.GetTooltips(s)
                         }
                     };
                 }
@@ -138,6 +161,17 @@ public class VicSiphon : Card, IRegisterable
                                     amount = 1
                                 }]
                             }
+                        },
+                        new ATooltipAction
+                        { Tooltips = new AAddCard
+                        {
+                            card = new VicAux()
+                            {
+                                upgrade = Upgrade.A
+                            },
+                            destination = CardDestination.Hand,
+                            amount = 1
+                        }.GetTooltips(s)
                         }
                     };
                 }
@@ -161,6 +195,17 @@ public class VicSiphon : Card, IRegisterable
                                     amount = 1
                                 }]
                             }
+                        },
+                        new ATooltipAction
+                        { Tooltips = new AAddCard
+                        {
+                            card = new VicAux()
+                            {
+                                upgrade = Upgrade.A
+                            },
+                            destination = CardDestination.Hand,
+                            amount = 1
+                        }.GetTooltips(s)
                         }
                     };
                 }
