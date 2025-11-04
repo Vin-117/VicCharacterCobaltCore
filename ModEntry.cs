@@ -31,8 +31,15 @@ internal class ModEntry : SimpleMod
     internal ISpriteEntry SignalAmplifierMidrow { get; }
     internal ISpriteEntry SignalAmplifierSmall { get; }
 
+    internal ISpriteEntry SignalAmplifierUpgradedMidrow { get; }
+
+    internal ISpriteEntry SignalAmplifierUpgradedSmall { get; }
+
     internal ISpriteEntry TorpedoMidrow { get; }
     internal ISpriteEntry TorpedoSmall { get; }
+
+    internal ISpriteEntry TorpedoUpgradedMidrow { get; }
+    internal ISpriteEntry TorpedoUpgradedSmall { get; }
 
     //Initiate status variables
     internal IStatusEntry VicAuxPower;
@@ -137,8 +144,14 @@ internal class ModEntry : SimpleMod
         SignalAmplifierMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/SignalAmplifier.png"));
         SignalAmplifierSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/SignalAmplifierSmall.png"));
 
+        SignalAmplifierUpgradedMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/SignalAmplifier_upgraded.png"));
+        SignalAmplifierUpgradedSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/SignalAmplifierSmall_upgraded.png"));
+
         TorpedoMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/Torpedo.png"));
         TorpedoSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/TorpedoSmall.png"));
+
+        TorpedoUpgradedMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/TorpedoUpgraded.png"));
+        TorpedoUpgradedSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/TorpedoUpgradedSmall.png"));
 
         /*
          * Koroko dependency

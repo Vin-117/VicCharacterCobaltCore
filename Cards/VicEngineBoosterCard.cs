@@ -48,7 +48,8 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2
+                        cost = 0,
+                        exhaust = true
                     };
                 }
             default:
@@ -85,18 +86,13 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AStatus
-                        {
-                            status = Status.evade,
-                            statusAmount = 1,
-                            targetPlayer = true
-                        },
                         new ASpawn
                         {
                             thing = new EngineBooster
                             {
                                 yAnimation = 0.0,
-                                targetPlayer = true
+                                targetPlayer = true,
+                                bubbleShield = true
                             },
                             dialogueSelector = ".VicEngineBooster"
                         }
@@ -111,8 +107,7 @@ public class VicEngineBoosterCard : Card, IRegisterable
                             thing = new EngineBooster
                             {
                                 yAnimation = 0.0,
-                                targetPlayer = true,
-                                bubbleShield = true
+                                targetPlayer = true
                             },
                             dialogueSelector = ".VicEngineBooster"
                         }

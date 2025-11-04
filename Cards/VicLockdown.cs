@@ -52,7 +52,7 @@ public class VicLockdown : Card, IRegisterable
                 {
                     return new CardData 
                     {
-                        cost = 0,
+                        cost = 1,
                         temporary = true,
                         retain = false,
                         exhaust = true
@@ -105,7 +105,7 @@ public class VicLockdown : Card, IRegisterable
                     {
                         new AStatus
                         {
-                            status = Status.shield,
+                            status = Status.maxShield,
                             statusAmount = 2,
                             targetPlayer = true
                         }

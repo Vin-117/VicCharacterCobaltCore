@@ -87,19 +87,18 @@ public class VicTorpedoCard : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AStatus
-                        {
-                            status = Status.droneShift,
-                            statusAmount = 1,
-                            targetPlayer = true
-                        },
                         new ASpawn
                         {
                             thing = new VicTorpedo
                             {
                                 yAnimation = 0.0
                             }
-                        }
+                        },
+                        new AMove
+                        {
+                            dir = -2,
+                            targetPlayer = true
+                        },
                     };
                 }
             case Upgrade.B:
@@ -112,7 +111,7 @@ public class VicTorpedoCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0
                             },
-                            offset = 1
+                            offset = -1
                         },
                         new ASpawn
                         {
@@ -120,8 +119,8 @@ public class VicTorpedoCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0
                             },
-                            offset = -1
-                        },
+                            offset = 1
+                        }
                     };
                 }
             default:

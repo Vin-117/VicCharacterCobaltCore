@@ -41,14 +41,14 @@ public class VicSignalAmplifierCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0
+                        cost = 1
                     };
                 }
             case Upgrade.B:
                 {
                     return new CardData
                     {
-                        cost = 2
+                        cost = 0
                     };
                 }
             default:
@@ -87,7 +87,7 @@ public class VicSignalAmplifierCard : Card, IRegisterable
                     {
                         new ASpawn
                         {
-                            thing = new SignalAmplifier
+                            thing = new SignalAmplifierUpgraded
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = true
@@ -106,19 +106,8 @@ public class VicSignalAmplifierCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = true
-                            },
-                            offset = -1
-                        },
-                        new ASpawn
-                        {
-                            thing = new SignalAmplifier
-                            {
-                                yAnimation = 0.0,
-                                targetPlayer = true
-                            },
-                            offset = 1,
-                            dialogueSelector = ".VicSatellite"
-                        },
+                            }
+                        }
                     };
                 }
             default:

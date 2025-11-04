@@ -52,8 +52,8 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
-                        exhaust = false,
+                        cost = 2,
+                        exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "descB"]))
                     };
                 }
@@ -108,10 +108,14 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        
-                        new ADrawCard()
+                        new AAddCard()
                         {
-                            count = 2
+                            card = new VicLockdown()
+                            {
+                                upgrade = Upgrade.A
+                            },
+                            destination = CardDestination.Deck,
+                            amount = 1,
                         },
                         new AAddCard()
                         {
@@ -121,7 +125,7 @@ public class VicCrisisManagement : Card, IRegisterable
                             },
                             destination = CardDestination.Deck,
                             amount = 1,
-                        }
+                        },
                     };
                 }
             default:

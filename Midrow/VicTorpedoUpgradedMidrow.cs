@@ -13,23 +13,23 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VicCharacter.Midrow
 {
-    internal sealed class VicTorpedo : Missile
+    internal sealed class VicTorpedoUpgraded : Missile
     {
 
         public static Color exhaustColor = new Color("00ffff");
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public enum VicTorpedoType
+        public enum VicTorpedoUpgradedType
         {
             Normal
         }
 
         [JsonProperty]
-        public VicTorpedoType MissileType = VicTorpedoType.Normal;
+        public VicTorpedoUpgradedType MissileType = VicTorpedoUpgradedType.Normal;
 
         public override Spr? GetIcon()
         {
-            return ModEntry.Instance.TorpedoSmall.Sprite;
+            return ModEntry.Instance.TorpedoUpgradedSmall.Sprite;
         }
 
         public override string GetDialogueTag() => "Torpedo";
@@ -41,9 +41,9 @@ namespace VicCharacter.Midrow
                 {
                     Icon = GetIcon()!,
                     flipIconY = targetPlayer,
-                    Title = ModEntry.Instance.Localizations.Localize(["midrow", "Torpedo", MissileType.ToString(), "name"]),
+                    Title = ModEntry.Instance.Localizations.Localize(["midrow", "TorpedoUpgraded", MissileType.ToString(), "name"]),
                     TitleColor = Colors.midrow,
-                    Description = ModEntry.Instance.Localizations.Localize(["midrow", "Torpedo", MissileType.ToString(), "description"])
+                    Description = ModEntry.Instance.Localizations.Localize(["midrow", "TorpedoUpgraded", MissileType.ToString(), "description"])
                 }
             ];
             if (this.bubbleShield)
@@ -58,10 +58,10 @@ namespace VicCharacter.Midrow
                 new AMissileHit
                 {
                     worldX = x,
-                    outgoingDamage = 2,
+                    outgoingDamage = 3,
                     targetPlayer = targetPlayer,
                     status = Status.lockdown,
-                    statusAmount = 1
+                    statusAmount = 2
                 }
             };
         }
@@ -75,7 +75,7 @@ namespace VicCharacter.Midrow
             Vec vec2 = v + offset;
             bool flag = targetPlayer;
             bool flag2 = false;
-            Spr spr = ModEntry.Instance.TorpedoMidrow.Sprite;
+            Spr spr = ModEntry.Instance.TorpedoUpgradedMidrow.Sprite;
             
 
             Vec vec3 = default(Vec);

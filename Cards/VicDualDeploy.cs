@@ -9,8 +9,16 @@ namespace VicCharacter.Cards;
 
 public class VicDualDeploy : Card, IRegisterable
 {
+
+    private static ISpriteEntry TopArt = null!;
+    private static ISpriteEntry BottomArt = null!;
+
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
+
+        TopArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/DualDeploy_Top.png"));
+        BottomArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/DualDeploy_Bottom.png"));
+
         helper.Content.Cards.RegisterCard(new CardConfiguration
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
@@ -19,16 +27,17 @@ public class VicDualDeploy : Card, IRegisterable
                 deck = ModEntry.Instance.VicCharacter.Deck,
                 rarity = Rarity.uncommon,
                 dontOffer = false,
-                upgradesTo = [Upgrade.A, Upgrade.B]
+                upgradesTo = [Upgrade.A, Upgrade.B],
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicDualDeploy", "name"]).Localize,
+
         });
     }
 
     public override CardData GetData(State state)
         => new()
         {
-            art = flipped ? StableSpr.cards_Adaptability_Bottom : StableSpr.cards_Adaptability_Top,
+            art = (flipped ? BottomArt : TopArt).Sprite,
             cost = 1,
             floppable = true,
             retain = upgrade == Upgrade.B ? true : false,

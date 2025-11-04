@@ -42,8 +42,8 @@ public class VicPoisonMissile : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0,
-                        exhaust = true,
+                        cost = 1,
+                        exhaust = false,
                         artTint = "24ff4f"
                     };
                 }
