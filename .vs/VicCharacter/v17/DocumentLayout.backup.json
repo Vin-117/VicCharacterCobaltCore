@@ -3,35 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\Desktop\\VicCharacter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\cards\\vicdualdeploy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicdualdeploy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Dracula\\Cards\\BloodShieldCard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\midrow\\victorpedomidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:midrow\\victorpedomidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\cards\\vicpoisonmissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicpoisonmissile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\cards\\victorpedocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\victorpedocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\cards\\vicglide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicglide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,109 +18,33 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BloodShieldCard.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Dracula\\Cards\\BloodShieldCard.cs",
-              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Dracula\\Cards\\BloodShieldCard.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Dracula\\Cards\\BloodShieldCard.cs",
-              "RelativeToolTip": "..\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Dracula\\Cards\\BloodShieldCard.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAADIAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T23:07:12.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VicTorpedoMidrow.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Midrow\\VicTorpedoMidrow.cs",
-              "RelativeDocumentMoniker": "Midrow\\VicTorpedoMidrow.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Midrow\\VicTorpedoMidrow.cs",
-              "RelativeToolTip": "Midrow\\VicTorpedoMidrow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T22:56:04.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VicDualDeploy.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicDualDeploy.cs",
-              "RelativeDocumentMoniker": "Cards\\VicDualDeploy.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicDualDeploy.cs",
-              "RelativeToolTip": "Cards\\VicDualDeploy.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBMAAABqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T22:53:49.677Z",
+              "Title": "VicCharacter",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
+              "RelativeDocumentMoniker": "VicCharacter.csproj",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
+              "RelativeToolTip": "VicCharacter.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-04T23:24:27.484Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VicPoisonMissile.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicPoisonMissile.cs",
-              "RelativeDocumentMoniker": "Cards\\VicPoisonMissile.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicPoisonMissile.cs",
-              "RelativeToolTip": "Cards\\VicPoisonMissile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T22:33:15.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VicGlide.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicGlide.cs",
-              "RelativeDocumentMoniker": "Cards\\VicGlide.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicGlide.cs",
-              "RelativeToolTip": "Cards\\VicGlide.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowGIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T22:32:47.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VicTorpedoCard.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicTorpedoCard.cs",
-              "RelativeDocumentMoniker": "Cards\\VicTorpedoCard.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicTorpedoCard.cs",
-              "RelativeToolTip": "Cards\\VicTorpedoCard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAACGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-04T02:25:15.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "en.json",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\i18n\\en.json",
-              "RelativeDocumentMoniker": "i18n\\en.json",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\i18n\\en.json",
-              "RelativeToolTip": "i18n\\en.json",
-              "ViewState": "AgIAACYAAAAAAAAAAAAlwDYAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "nickel.json",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\nickel.json",
+              "RelativeDocumentMoniker": "nickel.json",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\nickel.json",
+              "RelativeToolTip": "nickel.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-04T01:20:17.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ModEntry.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\ModEntry.cs",
-              "RelativeDocumentMoniker": "ModEntry.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\ModEntry.cs",
-              "RelativeToolTip": "ModEntry.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAowJsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T23:24:01.925Z"
+              "WhenOpened": "2025-11-04T23:24:17.992Z",
+              "EditorCaption": ""
             }
           ]
         }
