@@ -247,7 +247,7 @@ internal class ModEntry : SimpleMod
             Starters = new StarterDeck
             {
                 cards = [
-                    new VicHURTCard(),
+                    new VicSeekerSwarm(),
                     new VicManeuver()
                 ],
             },

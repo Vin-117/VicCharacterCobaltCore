@@ -34,7 +34,7 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "desc"]))
                     };
@@ -43,7 +43,7 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "descA"]))
                     };
@@ -52,7 +52,7 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 3,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "descB"]))
                     };
@@ -61,7 +61,7 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "desc"]))
                     };
