@@ -80,12 +80,14 @@ public class VicThanix : Card, IRegisterable
                         new AAttack
                         {
                             damage = GetDmg(s, 3),
-                            stunEnemy = true
+                            stunEnemy = true,
+                            fast = true
                         },
                         new AAttack
                         {
                             damage = GetDmg(s, 3),
-                            stunEnemy = true
+                            stunEnemy = true,
+                            fast = true
                         },
                     };
                 }

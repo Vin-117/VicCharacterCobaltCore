@@ -51,4 +51,9 @@ public class VicRadioSystem : Artifact, IRegisterable
             Pulse();
         }
     }
+
+    public override List<Tooltip>? GetExtraTooltips()
+    => [.. new SignalAmplifier().GetTooltips(),
+           new TTGlossary("midrow.bubbleShield")];
+
 }

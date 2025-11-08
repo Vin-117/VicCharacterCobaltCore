@@ -16,7 +16,7 @@ public class VicPoisonMissile : Card, IRegisterable
             Meta = new CardMeta
             {
                 deck = ModEntry.Instance.VicCharacter.Deck,
-                rarity = Rarity.rare,
+                rarity = Rarity.uncommon,
                 dontOffer = false,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
@@ -42,8 +42,8 @@ public class VicPoisonMissile : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
-                        exhaust = false,
+                        cost = 0,
+                        exhaust = true,
                         artTint = "24ff4f"
                     };
                 }

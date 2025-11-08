@@ -2,11 +2,12 @@
 using System.Reflection;
 using Nanoray.PluginManager;
 using Nickel;
+using VicCharacter.Midrow;
 
 namespace VicCharacter.Cards;
 
 
-public class VicCalibrate : Card, IRegisterable
+public class VicHURTCard : Card, IRegisterable
 {
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
@@ -16,57 +17,50 @@ public class VicCalibrate : Card, IRegisterable
             Meta = new CardMeta
             {
                 deck = ModEntry.Instance.VicCharacter.Deck,
-                rarity = Rarity.uncommon,
+                rarity = Rarity.rare,
                 dontOffer = false,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicCalibrate", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicCalibrate.png")).Sprite,
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicHURTCard", "name"]).Localize,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
         });
     }
 
     public override CardData GetData(State state)
     {
-        switch (this.upgrade)
+        switch(this.upgrade)
         {
-            case Upgrade.None:
+            case Upgrade.None: 
                 {
                     return new CardData
                     {
-                        cost = 2,
-                        buoyant = false,
-                        exhaust = true,
-                        description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalibrate", "desc"]))
+                        cost = 3,
+                        artTint = "f5ff00"
                     };
                 }
             case Upgrade.A:
                 {
                     return new CardData
                     {
-                        cost = 2,
-                        buoyant = true,
-                        exhaust = true,
-                        description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalibrate", "descA"]))
+                        cost = 3,
+                        artTint = "f5ff00",
+                        retain = true
                     };
                 }
             case Upgrade.B:
                 {
                     return new CardData
                     {
-                        cost = 2,
-                        buoyant = false,
-                        exhaust = true,
-                        description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalibrate", "descB"]))
+                        cost = 3,
+                        artTint = "f5ff00"
                     };
                 }
             default:
                 {
                     return new CardData
                     {
-                        cost = 1,
-                        buoyant = false,
-                        exhaust = true,
-                        description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalibrate", "desc"]))
+                        cost = 3,
+                        artTint = "f5ff00"
                     };
                 }
         }
@@ -80,13 +74,13 @@ public class VicCalibrate : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AAddCard()
+                        new ASpawn
                         {
-                            card = new VicThanix()
+                            thing = new VicHURT
                             {
+                                yAnimation = 0.0
                             },
-                            destination = CardDestination.Discard,
-                            amount = 1,
+                            //dialogueSelector = ".VicTorpedoLaunch"
                         }
                     };
                 }
@@ -94,13 +88,12 @@ public class VicCalibrate : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AAddCard()
+                        new ASpawn
                         {
-                            card = new VicThanix()
+                            thing = new VicHURT
                             {
-                            },
-                            destination = CardDestination.Deck,
-                            amount = 1,
+                                yAnimation = 0.0
+                            }
                         }
                     };
                 }
@@ -108,13 +101,12 @@ public class VicCalibrate : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AAddCard()
+                        new ASpawn
                         {
-                            card = new VicRecalibrate()
+                            thing = new VicPAIN
                             {
-                            },
-                            destination = CardDestination.Discard,
-                            amount = 1,
+                                yAnimation = 0.0
+                            }
                         }
                     };
                 }
@@ -122,13 +114,12 @@ public class VicCalibrate : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AAddCard()
+                        new ASpawn
                         {
-                            card = new VicThanix()
+                            thing = new VicHURT
                             {
-                            },
-                            destination = CardDestination.Discard,
-                            amount = 1,
+                                yAnimation = 0.0
+                            }
                         }
                     };
                 }

@@ -42,7 +42,7 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 0,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicManeuver", "descA"]))
                     };
                 }
@@ -50,9 +50,9 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 0,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicManeuver", "descB"])),
-                        exhaust = true
+                        exhaust = false
                     };
                 }
             default:
@@ -97,15 +97,6 @@ public class VicManeuver : Card, IRegisterable
                             },
                             destination = CardDestination.Hand,
                             amount = 1,
-                        },
-                        new AAddCard()
-                        {
-                            card = new VicGlide()
-                            {
-                            },
-                            destination = CardDestination.Deck,
-                            amount = 1,
-                            omitFromTooltips = true
                         }
                     };
                 }

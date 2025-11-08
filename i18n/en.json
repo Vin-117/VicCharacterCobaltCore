@@ -27,7 +27,7 @@
         "VicManeuver": {
             "name": "Maneuver",
 			"desc": "Add a <c=card>Glide</c> to your hand.",
-			"descA": "Add a <c=card>Glide</c> to your hand and draw pile.",
+			"descA": "Add a <c=card>Glide</c> to your hand.",
             "descB": "Add a <c=card>Glide B</c> to your hand."
         },
         "VicMobileMine": {
@@ -39,8 +39,8 @@
 		"VicCalmUnderPressure": {
             "name": "Calm Under Pressure",
 			"desc": "Add a <c=card>Plan</c> to your hand.",
-			"descA": "Draw 1. Add a <c=card>Plan A</c> to your hand.",
-            "descB": "Draw 1. Add a <c=card>Plan B</c> to your hand."
+			"descA": "Add a <c=card>Plan A</c> to your hand.",
+            "descB": "Add a <c=card>Plan B</c> to your hand."
 		},
 		"VicPlan": {
             "name": "Plan"
@@ -49,7 +49,7 @@
             "name": "Small Minefield"
 		},
 		"VicCrisisManagement": {
-            "name": "Crisis Management",
+            "name": "Threat Response",
 			"desc": "Add a <c=card>Lockdown</c> to your draw pile.",
 			"descA": "Add a <c=card>Lockdown A</c> to your draw pile.",
             "descB": "Add a <c=card>Lockdown A and B</c> to your draw pile."
@@ -85,7 +85,7 @@
             "name": "Blockade",
 			"desc": "Add 3 <c=card>Trap Charges</c> to your hand.",
 			"descA": "Add 3 <c=card>Trap Charges</c> to your hand and gain 2 <c=status>droneshift</c>.",
-            "descB": "Add 3 <c=card>Trap Charges</c> to your hand and 2 to your discard pile."
+            "descB": "Add 3 <c=card>Trap Charges</c> to your hand."
 		},
 		"VicSiphon": {
             "name": "Siphon Power",
@@ -101,9 +101,9 @@
 		},
 		"VicPassiveThrusters": {
             "name": "Passive Thrusters",
-			"desc": "Add 1 <c=card>Drift</c> to your draw and discard pile.",
-			"descA": "Add 1 <c=card>Drift A</c> to your hand and discard pile.",
-            "descB": "Add 3 <c=card>Drifts</c> and 1 <c=card>Fumes</c> to your draw pile."
+			"desc": "Gain 1 evade. Add a <c=card>Drift</c> and a <c=card>Fumes</c> to your draw pile.",
+			"descA": "Gain 1 evade. Add a <c=card>Drift A</c> to your draw pile.",
+            "descB": "Add a non-temp <c=card>Drift B</c> to your hand."
 		},
 		"VicDrift": {
             "name": "Drift"
@@ -119,9 +119,9 @@
 		},
 		"VicRecalibrate": {
             "name": "Recalibrate",
-			"desc": "Add a <c=card>Thanix Cannon A</c> to your draw pile.",
-			"descA": "Add 2 <c=card>Thanix Cannon Bs</c> to your draw pile.",
-            "descB": "Add"
+			"desc": "Add a <c=card>Thanix Cannon A</c> to your discard pile.",
+			"descA": "Add a <c=card>Thanix Cannon A</c> to your draw pile.",
+            "descB": "Add a <c=card>Thanix Cannon B</c> to your draw pile."
 		},
 		"VicCalibrate": {
             "name": "Calibrate",
@@ -131,6 +131,9 @@
 		},
 		"VicTorpedoCard": {
             "name": "Torpedo"
+        },
+        "VicHURTCard": {
+            "name": "H.U.R.T"
         },
 		"VicRemember": {
             "name": "Remember",
@@ -152,11 +155,11 @@
 	"artifact": {
 		"VicRadioSystem" : {
 			"name" : "SPARE SATELLITE",
-			"desc": "Start each combat with a <c=status>Bubbled</c> <c=midrow>Signal Amplifier</c> near your ship."
+			"desc": "Start each combat with a bubbled <c=midrow>Signal Amplifier</c> near your ship."
 		},
         "VicSidelink" : {
 			"name" : "SIDELINK",
-			"desc": "Every 3 midrow objects deployed, gain 1 <c=status>Evade</c>."
+			"desc": "Every 3 midrow objects deployed, gain 1 <c=status>EVADE</c>."
 		},
         "VicRegenExhaust" : {
 			"name" : "ENGINE ACCELERATOR",
@@ -182,13 +185,25 @@
 	"EngineBooster": {
       "Normal": {
         "name": "Engine Booster",
-        "description": "Beams <c=status>1 EVADE</c> at its target once per turn."
+        "description": "Beams 1 <c=status>EVADE</c> at its target once per turn."
       }
     },
 	"Torpedo": {
       "Normal": {
         "name": "Torpedo",
         "description": "This missile is going to deal <c=damage>2</c> DMG and apply <c=damage>1</c> <c=status>ENGINE LOCK</c>."
+      }
+    },
+    "HURT": {
+      "Normal": {
+        "name": "High Uranium Rocket Type",
+        "description": "A damaging mini nuke. It is going to deal <c=damage>7</c> DMG and stun its targeted ship part."
+      }
+    },
+    "PAIN": {
+      "Normal": {
+        "name": "P.A.I.N",
+        "description": "The end. It is going to deal <c=damage>10</c> DMG and stun its targeted ship part."
       }
     },
     "TorpedoUpgraded": {
@@ -206,13 +221,13 @@
     "SignalAmplifier2": {
       "Normal": {
         "name": "Signal Amplifier MKII",
-        "description": "Beams <c=status>2 DRAW NEXT TURN</c> at its target once per turn."
+        "description": "Beams 2 <c=status>DRAW NEXT TURN</c> at its target once per turn."
       }
       },
 	"SignalAmplifier": {
       "Normal": {
         "name": "Signal Amplifier",
-        "description": "Beams <c=status>1 DRAW NEXT TURN</c> at its target once per turn."
+        "description": "Beams 1 <c=status>DRAW NEXT TURN</c> at its target once per turn."
       },
     },
 }

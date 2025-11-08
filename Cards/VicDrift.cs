@@ -55,9 +55,9 @@ public class VicDrift : Card, IRegisterable
                     return new CardData
                     {
                         cost = 0,
-                        retain = false,
+                        retain = true,
                         temporary = true,
-                        exhaust = false
+                        exhaust = true
                     };
                 }
             default:
@@ -122,7 +122,7 @@ public class VicDrift : Card, IRegisterable
                         },
                         new ADrawCard
                         {
-                            count = 1
+                            count = 2
                         }
                     };
                 }

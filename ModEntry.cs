@@ -38,8 +38,11 @@ internal class ModEntry : SimpleMod
     internal ISpriteEntry TorpedoMidrow { get; }
     internal ISpriteEntry TorpedoSmall { get; }
 
-    internal ISpriteEntry TorpedoUpgradedMidrow { get; }
-    internal ISpriteEntry TorpedoUpgradedSmall { get; }
+    internal ISpriteEntry HURTMidrow { get; }
+    internal ISpriteEntry HURTSmall { get; }
+
+    internal ISpriteEntry PAINMidrow { get; }
+    internal ISpriteEntry PAINSmall { get; }
 
     //Initiate status variables
     internal IStatusEntry VicAuxPower;
@@ -72,18 +75,18 @@ internal class ModEntry : SimpleMod
     private static List<Type> VicCharacterUncommonCardTypes = [
         typeof(VicSensorOverload),
         typeof(VicPassiveThrusters),
-        typeof(VicDualDeploy),
         typeof(VicBlockade),
         typeof(VicCalibrate),
         typeof(VicEngineBoosterCard),
+        typeof(VicPoisonMissile),
         typeof(VicSiphon)
     ];
     private static List<Type> VicCharacterRareCardTypes = [
-        typeof(VicPoisonMissile),
         typeof(VicTorpedoCard),
         typeof(VicKineticBarrier),
         typeof(VicRemember),
-        typeof(VicAuxiliaryPower)
+        typeof(VicAuxiliaryPower),
+        typeof(VicHURTCard)
     ];
     private static List<Type> VicCharacterSpecialCardTypes = [
         typeof(VicGlide),
@@ -150,8 +153,11 @@ internal class ModEntry : SimpleMod
         TorpedoMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/Torpedo.png"));
         TorpedoSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/TorpedoSmall.png"));
 
-        TorpedoUpgradedMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/TorpedoUpgraded.png"));
-        TorpedoUpgradedSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/TorpedoUpgradedSmall.png"));
+        HURTMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/HURT.png"));
+        HURTSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/HURTSmall.png"));
+
+        PAINMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/PAIN.png"));
+        PAINSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/PAINSmall.png"));
 
         /*
          * Koroko dependency
@@ -241,7 +247,7 @@ internal class ModEntry : SimpleMod
             Starters = new StarterDeck
             {
                 cards = [
-                    new VicSeekerSwarm(),
+                    new VicHURTCard(),
                     new VicManeuver()
                 ],
             },

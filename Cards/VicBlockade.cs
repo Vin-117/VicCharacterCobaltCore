@@ -53,7 +53,7 @@ public class VicBlockade : Card, IRegisterable
                     return new CardData
                     {
                         cost = 3,
-                        exhaust = true,
+                        exhaust = false,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicBlockade", "descB"]))
                     };
                 }
@@ -121,14 +121,6 @@ public class VicBlockade : Card, IRegisterable
                             },
                             destination = CardDestination.Hand,
                             amount = 3,
-                        },
-                        new AAddCard()
-                        {
-                            card = new VicTrapCharge()
-                            {
-                            },
-                            destination = CardDestination.Discard,
-                            amount = 2,
                         }
                     };
                 }

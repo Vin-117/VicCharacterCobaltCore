@@ -55,8 +55,8 @@ public class VicRecalibrate : Card, IRegisterable
                     {
                         cost = 0,
                         temporary = true,
-                        exhaust = true
-                        //description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicRecalibrate", "descB"]))
+                        exhaust = true,
+                        description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicRecalibrate", "descB"]))
                     };
                 }
             default:
@@ -87,7 +87,7 @@ public class VicRecalibrate : Card, IRegisterable
                                 upgrade = Upgrade.A,
                                 temporaryOverride = true
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Discard,
                             amount = 1,
                         }
                     };
@@ -100,11 +100,11 @@ public class VicRecalibrate : Card, IRegisterable
                         {
                             card = new VicThanix()
                             {
-                                upgrade = Upgrade.B,
+                                upgrade = Upgrade.A,
                                 temporaryOverride = true
                             },
                             destination = CardDestination.Deck,
-                            amount = 2,
+                            amount = 1,
                         }
                     };
                 }
@@ -112,11 +112,15 @@ public class VicRecalibrate : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AStatus
+                        new AAddCard()
                         {
-                            status = Status.powerdrive,
-                            statusAmount = 1,
-                            targetPlayer = true
+                            card = new VicThanix()
+                            {
+                                upgrade = Upgrade.B,
+                                temporaryOverride = true
+                            },
+                            destination = CardDestination.Deck,
+                            amount = 1,
                         }
                     };
                 }

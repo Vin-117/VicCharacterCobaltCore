@@ -13,26 +13,26 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VicCharacter.Midrow
 {
-    internal sealed class VicTorpedoUpgraded : Missile
+    internal sealed class VicPAIN : Missile
     {
 
-        public static Color exhaustColor = new Color("00ffff");
+        public static Color exhaustColor = new Color("f5ff00");
 
         [JsonConverter(typeof(StringEnumConverter))]
-        public enum VicTorpedoUpgradedType
+        public enum VicPAINType
         {
             Normal
         }
 
         [JsonProperty]
-        public VicTorpedoUpgradedType MissileType = VicTorpedoUpgradedType.Normal;
+        public VicPAINType MissileType = VicPAINType.Normal;
 
         public override Spr? GetIcon()
         {
-            return ModEntry.Instance.TorpedoUpgradedSmall.Sprite;
+            return ModEntry.Instance.PAINSmall.Sprite;
         }
 
-        public override string GetDialogueTag() => "Torpedo";
+        public override string GetDialogueTag() => "HURT";
 
         public override List<Tooltip> GetTooltips()
         {
@@ -41,9 +41,9 @@ namespace VicCharacter.Midrow
                 {
                     Icon = GetIcon()!,
                     flipIconY = targetPlayer,
-                    Title = ModEntry.Instance.Localizations.Localize(["midrow", "TorpedoUpgraded", MissileType.ToString(), "name"]),
+                    Title = ModEntry.Instance.Localizations.Localize(["midrow", "PAIN", MissileType.ToString(), "name"]),
                     TitleColor = Colors.midrow,
-                    Description = ModEntry.Instance.Localizations.Localize(["midrow", "TorpedoUpgraded", MissileType.ToString(), "description"])
+                    Description = ModEntry.Instance.Localizations.Localize(["midrow", "PAIN", MissileType.ToString(), "description"])
                 }
             ];
             if (this.bubbleShield)
@@ -53,17 +53,35 @@ namespace VicCharacter.Midrow
 
         public override List<CardAction>? GetActions(State s, Combat c)
         {
-            return new List<CardAction>
+
+            if (!targetPlayer)
             {
-                new AMissileHit
+                return new List<CardAction>
                 {
-                    worldX = x,
-                    outgoingDamage = 3,
-                    targetPlayer = targetPlayer,
-                    status = Status.lockdown,
-                    statusAmount = 2
-                }
-            };
+                    new AMissileHit
+                    {
+                        worldX = x,
+                        outgoingDamage = 10,
+                        targetPlayer = targetPlayer,
+                    },
+                    new AStunPart
+                    {
+                        worldX = x
+                    }
+                };
+            }
+            else 
+            {
+                return new List<CardAction>
+                {
+                    new AMissileHit
+                    {
+                        worldX = x,
+                        outgoingDamage = 10,
+                        targetPlayer = targetPlayer
+                    }
+                };
+            }
         }
 
         public override void Render(G g, Vec v)
@@ -75,7 +93,7 @@ namespace VicCharacter.Midrow
             Vec vec2 = v + offset;
             bool flag = targetPlayer;
             bool flag2 = false;
-            Spr spr = ModEntry.Instance.TorpedoUpgradedMidrow.Sprite;
+            Spr spr = ModEntry.Instance.PAINMidrow.Sprite;
             
 
             Vec vec3 = default(Vec);

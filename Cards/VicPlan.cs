@@ -93,7 +93,7 @@ public class VicPlan : Card, IRegisterable
                     {
                         new ADrawCard
                         {
-                            count = 3
+                            count = 4
                         }
                     };
                 }
@@ -103,16 +103,7 @@ public class VicPlan : Card, IRegisterable
                     {
                         new ADrawCard
                         {
-                            count = 2
-                        },
-                        new AAddCard()
-                        {
-                            card = new VicPlan()
-                            {
-                                upgrade = Upgrade.B
-                            },
-                            destination = CardDestination.Deck,
-                            amount = 1,
+                            count = 3
                         }
                     };
                 }

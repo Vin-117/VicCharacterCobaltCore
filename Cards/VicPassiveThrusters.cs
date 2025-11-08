@@ -50,7 +50,8 @@ public class VicPassiveThrusters : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 0,
+                        singleUse = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicPassiveThrusters", "descB"]))
                     };
                 }
@@ -74,6 +75,12 @@ public class VicPassiveThrusters : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
+                        new AStatus()
+                        { 
+                            status = Status.evade,
+                            statusAmount = 1,
+                            targetPlayer = true
+                        },
                         new AAddCard()
                         {
                             card = new VicDrift()
@@ -84,12 +91,11 @@ public class VicPassiveThrusters : Card, IRegisterable
                         },
                         new AAddCard()
                         {
-                            card = new VicDrift()
+                            card = new TrashFumes()
                             {
                             },
-                            destination = CardDestination.Discard,
-                            amount = 1,
-                            omitFromTooltips = true
+                            destination = CardDestination.Deck,
+                            amount = 1
                         }
                     };
                 }
@@ -97,14 +103,11 @@ public class VicPassiveThrusters : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AAddCard()
+                        new AStatus()
                         {
-                            card = new VicDrift()
-                            {
-                                upgrade = Upgrade.A
-                            },
-                            destination = CardDestination.Hand,
-                            amount = 1,
+                            status = Status.evade,
+                            statusAmount = 1,
+                            targetPlayer = true
                         },
                         new AAddCard()
                         {
@@ -112,9 +115,8 @@ public class VicPassiveThrusters : Card, IRegisterable
                             {
                                 upgrade = Upgrade.A
                             },
-                            destination = CardDestination.Discard,
+                            destination = CardDestination.Deck,
                             amount = 1,
-                            omitFromTooltips = true
                         }
 
                     };
@@ -127,16 +129,10 @@ public class VicPassiveThrusters : Card, IRegisterable
                         {
                             card = new VicDrift()
                             {
+                                upgrade = Upgrade.B,
+                                temporaryOverride = false
                             },
-                            destination = CardDestination.Deck,
-                            amount = 3,
-                        },
-                        new AAddCard()
-                        {
-                            card = new TrashFumes()
-                            {
-                            },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Hand,
                             amount = 1,
                         }
                     };

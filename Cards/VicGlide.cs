@@ -56,9 +56,9 @@ public class VicGlide : Card, IRegisterable
                 {
                     return new CardData 
                     {
-                        cost = 0,
+                        cost = 1,
                         temporary = true,
-                        exhaust = false,
+                        exhaust = true,
                         retain = true,
                         flippable = true
                     };
