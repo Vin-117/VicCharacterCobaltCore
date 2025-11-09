@@ -106,7 +106,8 @@ public class VicSignalAmplifierCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = true
-                            }
+                            },
+                            dialogueSelector = ".VicSatelliteUpgraded"
                         }
                     };
                 }

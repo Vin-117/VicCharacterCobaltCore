@@ -102,7 +102,8 @@ internal class ModEntry : SimpleMod
         typeof(VicCatEXE)
         ];
     private static List<Type> VicCharacterDialogueTypes = [
-        typeof(NewCombatDialogue)
+        typeof(VicNewCombatDialogue),
+        typeof(VicNewStoryDialogue)
     ];
     private static IEnumerable<Type> VicCharacterFullModCardTypes =
         VicCharacterCommonCardTypes
@@ -221,7 +222,17 @@ internal class ModEntry : SimpleMod
         RegisterAnimation(package, "neutral", "assets/Animation/Neutral/VicNeutral", 1);
         RegisterAnimation(package, "neutraltalk", "assets/Animation/Neutral/VicNeutral", 4);
         RegisterAnimation(package, "squint", "assets/Animation/Squint/VicSquint", 4);
-        RegisterAnimation(package, "annoyed", "assets/Animation/Annoyed/VicAnnoyed", 1);
+        RegisterAnimation(package, "annoyed", "assets/Animation/Annoyed/VicAnnoyed", 4);
+        RegisterAnimation(package, "doubtful", "assets/Animation/Doubtful/VicDoubtful", 4);
+        RegisterAnimation(package, "happy", "assets/Animation/Happy/VicHappy", 4);
+        RegisterAnimation(package, "smug", "assets/Animation/Smug/VicSmug", 4);
+        RegisterAnimation(package, "panic", "assets/Animation/Panic/VicPanic", 4);
+        RegisterAnimation(package, "pda", "assets/Animation/PDA/VicPDA", 4);
+        RegisterAnimation(package, "pdasmile", "assets/Animation/PDASmile/VicPDASmile", 4);
+        RegisterAnimation(package, "observe", "assets/Animation/Observe/VicObserve", 4);
+        RegisterAnimation(package, "pressured", "assets/Animation/Pressured/VicPressured", 4);
+        RegisterAnimation(package, "pressuredneutral", "assets/Animation/PressuredNeutral/VicPressuredNeutral", 4);
+        RegisterAnimation(package, "pressuredstatic", "assets/Animation/Pressured/VicPressured", 1);
         Instance.Helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2
         {
             CharacterType = VicCharacter.Deck.Key(),

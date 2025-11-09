@@ -197,13 +197,13 @@
     "HURT": {
       "Normal": {
         "name": "High Uranium Rocket Type",
-        "description": "A damaging mini nuke. It is going to deal <c=damage>7</c> DMG and stun its targeted ship part."
+        "description": "A damaging mini nuke. It is going to deal <c=damage>6</c> damage and stun its targeted ship part."
       }
     },
     "PAIN": {
       "Normal": {
         "name": "P.A.I.N",
-        "description": "The end. It is going to deal <c=damage>10</c> DMG and stun its targeted ship part."
+        "description": "The end. It is going to deal <c=damage>9</c> damage and stun its targeted ship part."
       }
     },
     "TorpedoUpgraded": {

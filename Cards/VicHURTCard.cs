@@ -80,7 +80,7 @@ public class VicHURTCard : Card, IRegisterable
                             {
                                 yAnimation = 0.0
                             },
-                            //dialogueSelector = ".VicTorpedoLaunch"
+                            dialogueSelector = ".VicNuke"
                         }
                     };
                 }
@@ -93,7 +93,8 @@ public class VicHURTCard : Card, IRegisterable
                             thing = new VicHURT
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            dialogueSelector = ".VicNuke"
                         }
                     };
                 }
@@ -106,7 +107,8 @@ public class VicHURTCard : Card, IRegisterable
                             thing = new VicPAIN
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            dialogueSelector = ".VicBigNuke"
                         }
                     };
                 }

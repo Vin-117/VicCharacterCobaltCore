@@ -61,7 +61,7 @@ namespace VicCharacter.Midrow
                     new AMissileHit
                     {
                         worldX = x,
-                        outgoingDamage = 10,
+                        outgoingDamage = 9,
                         targetPlayer = targetPlayer,
                     },
                     new AStunPart
@@ -77,7 +77,7 @@ namespace VicCharacter.Midrow
                     new AMissileHit
                     {
                         worldX = x,
-                        outgoingDamage = 10,
+                        outgoingDamage = 9,
                         targetPlayer = targetPlayer
                     }
                 };
