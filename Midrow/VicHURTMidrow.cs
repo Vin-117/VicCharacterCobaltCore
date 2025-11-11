@@ -32,7 +32,7 @@ namespace VicCharacter.Midrow
             return ModEntry.Instance.HURTSmall.Sprite;
         }
 
-        public override string GetDialogueTag() => "HURT";
+        public override string GetDialogueTag() => "VicHURT";
 
         public override List<Tooltip> GetTooltips()
         {
@@ -61,7 +61,7 @@ namespace VicCharacter.Midrow
                     new AMissileHit
                     {
                         worldX = x,
-                        outgoingDamage = 6,
+                        outgoingDamage = 7,
                         targetPlayer = targetPlayer,
                     },
                     new AStunPart

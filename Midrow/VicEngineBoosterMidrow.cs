@@ -33,7 +33,7 @@ namespace VicCharacter.Midrow
             
         }
 
-        public override string GetDialogueTag() => "EngineBooster";
+        public override string GetDialogueTag() => "VicEngineBoosterTag";
         public override double GetWiggleAmount() => 0.0;
         public override double GetWiggleRate() => 1.0;
         public override bool IsHostile() => this.targetPlayer;

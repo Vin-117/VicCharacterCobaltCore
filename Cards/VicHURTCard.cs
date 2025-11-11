@@ -35,6 +35,7 @@ public class VicHURTCard : Card, IRegisterable
                     return new CardData
                     {
                         cost = 3,
+                        exhaust = true,
                         artTint = "f5ff00"
                     };
                 }
@@ -43,8 +44,8 @@ public class VicHURTCard : Card, IRegisterable
                     return new CardData
                     {
                         cost = 3,
-                        artTint = "f5ff00",
-                        retain = true
+                        exhaust = false,
+                        artTint = "f5ff00"
                     };
                 }
             case Upgrade.B:
@@ -52,6 +53,7 @@ public class VicHURTCard : Card, IRegisterable
                     return new CardData
                     {
                         cost = 3,
+                        exhaust = true,
                         artTint = "f5ff00"
                     };
                 }

@@ -98,6 +98,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSeekerSwarm" ],
+                anyDrones = [ "missile_seeker" ],
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -108,6 +109,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSeekerSwarm" ],
+                anyDrones = [ "missile_seeker" ],
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -118,6 +120,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSeekerSwarm" ],
+                anyDrones = [ "missile_seeker" ],
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -128,6 +131,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSeekerSwarm" ],
+                anyDrones = [ "missile_seeker" ],
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -138,6 +142,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSeekerSwarm" ],
+                anyDrones = [ "missile_seeker" ],
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -148,6 +153,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -158,6 +164,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -168,6 +175,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -178,6 +186,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -188,6 +197,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -198,6 +208,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -208,6 +219,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -218,6 +230,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatellite" ],
+                anyDronesFriendly = ["SignalAmplifierTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -228,6 +241,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatellite" ],
+                anyDronesFriendly = ["SignalAmplifierTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -238,6 +252,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatellite" ],
+                anyDronesFriendly = ["SignalAmplifierTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -248,6 +263,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatellite" ],
+                anyDronesFriendly = ["SignalAmplifierTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -258,6 +274,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatellite" ],
+                anyDronesFriendly = ["SignalAmplifierTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -268,6 +285,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatelliteUpgraded" ],
+                anyDronesFriendly = ["SignalAmplifierUpgradedTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -278,6 +296,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatelliteUpgraded" ],
+                anyDronesFriendly = ["SignalAmplifierUpgradedTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -288,6 +307,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatelliteUpgraded" ],
+                anyDronesFriendly = ["SignalAmplifierUpgradedTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -298,6 +318,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatelliteUpgraded" ],
+                anyDronesFriendly = ["SignalAmplifierUpgradedTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -308,6 +329,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSatelliteUpgraded" ],
+                anyDronesFriendly = ["SignalAmplifierUpgradedTag"],
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -369,7 +391,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 allPresent = [ AmVic ],
                 lookup = [ "VicNuke" ],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
-                //anyDronesFriendly = ["VicHURT"],
+                anyDrones = ["VicHURT"],
                 oncePerCombat = true,
                 dialogue = [
                   new(AmVic, "smug", "Block this.")
@@ -379,7 +401,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicNuke" ],
-                //anyDronesFriendly = ["VicHURT"],
+                anyDrones = ["VicHURT"],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -390,7 +412,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicNuke" ],
-                //anyDronesFriendly = ["VicHURT"],
+                anyDrones = ["VicHURT"],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -401,6 +423,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicNuke" ],
+                anyDrones = ["VicHURT"],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -411,6 +434,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicBigNuke" ],
+                anyDrones = ["VicPAIN"],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -421,6 +445,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicBigNuke" ],
+                anyDrones = ["VicPAIN"],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -431,6 +456,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicBigNuke" ],
+                anyDrones = ["VicPAIN"],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -441,6 +467,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicBigNuke" ],
+                anyDrones = ["VicPAIN"],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -988,6 +1015,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSmallMinefield" ],
+                anyDrones = ["VicSmallSpaceMineTag"],
                 oncePerCombatTags = [ "VicSmallMinefield" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -998,6 +1026,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSmallMinefield" ],
+                anyDrones = ["VicSmallSpaceMineTag"],
                 oncePerCombatTags = [ "VicSmallMinefield" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1008,6 +1037,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSmallMinefield" ],
+                anyDrones = ["VicSmallSpaceMineTag"],
                 oncePerCombatTags = [ "VicSmallMinefield" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1018,6 +1048,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSmallMinefield" ],
+                anyDrones = ["VicSmallSpaceMineTag"],
                 oncePerCombatTags = [ "VicSmallMinefield" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1028,6 +1059,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSmallMinefield" ],
+                anyDrones = ["VicSmallSpaceMineTag"],
                 oncePerCombatTags = [ "VicSmallMinefield" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1038,16 +1070,18 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicSmallMinefield" ],
+                anyDrones = ["VicSmallSpaceMineTag"],
                 oncePerCombatTags = [ "VicSmallMinefield" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "Small ordinance deployed!")
+                  new(AmVic, "pda", "Small ordinance deployed!")
                 ]
             }},
              {"VicMobileMineLaunch_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicMobileMine" ],
+                anyDrones = ["spaceMine"],
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1058,6 +1092,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicMobileMine" ],
+                anyDrones = ["spaceMine"],
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1068,6 +1103,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicMobileMine" ],
+                anyDrones = ["spaceMine"],
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1078,6 +1114,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicMobileMine" ],
+                anyDrones = ["spaceMine"],
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1088,6 +1125,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicMobileMine" ],
+                anyDrones = ["spaceMine"],
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1098,6 +1136,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicMobileMine" ],
+                anyDrones = ["spaceMine"],
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1108,6 +1147,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicTorpedoLaunch" ],
+                anyDrones = ["VicTorpedoTag"],
                 oncePerCombatTags = [ "VicTorpedoLaunch" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1118,6 +1158,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicTorpedoLaunch" ],
+                anyDrones = ["VicTorpedoTag"],
                 oncePerCombatTags = [ "VicTorpedoLaunch" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1128,6 +1169,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicTorpedoLaunch" ],
+                anyDrones = ["VicTorpedoTag"],
                 oncePerCombatTags = [ "VicTorpedoLaunch" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1138,6 +1180,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicTorpedoLaunch" ],
+                anyDrones = ["VicTorpedoTag"],
                 oncePerCombatTags = [ "VicTorpedoLaunch" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1147,6 +1190,7 @@ internal class VicNewCombatDialogue : IRegisterable
              {"VicTorpedoLaunch_4", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
+                anyDrones = ["VicTorpedoTag"],
                 lookup = [ "VicTorpedoLaunch" ],
                 oncePerCombatTags = [ "VicTorpedoLaunch" ],
                 oncePerCombat = true,
@@ -1158,6 +1202,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicTorpedoLaunch" ],
+                anyDrones = ["VicTorpedoTag"],
                 oncePerCombatTags = [ "VicTorpedoLaunch" ],
                 oncePerCombat = true,
                 dialogue = [
@@ -1168,6 +1213,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 lookup = [ "VicTorpedoLaunch" ],
+                anyDrones = ["VicTorpedoTag"],
                 oncePerCombatTags = [ "VicTorpedoLaunch" ],
                 oncePerCombat = true,
                 dialogue = [

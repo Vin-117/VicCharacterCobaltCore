@@ -32,7 +32,7 @@ namespace VicCharacter.Midrow
             return ModEntry.Instance.TorpedoSmall.Sprite;
         }
 
-        public override string GetDialogueTag() => "Torpedo";
+        public override string GetDialogueTag() => "VicTorpedoTag";
 
         public override List<Tooltip> GetTooltips()
         {

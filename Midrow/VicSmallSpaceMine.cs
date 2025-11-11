@@ -30,7 +30,7 @@ namespace VicCharacter.Midrow
             
         }
 
-        public override string GetDialogueTag() => "VicSmallSpaceMine";
+        public override string GetDialogueTag() => "VicSmallSpaceMineTag";
         public override double GetWiggleAmount() => 1.0;
         public override double GetWiggleRate() => 1.0;
         public override bool IsHostile() => this.targetPlayer;

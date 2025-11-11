@@ -30,7 +30,7 @@ namespace VicCharacter.Midrow
             
         }
 
-        public override string GetDialogueTag() => "SignalAmplifierUpgraded";
+        public override string GetDialogueTag() => "SignalAmplifierUpgradedTag";
         public override double GetWiggleAmount() => 0.0;
         public override double GetWiggleRate() => 1.0;
         public override bool IsHostile() => this.targetPlayer;

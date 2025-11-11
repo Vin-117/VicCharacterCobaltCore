@@ -226,10 +226,12 @@ internal class ModEntry : SimpleMod
         RegisterAnimation(package, "doubtful", "assets/Animation/Doubtful/VicDoubtful", 4);
         RegisterAnimation(package, "happy", "assets/Animation/Happy/VicHappy", 4);
         RegisterAnimation(package, "smug", "assets/Animation/Smug/VicSmug", 4);
+        RegisterAnimation(package, "determined", "assets/Animation/Determined/VicDetermined", 4);
         RegisterAnimation(package, "panic", "assets/Animation/Panic/VicPanic", 4);
         RegisterAnimation(package, "pda", "assets/Animation/PDA/VicPDA", 4);
         RegisterAnimation(package, "pdasmile", "assets/Animation/PDASmile/VicPDASmile", 4);
         RegisterAnimation(package, "observe", "assets/Animation/Observe/VicObserve", 4);
+        RegisterAnimation(package, "observestatic", "assets/Animation/Observe/VicObserve", 1);
         RegisterAnimation(package, "pressured", "assets/Animation/Pressured/VicPressured", 4);
         RegisterAnimation(package, "pressuredneutral", "assets/Animation/PressuredNeutral/VicPressuredNeutral", 4);
         RegisterAnimation(package, "pressuredstatic", "assets/Animation/Pressured/VicPressured", 1);
