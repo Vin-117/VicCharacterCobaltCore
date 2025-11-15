@@ -89,9 +89,9 @@
 		},
 		"VicSiphon": {
             "name": "Siphon Power",
-			"desc": "Exhaust a card in hand. Gain 1 <c=status>Auxiliary A</c> to hand.",
-			"descA": "Exhaust a card in hand. Gain 1 <c=status>Auxiliary A</c> to hand.",
-            "descB": "Exhaust a card in draw or discard pile. Gain 1 <c=status>Auxiliary A</c> to hand."
+			"desc": "Exhaust a card in hand. Gain 1 <c=card>Auxiliary A</c> to hand.",
+			"descA": "Exhaust a card in hand. Gain 1 <c=card>Auxiliary A</c> to hand.",
+            "descB": "Exhaust a card in draw or discard pile. Gain 1 <c=card>Auxiliary A</c> to hand."
 		},
 		"VicPoisonMissile": {
             "name": "Acid Missile"
@@ -99,11 +99,8 @@
 		"VicAux": {
             "name": "Auxiliary"
 		},
-		"VicPassiveThrusters": {
-            "name": "Passive Thrusters",
-			"desc": "Gain 1 evade. Add a <c=card>Drift</c> and a <c=card>Fumes</c> to your draw pile.",
-			"descA": "Gain 1 evade. Add a <c=card>Drift A</c> to your draw pile.",
-            "descB": "Add a non-temp <c=card>Drift B</c> to your hand."
+		"VicShifterDroneCard": {
+            "name": "Shift Drone"
 		},
 		"VicDrift": {
             "name": "Drift"
@@ -180,6 +177,18 @@
       "Normal": {
         "name": "Kinetic Barrier",
         "description": "A highly reflective field of energy. It's <c=boldPink>Indesctructible</c>. Attacking it will damage its attacker for <c=damage>1</c>."
+      }
+    },
+    "ShifterDroneLeft": {
+      "Normal": {
+        "name": "Left Shift Drone",
+        "description": "Shoots a <c=damage>0</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>2</c> spaces to the <c=boldPink>LEFT</c>."
+      }
+    },
+    "ShifterDroneRight": {
+      "Normal": {
+        "name": "Right Shift Drone",
+        "description": "Shoots a <c=damage>0</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>2</c> spaces to the <c=boldPink>RIGHT</c>."
       }
     },
 	"EngineBooster": {

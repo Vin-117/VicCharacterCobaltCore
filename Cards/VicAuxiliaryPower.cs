@@ -34,7 +34,7 @@ public class VicAuxiliaryPower : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 3,
+                        cost = 4,
                         exhaust = true
                     };
                 }
@@ -42,7 +42,7 @@ public class VicAuxiliaryPower : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 3,
                         exhaust = true
                     };
                 }

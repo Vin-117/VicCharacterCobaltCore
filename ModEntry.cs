@@ -44,6 +44,15 @@ internal class ModEntry : SimpleMod
     internal ISpriteEntry PAINMidrow { get; }
     internal ISpriteEntry PAINSmall { get; }
 
+    internal ISpriteEntry ShiftDroneLeft { get; }
+
+    internal ISpriteEntry ShiftDroneLeftSmall { get; }
+
+    internal ISpriteEntry ShiftDroneRight { get; }
+
+    internal ISpriteEntry ShiftDroneRightSmall { get; }
+
+
     //Initiate status variables
     internal IStatusEntry VicAuxPower;
     internal IStatusEntry VicAuxSurge;
@@ -74,11 +83,11 @@ internal class ModEntry : SimpleMod
     ];
     private static List<Type> VicCharacterUncommonCardTypes = [
         typeof(VicSensorOverload),
-        typeof(VicPassiveThrusters),
         typeof(VicBlockade),
         typeof(VicCalibrate),
         typeof(VicEngineBoosterCard),
         typeof(VicPoisonMissile),
+        typeof(VicShifterDroneCard),
         typeof(VicSiphon)
     ];
     private static List<Type> VicCharacterRareCardTypes = [
@@ -160,6 +169,12 @@ internal class ModEntry : SimpleMod
         PAINMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/PAIN.png"));
         PAINSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/PAINSmall.png"));
 
+        ShiftDroneLeft = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/ShiftDroneLeft.png"));
+        ShiftDroneLeftSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/ShiftDroneLeftSmall.png"));
+
+        ShiftDroneRight = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/ShiftDroneRight.png"));
+        ShiftDroneRightSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/ShiftDroneRightSmall.png"));
+
         /*
          * Koroko dependency
          */
@@ -220,21 +235,26 @@ internal class ModEntry : SimpleMod
          * Define character sprites
          */
         RegisterAnimation(package, "neutral", "assets/Animation/Neutral/VicNeutral", 1);
+        RegisterAnimation(package, "pensive", "assets/Animation/Pensive/VicPensive", 5);
         RegisterAnimation(package, "neutraltalk", "assets/Animation/Neutral/VicNeutral", 4);
         RegisterAnimation(package, "squint", "assets/Animation/Squint/VicSquint", 4);
         RegisterAnimation(package, "annoyed", "assets/Animation/Annoyed/VicAnnoyed", 4);
         RegisterAnimation(package, "doubtful", "assets/Animation/Doubtful/VicDoubtful", 4);
         RegisterAnimation(package, "happy", "assets/Animation/Happy/VicHappy", 4);
+        RegisterAnimation(package, "happyneutral", "assets/Animation/HappyNeutral/VicHappyNeutral", 4);
         RegisterAnimation(package, "smug", "assets/Animation/Smug/VicSmug", 4);
         RegisterAnimation(package, "determined", "assets/Animation/Determined/VicDetermined", 4);
         RegisterAnimation(package, "panic", "assets/Animation/Panic/VicPanic", 4);
         RegisterAnimation(package, "pda", "assets/Animation/PDA/VicPDA", 4);
         RegisterAnimation(package, "pdasmile", "assets/Animation/PDASmile/VicPDASmile", 4);
+        RegisterAnimation(package, "pdapressured", "assets/Animation/PDAPressured/VicPDAPressured", 4);
         RegisterAnimation(package, "observe", "assets/Animation/Observe/VicObserve", 4);
         RegisterAnimation(package, "observestatic", "assets/Animation/Observe/VicObserve", 1);
         RegisterAnimation(package, "pressured", "assets/Animation/Pressured/VicPressured", 4);
         RegisterAnimation(package, "pressuredneutral", "assets/Animation/PressuredNeutral/VicPressuredNeutral", 4);
         RegisterAnimation(package, "pressuredstatic", "assets/Animation/Pressured/VicPressured", 1);
+        RegisterAnimation(package, "explains", "assets/Animation/Explains/VicExplains", 5);
+        RegisterAnimation(package, "depressed", "assets/Animation/Depressed/VicDepressed", 4);
         Instance.Helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2
         {
             CharacterType = VicCharacter.Deck.Key(),

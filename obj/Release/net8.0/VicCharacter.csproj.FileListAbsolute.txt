@@ -8,3 +8,13 @@ C:\Users\conce\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.AssemblyInfo
 C:\Users\conce\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.csproj.CoreCompileInputs.cache
 C:\Users\conce\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.sourcelink.json
 C:\Users\conce\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.dll
+C:\Users\conce\OneDrive\Desktop\VicCharacter\bin\Release\net8.0\VicCharacter.dll.config
+C:\Users\conce\OneDrive\Desktop\VicCharacter\bin\Release\net8.0\VicCharacter.deps.json
+C:\Users\conce\OneDrive\Desktop\VicCharacter\bin\Release\net8.0\VicCharacter.dll
+C:\Users\conce\OneDrive\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.csproj.AssemblyReference.cache
+C:\Users\conce\OneDrive\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\conce\OneDrive\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.AssemblyInfoInputs.cache
+C:\Users\conce\OneDrive\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.AssemblyInfo.cs
+C:\Users\conce\OneDrive\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.csproj.CoreCompileInputs.cache
+C:\Users\conce\OneDrive\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.sourcelink.json
+C:\Users\conce\OneDrive\Desktop\VicCharacter\obj\Release\net8.0\VicCharacter.dll
