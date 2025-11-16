@@ -34,25 +34,25 @@ public class VicSensorOverload : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         exhaust = true,
-                        retain = true
+                        retain = false
                     };
                 }
             case Upgrade.A:
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 0,
                         exhaust = true,
-                        retain = true
+                        retain = false
                     };
                 }
             case Upgrade.B:
                 {
                     return new CardData
                     {
-                        cost = 0,
+                        cost = 1,
                         exhaust = true,
                         retain = true
                     };
@@ -84,7 +84,7 @@ public class VicSensorOverload : Card, IRegisterable
                             {
                                 temporaryOverride = true
                             },
-                            destination = CardDestination.Discard,
+                            destination = CardDestination.Deck,
                             amount = 1,
                         }
                     };
@@ -101,7 +101,7 @@ public class VicSensorOverload : Card, IRegisterable
                             {
                                 temporaryOverride = true
                             },
-                            destination = CardDestination.Discard,
+                            destination = CardDestination.Deck,
                             amount = 1,
                         }
                     };
@@ -111,18 +111,14 @@ public class VicSensorOverload : Card, IRegisterable
                     return new List<CardAction>
                     {
                         new AStunShip(),
-                        new AEnergy
-                        {
-                            changeAmount = 2
-                        },
                         new AAddCard()
                         {
                             card = new TrashUnplayable()
                             {
                                 temporaryOverride = true
                             },
-                            destination = CardDestination.Discard,
-                            amount = 2,
+                            destination = CardDestination.Deck,
+                            amount = 1,
                         }
                     };
                 }
@@ -137,7 +133,7 @@ public class VicSensorOverload : Card, IRegisterable
                             {
                                 temporaryOverride = true
                             },
-                            destination = CardDestination.Discard,
+                            destination = CardDestination.Deck,
                             amount = 1,
                         }
                     };

@@ -160,7 +160,7 @@
 		},
         "VicRegenExhaust" : {
 			"name" : "ENGINE ACCELERATOR",
-			"desc": "At the start of combat, gain a <c=card>Drift A</c>."
+			"desc": "At the start of combat, gain a <c=card>Drift</c>."
 		},
         "VicOverclockedMissileBay" : {
 			"name" : "OVERCLOCKED MISSILE BAY",
@@ -201,6 +201,12 @@
       "Normal": {
         "name": "Torpedo",
         "description": "This missile is going to deal <c=damage>2</c> DMG and apply <c=damage>1</c> <c=status>ENGINE LOCK</c>."
+      }
+    },
+    "HeavySeeker": {
+      "Normal": {
+        "name": "Heavy Seeker",
+        "description": ["This missile is going to deal <c=damage>3</c> DMG.", "<c=damage>It cannot miss!</c>"]
       }
     },
     "HURT": {

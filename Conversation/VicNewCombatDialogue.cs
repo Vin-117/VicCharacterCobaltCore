@@ -1312,6 +1312,20 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(AmVic, "observe", "A ship without cannons? Not ideal, but I can work with it.")
                 ]
             }},
+             {"OverheatGeneric_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                goingToOverheat = true,
+                oncePerCombatTags = ["OverheatGeneric"],
+                dialogue = [
+                    new(AmVic, "panic", "Prepare for emergency venting!")
+                ]
+            }},
+             {"WeJustGainedHeatAndDrakeIsHere_Multi_0", new(){
+                edit = [
+                    new(EMod.countFromStart, 1, AmVic, "annoyed", "Really, Drake?"),
+                ]
+            }},
 
             // {"", new(){
 

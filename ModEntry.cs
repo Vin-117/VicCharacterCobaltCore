@@ -30,13 +30,17 @@ internal class ModEntry : SimpleMod
 
     internal ISpriteEntry SignalAmplifierMidrow { get; }
     internal ISpriteEntry SignalAmplifierSmall { get; }
-
     internal ISpriteEntry SignalAmplifierUpgradedMidrow { get; }
-
     internal ISpriteEntry SignalAmplifierUpgradedSmall { get; }
 
     internal ISpriteEntry TorpedoMidrow { get; }
     internal ISpriteEntry TorpedoSmall { get; }
+
+    internal ISpriteEntry HeavySeekerMidrow { get; }
+    internal ISpriteEntry HeavySeekerBlinkMidrow { get; }
+    internal ISpriteEntry HeavySeekerAngledMidrow { get; }
+    internal ISpriteEntry HeavySeekerAngledBlinkMidrow { get; }
+    internal ISpriteEntry HeavySeekerSmall { get; }
 
     internal ISpriteEntry HURTMidrow { get; }
     internal ISpriteEntry HURTSmall { get; }
@@ -112,7 +116,8 @@ internal class ModEntry : SimpleMod
         ];
     private static List<Type> VicCharacterDialogueTypes = [
         typeof(VicNewCombatDialogue),
-        typeof(VicNewStoryDialogue)
+        typeof(VicNewStoryDialogue),
+        typeof(VicNewEventDialogue)
     ];
     private static IEnumerable<Type> VicCharacterFullModCardTypes =
         VicCharacterCommonCardTypes
@@ -145,6 +150,12 @@ internal class ModEntry : SimpleMod
         Harmony = new Harmony("Vintage.VicCharacterFullModMod");
 
         //Assign sprites to icon variables
+        HeavySeekerMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/missile_heavy_seeker.png"));
+        HeavySeekerBlinkMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/missile_heavy_seeker_blink.png"));
+        HeavySeekerAngledMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/missile_heavy_seekerAngle.png"));
+        HeavySeekerAngledBlinkMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/missile_heavy_seekerAngle_blink.png"));
+        HeavySeekerSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/HeavySeekerSmall.png"));
+
         KineticBarrierMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/KineticBarrier.png"));
         KineticBarrierSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/KineticBarrierSmall.png"));
 

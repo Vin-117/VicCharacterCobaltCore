@@ -2,6 +2,7 @@
 using System.Reflection;
 using Nanoray.PluginManager;
 using Nickel;
+using VicCharacter.Midrow;
 
 namespace VicCharacter.Cards;
 
@@ -103,30 +104,19 @@ public class VicSeekerSwarm : Card, IRegisterable
                     {
                         new ASpawn
                         {
-                            thing = new Missile
+                            thing = new VicHeavySeeker
                             {
                                 yAnimation = 0.0,
-                                missileType = MissileType.seeker
+                            },
+                            offset = -1
+                        },
+                        new ASpawn
+                        {
+                            thing = new VicHeavySeeker
+                            {
+                                yAnimation = 0.0
                             },
                             offset = 1
-                        },
-                        new ASpawn
-                        {
-                            thing = new Missile
-                            {
-                                yAnimation = 0.0,
-                                missileType = MissileType.seeker
-                            }
-                        },
-                        new ASpawn
-                        {
-                            thing = new Missile
-                            {
-                                yAnimation = 0.0,
-                                missileType = MissileType.seeker
-                            },
-                            offset = -1,
-                            dialogueSelector = ".VicSeekerSwarm"
                         }
                     };
                 }

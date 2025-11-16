@@ -34,7 +34,7 @@ public class VicRegenExhaust : Artifact, IRegisterable
             {
                 card = new VicDrift()
                 {
-                    upgrade = Upgrade.A
+                    upgrade = Upgrade.None
                 }
             }
         };

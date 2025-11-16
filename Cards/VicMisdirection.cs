@@ -35,7 +35,7 @@ public class VicMisdirection : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         exhaust = true,
                         retain = true,
                         infinite = false
@@ -45,7 +45,7 @@ public class VicMisdirection : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0,
+                        cost = 1,
                         exhaust = true,
                         retain = true,
                         infinite = false
@@ -55,7 +55,7 @@ public class VicMisdirection : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         exhaust = false,
                         retain = true,
                         infinite = false
@@ -65,7 +65,7 @@ public class VicMisdirection : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         exhaust = true,
                         retain = true,
                         infinite = false
@@ -100,10 +100,6 @@ public class VicMisdirection : Card, IRegisterable
                             statusAmount = 1,
                             status = Status.backwardsMissiles,
                             targetPlayer = false
-                        },
-                        new ADrawCard
-                        {
-                            count = 1
                         }
                     };
                 }

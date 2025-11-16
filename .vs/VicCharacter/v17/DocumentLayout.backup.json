@@ -3,16 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\OneDrive\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewCombatDialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +20,45 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "nickel.json",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\nickel.json",
-              "RelativeDocumentMoniker": "nickel.json",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\nickel.json",
-              "RelativeToolTip": "nickel.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-15T01:14:25.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VicCharacter",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\VicCharacter.csproj",
-              "RelativeDocumentMoniker": "VicCharacter.csproj",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\VicCharacter.csproj",
-              "RelativeToolTip": "VicCharacter.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-15T01:13:32.011Z",
+              "Title": "story.json",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json",
+              "ViewState": "AgIAAGpfAAAAAAAAAAAhwKRdAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-16T20:57:03.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ModEntry.cs",
               "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\ModEntry.cs",
               "RelativeDocumentMoniker": "ModEntry.cs",
               "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\ModEntry.cs",
               "RelativeToolTip": "ModEntry.cs",
-              "ViewState": "AgIAAOoAAAAAAAAAAAAAAPkAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAPgAAAAAAAAAAAD4vwQBAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-14T23:21:27.609Z",
+              "WhenOpened": "2025-11-16T20:49:15.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewCombatDialogue.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewCombatDialogue.cs",
+              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewCombatDialogue.cs",
+              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewCombatDialogue.cs",
+              "RelativeToolTip": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewCombatDialogue.cs",
+              "ViewState": "AgIAABoDAAAAAAAAAAD4vyQDAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T20:47:18.508Z",
               "EditorCaption": ""
             }
           ]

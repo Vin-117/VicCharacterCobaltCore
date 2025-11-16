@@ -35,7 +35,7 @@ public class VicDrift : Card, IRegisterable
                     return new CardData
                     {
                         cost = 0,
-                        retain = false,
+                        retain = true,
                         temporary = true,
                         exhaust = true
                     };
@@ -106,7 +106,7 @@ public class VicDrift : Card, IRegisterable
                         },
                         new ADrawCard
                         {
-                            count = 1
+                            count = 3
                         }
                     };
                 }
@@ -117,12 +117,12 @@ public class VicDrift : Card, IRegisterable
                         new AStatus
                         {
                             status = Status.evade,
-                            statusAmount = 1,
+                            statusAmount = 2,
                             targetPlayer = true
                         },
                         new ADrawCard
                         {
-                            count = 2
+                            count = 1
                         }
                     };
                 }
