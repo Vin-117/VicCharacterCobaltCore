@@ -22,7 +22,7 @@ public class VicMinefield : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicMinefield", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicDrone.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicMine.png")).Sprite,
         });
     }
 
@@ -34,7 +34,7 @@ public class VicMinefield : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         flippable = false
                     };
                 }
@@ -42,7 +42,7 @@ public class VicMinefield : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         flippable = false
                     };
                 }
@@ -50,7 +50,7 @@ public class VicMinefield : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         flippable = true
                     };
                 }
@@ -58,7 +58,7 @@ public class VicMinefield : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         flippable = false
                     };
                 }
