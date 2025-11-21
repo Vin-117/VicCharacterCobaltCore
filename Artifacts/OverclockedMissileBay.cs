@@ -50,6 +50,9 @@ public class VicOverclockedMissileBay : Artifact, IRegisterable
         state.ship.baseEnergy--;
     }
 
+    public override List<Tooltip>? GetExtraTooltips()
+    => [.. new VicDummySeeker().GetTooltips()];
+
     public override void OnTurnStart(State state, Combat combat)
     {
         VicOverclockedMissileBayCount++;
@@ -66,8 +69,7 @@ public class VicOverclockedMissileBay : Artifact, IRegisterable
                     targetPlayer = true
                 }
             });
-        }
-        ;
+        };
     }
 
 }

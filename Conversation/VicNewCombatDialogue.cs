@@ -3,6 +3,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Nanoray.PluginManager;
 using Nickel;
 using System.Collections.Generic;
+using System.Linq;
 using VicCharacter.Artifacts;
 using VicCharacter.External;
 using static VicCharacter.Conversation.CommonDefinitions;
@@ -71,7 +72,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "...Is this truly endless? Will we truly be here forever?")
+                  new(AmVic, "pressured", "Will we be here forever? Will we even know?")
                 ]
             }},
             {"VicRemember_6", new(){
@@ -149,6 +150,72 @@ internal class VicNewCombatDialogue : IRegisterable
                   new(AmVic, "pda", "Missile targets confirmed.")
                 ]
             }},
+            {"VicShifterDroneLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pda", "Positional disrupter online.")
+                ]
+            }},
+            {"VicShifterDroneLaunch_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "neutraltalk", "Time to shake things up.")
+                ]
+            }},
+            {"VicShifterDroneLaunch_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "neutraltalk", "Let's move our problems somewhere else.")
+                ]
+            }},
+            {"VicShifterDroneLaunch_3", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "observe", "Watch their position. It's about to get complicated.")
+                ]
+            }},
+            {"VicShifterDroneLaunch_4", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pda", "Shift drone is ready.")
+                ]
+            }},
+            {"VicShifterDroneLaunch_5", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pda", "Better hope you don't get motion sickness.")
+                ]
+            }},
             {"VicEngineBoosterLaunch_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
@@ -157,7 +224,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "This'll put a kick in our engines.")
+                  new(AmVic, "pda", "This'll put a kick in our thrusters.")
                 ]
             }},
             {"VicEngineBoosterLaunch_1", new(){
@@ -168,7 +235,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "Our thrusters aren't mobile enough. Let's change that.")
+                  new(AmVic, "pda", "Engine booster in play.")
                 ]
             }},
             {"VicEngineBoosterLaunch_2", new(){
@@ -179,7 +246,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "We need a boost. And I know how to get it.")
+                  new(AmVic, "neutraltalk", "Try to keep this alive. You'll thank me later.")
                 ]
             }},
             {"VicEngineBoosterLaunch_3", new(){
@@ -190,7 +257,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "Try to keep this alive. You'll thank me later.")
+                  new(AmVic, "neutraltalk", "A little backdraft wouldn't hurt.")
                 ]
             }},
             {"VicEngineBoosterLaunch_4", new(){
@@ -201,7 +268,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "Give it enough time, and we'll fly circles around them.")
+                  new(AmVic, "neutraltalk", "Mind that drone. They aren't disposable.")
                 ]
             }},
             {"VicEngineBoosterLaunch_5", new(){
@@ -212,18 +279,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicEngineBoosterOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "Mind that drone. They take a while to replace.")
-                ]
-            }},
-            {"VicEngineBoosterLaunch_6", new(){
-                type = NodeType.combat,
-                allPresent = [ AmVic ],
-                lookup = [ "VicEngineBooster" ],
-                anyDronesFriendly = ["VicEngineBoosterTag"],
-                oncePerCombatTags = [ "VicEngineBoosterOnce" ],
-                oncePerCombat = true,
-                dialogue = [
-                  new(AmVic, "neutraltalk", "Watch our thruster output. It'll jump when that drone fires.")
+                  new(AmVic, "pda", "Time to spread our wings.")
                 ]
             }},
             {"VicSatelliteLaunch_0", new(){
@@ -245,7 +301,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicSatelliteOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "pda", "Launching a sensor array.")
+                  new(AmVic, "pda", "Launching a sensor node.")
                 ]
             }},
             {"VicSatelliteLaunch_2", new(){
@@ -1041,7 +1097,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicSmallMinefield" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "Not the most damaging, but the most disposable")
+                  new(AmVic, "neutraltalk", "Let's keep them busy.")
                 ]
             }},
              {"VicSmallMineLaunch_3", new(){
@@ -1107,7 +1163,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "explains", "The best way to obstruct a firing line.")
+                  new(AmVic, "neutraltalk", "The best way to obstruct a firing line.")
                 ]
             }},
              {"VicMobileMineLaunch_3", new(){
@@ -1118,7 +1174,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "Let’s make this inconvenient for them.")
+                  new(AmVic, "pda", "Let’s make this inconvenient for them.")
                 ]
             }},
              {"VicMobileMineLaunch_4", new(){
@@ -1326,7 +1382,367 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(EMod.countFromStart, 1, AmVic, "annoyed", "Really, Drake?"),
                 ]
             }},
+             {"ThatsALotOfDamageToUs_Vic_0", new(){
+                type = NodeType.combat,
+                enemyShotJustHit = true,
+                minDamageDealtToPlayerThisTurn = 3,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "panic", "Our hull can't sustain hits like that!")
+                ]
+            }},
+             {"ThatsALotOfDamageToUs_Vic_1", new(){
+                type = NodeType.combat,
+                enemyShotJustHit = true,
+                minDamageDealtToPlayerThisTurn = 3,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "pdapressured", "This is not good...")
+                ]
+            }},
+             {"ThatsALotOfDamageToUs_Vic_2", new(){
+                type = NodeType.combat,
+                enemyShotJustHit = true,
+                minDamageDealtToPlayerThisTurn = 3,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "panic", "We're going to be nothing but debris if this keeps up!")
+                ]
+            }},
+             {"JustHitGeneric_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                playerShotJustHit = true,
+                minDamageDealtToEnemyThisAction = 1,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Good impact.")
+                ]
+            }},
+             {"JustHitGeneric_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                playerShotJustHit = true,
+                minDamageDealtToEnemyThisAction = 1,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Hit confirmed.")
+                ]
+            }},
+             {"JustHitGeneric_Vic_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                playerShotJustHit = true,
+                minDamageDealtToEnemyThisAction = 1,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Shot connected.")
+                ]
+            }},
+             {"ThatsALotOfDamageToThem_Vic_0", new(){
+                type = NodeType.combat,
+                playerShotJustHit = true,
+                minDamageDealtToEnemyThisTurn = 10,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "pda", "They won't last long after that.")
+                ]
+            }},
+             {"ThatsALotOfDamageToThem_Vic_1", new(){
+                type = NodeType.combat,
+                playerShotJustHit = true,
+                minDamageDealtToEnemyThisTurn = 10,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "smug", "No less than what they deserve.")
+                ]
+            }},
+             {"ThatsALotOfDamageToThem_Vic_2", new(){
+                type = NodeType.combat,
+                playerShotJustHit = true,
+                minDamageDealtToEnemyThisTurn = 10,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "smug", "I don't believe in warning shots.")
+                ]
+            }},
+             {"WeAreMovingAroundALot_Vic_0", new(){
+                type = NodeType.combat,
+                minMovesThisTurn = 3,
+                oncePerRun = true,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "observe", "...Faster manuevering than I expected.")
+                ]
+            }},
+             {"WeAreMovingAroundALot_Vic_1", new(){
+                type = NodeType.combat,
+                minMovesThisTurn = 3,
+                oncePerRun = true,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Strap in. This ride isn't over yet.")
+                ]
+            }},
+             {"WeAreMovingAroundALot_Vic_2", new(){
+                type = NodeType.combat,
+                minMovesThisTurn = 3,
+                oncePerRun = true,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "pda", "We really make this ship dance, don't we?")
+                ]
+            }},
+             {"HandOnlyHasTrashCards_Vic_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                handFullOfTrash = true,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "annoyed", "What the hell is this garbage?")
+                ]
+            }},
+            {"HandOnlyHasUnplayableCards_Vic_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                handFullOfUnplayableCards = true,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "annoyed", "Can someone please clear the bridge?")
+                ]
+            }},
+            {"BooksWentMissing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["booksWentMissing"],
+                lastTurnPlayerStatuses = [Status.missingBooks],
+                dialogue = [
+                    new(AmVic, "observe", "Did that kid just sneak off?")
+                ]
+            }},
+            {"CatWentMissing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["CatWentMissing"],
+                lastTurnPlayerStatuses = [Status.missingCat],
+                dialogue = [
+                    new(AmVic, "pressured", "Where did CAT go?")
+                ]
+            }},
+            {"DizzyWentMissing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["dizzyWentMissing"],
+                lastTurnPlayerStatuses = [Status.missingDizzy],
+                dialogue = [
+                    new(AmVic, "observe", "Our science officer just vanished.")
+                ]
+            }},
+            {"DrakeWentMissing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["drakeWentMissing"],
+                lastTurnPlayerStatuses = [Status.missingDrake],
+                dialogue = [
+                    new(AmVic, "annoyed", "Of course she'd disappear on us now...")
+                ]
+            }},
+            {"IsaacWentMissing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["issacWentMissing"],
+                lastTurnPlayerStatuses = [Status.missingIsaac],
 
+                dialogue = [
+                    new(AmVic, "panic", "Isaac?!")
+                ]
+            }},
+            {"MaxWentMissing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["maxWentMissing"],
+                lastTurnPlayerStatuses = [Status.missingMax],
+                dialogue = [
+                    new(AmVic, "pdapressured", "...Why did Max suddenly log out?")
+                ]
+            }},
+            {"PeriWentMissing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["periWentMissing"],
+                lastTurnPlayerStatuses = [Status.missingPeri],
+                dialogue = [
+                    new(AmVic, "observe", "Hyperia?! Where the hell are you?")
+                ]
+            }},
+            {"RiggsWentMissing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["riggsWentMissing"],
+                lastTurnPlayerStatuses = [Status.missingRiggs],
+                dialogue = [
+                    new(AmVic, "observe", "...Where did our pilot go?")
+                ]
+            }},
+            {"EnemyHasBrittle_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                enemyHasBrittlePart = true,
+                oncePerRunTags = ["yelledAboutBrittle"],
+                dialogue = [
+                    new(AmVic, "pda", "Try for that brittle spot if you can.")
+                ]
+            }},
+            {"EnemyHasBrittle_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                enemyHasBrittlePart = true,
+                oncePerRunTags = ["yelledAboutBrittle"],
+                dialogue = [
+                    new(AmVic, "pda", "Reading a significant vulnerable point on the enemy ship.")
+                ]
+            }},
+            {"EnemyHasWeakness_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                enemyHasWeakPart = true,
+                oncePerRunTags = ["yelledAboutWeakness"],
+                dialogue = [
+                    new(AmVic, "neutraltalk", "I see a weak link.")
+                ]
+            }},
+            {"EnemyHasWeakness_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                enemyHasWeakPart = true,
+                oncePerRunTags = ["yelledAboutWeakness"],
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Go for the weaker bit if you can.")
+                ]
+            }},
+            {"ExpensiveCardPlayed_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                minCostOfCardJustPlayed = 4,
+                oncePerCombatTags = ["ExpensiveCardPlayed"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmVic, "pdapressured", "That was an expensive move.")
+                ]
+            }},
+            {"ExpensiveCardPlayed_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                minCostOfCardJustPlayed = 4,
+                oncePerCombatTags = ["ExpensiveCardPlayed"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmVic, "pdapressured", "I hope that was worth it.")
+                ]
+            }},
+            {"ManyTurns_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                minTurnsThisCombat = 9,
+                oncePerCombatTags = ["manyTurns"],
+                dialogue = [
+                    new(AmVic, "neutraltalk", "This is a long skirmish.")
+                ]
+            }},
+            {"ManyTurns_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                minTurnsThisCombat = 9,
+                oncePerCombatTags = ["manyTurns"],
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Play it slow. Play it safe.")
+                ]
+            }},
+            {"ManyTurns_Vic_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                minTurnsThisCombat = 9,
+                oncePerCombatTags = ["manyTurns"],
+                dialogue = [
+                    new(AmVic, "neutraltalk", "I've been in fights far longer than this.")
+                ]
+            }},
+            {"VeryManyTurns_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                minTurnsThisCombat = 20,
+                oncePerCombatTags = ["veryManyTurns"],
+                oncePerRun = true,
+                turnStart = true,
+                dialogue = [
+                    new(AmVic, "pensive", "If this is how long it takes to win, so be it.")
+                ]
+            }},
+            {"VeryManyTurns_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                minTurnsThisCombat = 20,
+                oncePerCombatTags = ["veryManyTurns"],
+                oncePerRun = true,
+                turnStart = true,
+                dialogue = [
+                    new(AmVic, "pda", "...Maybe this is taking too long.")
+                ]
+            }},
+            {"VeryManyTurns_Vic_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                minTurnsThisCombat = 20,
+                oncePerCombatTags = ["veryManyTurns"],
+                oncePerRun = true,
+                turnStart = true,
+                dialogue = [
+                    new(AmVic, "determined", "No matter how long, I won't give up.")
+                ]
+            }},
+            {"PlayedManyCards_Vic_0", new(){
+                type = NodeType.combat,
+                oncePerCombatTags = ["vicManyCardsPlayed"],
+                oncePerCombat = true,
+                minCardsPlayedThisTurn = 12,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "happy", "Great work, team.")
+                ]
+            }},
+            {"PlayedManyCards_Vic_1", new(){
+                type = NodeType.combat,
+                oncePerCombatTags = ["vicManyCardsPlayed"],
+                oncePerCombat = true,
+                minCardsPlayedThisTurn = 12,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "happyneutral", "Excellent efficiency!")
+                ]
+            }},
+            {"PlayedManyCards_Vic_2", new(){
+                type = NodeType.combat,
+                oncePerCombatTags = ["vicManyCardsPlayed"],
+                oncePerCombat = true,
+                minCardsPlayedThisTurn = 12,
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "happyneutral", "Amazing job!")
+                ]
+            }},
             // {"", new(){
 
             //     dialogue = [

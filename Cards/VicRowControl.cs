@@ -18,7 +18,7 @@ public class VicRowControl : Card, IRegisterable
             Meta = new CardMeta
             {
                 deck = ModEntry.Instance.VicCharacter.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 dontOffer = false,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
@@ -35,7 +35,7 @@ public class VicRowControl : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         buoyant = false,
                         exhaust = true,
                         artTint = "59f790"
@@ -55,7 +55,7 @@ public class VicRowControl : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         buoyant = false,
                         exhaust = true,
                         artTint = "59f790"
@@ -65,7 +65,7 @@ public class VicRowControl : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         buoyant = false,
                         exhaust = true,
                         artTint = "59f790"
@@ -99,12 +99,6 @@ public class VicRowControl : Card, IRegisterable
                         {
                             status = ModEntry.Instance.VicRowControlStatus.Status,
                             statusAmount = 1,
-                            targetPlayer = true
-                        },
-                        new AStatus
-                        {
-                            status = Status.droneShift,
-                            statusAmount = 2,
                             targetPlayer = true
                         }
                     };

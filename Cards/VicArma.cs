@@ -7,7 +7,7 @@ using Nickel;
 
 namespace VicCharacter.Cards;
 
-public class VicThanix : Card, IRegisterable
+public class VicArma : Card, IRegisterable
 {
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
@@ -21,8 +21,8 @@ public class VicThanix : Card, IRegisterable
                 dontOffer = true,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
-            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicThanix", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicThanix.png")).Sprite,
+            Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicArma", "name"]).Localize,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicArma.png")).Sprite,
         });
     }
 
@@ -40,13 +40,13 @@ public class VicThanix : Card, IRegisterable
             case Upgrade.A:
                 return new CardData
                 {
-                    cost = 1,
+                    cost = 0,
                     temporary = true
                 };
             case Upgrade.B:
                 return new CardData
                 {
-                    cost = 0,
+                    cost = 2,
                     temporary = true
                 };
             default:
@@ -68,10 +68,10 @@ public class VicThanix : Card, IRegisterable
                     {
                         new AAttack
                         {
-                            damage = GetDmg(s, 3),
+                            damage = GetDmg(s, 6),
                             stunEnemy = true,
-                            dialogueSelector = ".VicThanix"
-                        }
+                            dialogueSelector = ".VicArma"
+                        },
                     };
                 }
             case Upgrade.A:
@@ -80,16 +80,10 @@ public class VicThanix : Card, IRegisterable
                     {
                         new AAttack
                         {
-                            damage = GetDmg(s, 2),
-                            stunEnemy = true,
-                            fast = false
-                        },
-                        new AAttack
-                        {
-                            damage = GetDmg(s, 2),
+                            damage = GetDmg(s, 6),
                             stunEnemy = true,
                             fast = false,
-                            dialogueSelector = ".VicThanix"
+                            dialogueSelector = ".VicArma"
                         },
                     };
                 }
@@ -99,9 +93,10 @@ public class VicThanix : Card, IRegisterable
                     {
                         new AAttack
                         {
-                            damage = GetDmg(s, 3),
+                            damage = GetDmg(s, 10),
+                            piercing = true,
                             stunEnemy = true,
-                            dialogueSelector = ".VicThanix"
+                            dialogueSelector = ".VicArma"
                         }
                     };
                 }
@@ -113,7 +108,7 @@ public class VicThanix : Card, IRegisterable
                         {
                             damage = GetDmg(s, 3),
                             stunEnemy = true,
-                            dialogueSelector = ".VicThanix"
+                            dialogueSelector = ".VicArma"
                         }
                     };
                 }

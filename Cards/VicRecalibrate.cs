@@ -45,6 +45,7 @@ public class VicRecalibrate : Card, IRegisterable
                     {
                         cost = 0,
                         exhaust = true,
+                        buoyant = true,
                         temporary = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicRecalibrate", "descA"]))
                     };
@@ -82,13 +83,12 @@ public class VicRecalibrate : Card, IRegisterable
                     {
                         new AAddCard()
                         {
-                            card = new VicThanix()
+                            card = new VicArma()
                             {
-                                upgrade = Upgrade.A,
-                                temporaryOverride = true
                             },
                             destination = CardDestination.Discard,
                             amount = 1,
+                            dialogueSelector = ".VicRecalibrate"
                         }
                     };
                 }
@@ -98,13 +98,12 @@ public class VicRecalibrate : Card, IRegisterable
                     {
                         new AAddCard()
                         {
-                            card = new VicThanix()
+                            card = new VicArma()
                             {
-                                upgrade = Upgrade.A,
-                                temporaryOverride = true
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Hand,
                             amount = 1,
+                            dialogueSelector = ".VicRecalibrate"
                         }
                     };
                 }
@@ -114,13 +113,13 @@ public class VicRecalibrate : Card, IRegisterable
                     {
                         new AAddCard()
                         {
-                            card = new VicThanix()
+                            card = new VicArma()
                             {
-                                upgrade = Upgrade.B,
-                                temporaryOverride = true
+                                upgrade = Upgrade.B
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Hand,
                             amount = 1,
+                            dialogueSelector = ".VicRecalibrate"
                         }
                     };
                 }

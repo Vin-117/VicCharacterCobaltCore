@@ -63,7 +63,7 @@ public class VicCalibrate : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         buoyant = false,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalibrate", "desc"]))
@@ -87,7 +87,8 @@ public class VicCalibrate : Card, IRegisterable
                             },
                             destination = CardDestination.Discard,
                             amount = 1,
-                        }
+                            dialogueSelector = ".VicCalibrate"
+                        },
                     };
                 }
             case Upgrade.A:
@@ -101,6 +102,7 @@ public class VicCalibrate : Card, IRegisterable
                             },
                             destination = CardDestination.Deck,
                             amount = 1,
+                            dialogueSelector = ".VicCalibrate"
                         }
                     };
                 }
@@ -115,6 +117,7 @@ public class VicCalibrate : Card, IRegisterable
                             },
                             destination = CardDestination.Discard,
                             amount = 1,
+                            dialogueSelector = ".VicCalibrateB"
                         }
                     };
                 }

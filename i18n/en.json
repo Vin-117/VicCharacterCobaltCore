@@ -114,11 +114,14 @@
 		"VicThanix": {
             "name": "Thanix Cannon"
 		},
+        "VicArma": {
+            "name": "Armageddon"
+		},
 		"VicRecalibrate": {
             "name": "Recalibrate",
-			"desc": "Add a <c=card>Thanix Cannon A</c> to your discard pile.",
-			"descA": "Add a <c=card>Thanix Cannon A</c> to your draw pile.",
-            "descB": "Add a <c=card>Thanix Cannon B</c> to your draw pile."
+			"desc": "Add an <c=card>Armageddon</c> to your discard pile.",
+			"descA": "Add an <c=card>Armageddon</c> to your hand.",
+            "descB": "Add an <c=card>Armageddon B</c> to your hand."
 		},
 		"VicCalibrate": {
             "name": "Calibrate",
@@ -162,6 +165,10 @@
 			"name" : "ENGINE ACCELERATOR",
 			"desc": "At the start of combat, gain a <c=card>Drift</c>."
 		},
+        "VicPowerReserve" : {
+			"name" : "POWER RESERVE",
+			"desc": "At the start of combat, gain 3 <c=card>Auxiliary</c> cards."
+		},
         "VicOverclockedMissileBay" : {
 			"name" : "OVERCLOCKED MISSILE BAY",
 			"desc": "Gain 1 extra Energy every turn. Every other turn, deploy a <c=midrow>Seeker</c> aimed at yourself."
@@ -201,6 +208,12 @@
       "Normal": {
         "name": "Torpedo",
         "description": "This missile is going to deal <c=damage>2</c> DMG and apply <c=damage>1</c> <c=status>ENGINE LOCK</c>."
+      }
+    },
+    "DummySeeker": {
+      "Normal": {
+        "name": "Seeker",
+        "description": ["This missile is going to deal <c=damage>2</c> DMG.", "<c=damage>It cannot miss!</c>"]
       }
     },
     "HeavySeeker": {

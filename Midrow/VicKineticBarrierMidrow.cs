@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using VicCharacter.Actions;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VicCharacter.Midrow
@@ -74,10 +75,11 @@ namespace VicCharacter.Midrow
         {
             return new List<CardAction>
             {
-                new AAttack
+                new AVicAttack
                 {
                     damage = Card.GetActualDamage(s, 1),
                     targetPlayer = wasPlayer,
+                    piercing = false,
                     fromDroneX = this.x
                 }
             };
