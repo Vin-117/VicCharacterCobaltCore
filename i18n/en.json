@@ -159,7 +159,7 @@
 		},
         "VicSidelink" : {
 			"name" : "SIDELINK",
-			"desc": "Every 3 midrow objects deployed, gain 1 <c=status>EVADE</c>."
+			"desc": "Every 3 midrow objects launched, gain 1 <c=status>EVADE</c>."
 		},
         "VicRegenExhaust" : {
 			"name" : "ENGINE ACCELERATOR",

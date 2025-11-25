@@ -120,7 +120,8 @@ internal class ModEntry : SimpleMod
     private static List<Type> VicCharacterDialogueTypes = [
         typeof(VicNewCombatDialogue),
         typeof(VicNewStoryDialogue),
-        typeof(VicNewEventDialogue)
+        typeof(VicNewEventDialogue),
+        typeof(VicNewMultiDialogue)
     ];
     private static IEnumerable<Type> VicCharacterFullModCardTypes =
         VicCharacterCommonCardTypes

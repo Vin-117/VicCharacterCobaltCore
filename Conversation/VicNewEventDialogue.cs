@@ -103,6 +103,39 @@ internal class VicNewEventDialogue : IRegisterable
                     new(EMod.countFromStart, 1, AmVic, "annoyed", "You're clearly not seeker certified.")
                 ]
             }},
+            {"ShopkeeperInfinite_Vic_Multi_0", new(){
+                type = NodeType.@event,
+                lookup = [ "shopBefore" ],
+                bg = "BGShop",
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmShopkeeper, "Need some upgrades?", true),
+                    new(AmVic, "neutraltalk", "We're willing to pay top dollar."),
+                    new(new Jump{key = "NewShop"})
+                ]
+            }},
+             {"ShopkeeperInfinite_Vic_Multi_1", new(){
+                type = NodeType.@event,
+                lookup = [ "shopBefore" ],
+                bg = "BGShop",
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmShopkeeper, "Still not satisfied with your ship?", true),
+                    new(AmVic, "neutraltalk", "I have high standards."),
+                    new(new Jump{key = "NewShop"})
+                ]
+            }},
+             {"ShopkeeperInfinite_Vic_Multi_2", new(){
+                type = NodeType.@event,
+                lookup = [ "shopBefore" ],
+                bg = "BGShop",
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmShopkeeper, "Here for business?", true),
+                    new(AmVic, "neutraltalk", "I wouldn't be here otherwise."),
+                    new(new Jump{key = "NewShop"})
+                ]
+            }},
         });
     }
 }

@@ -821,87 +821,9 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(AmVic, "annoyed", "This intercom is too bloody loud!")
                 ]
             }},
-             {"AquiredPrototype22_Vic", new(){
-                type = NodeType.combat,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "Prototype22" ],
-                allPresent = [ AmVic, AmDizzy ],
-                hasArtifacts = [ "Prototype22" ],
-                dialogue = [
-                    new(AmVic, "observe", "Are you sure this shield generator is stable?"),
-                    new(AmDizzy, "explains", "Stable is a relative term."),
-                ]
-            }},
-             {"AquiredPowerDiverson_Vic", new(){
-                type = NodeType.combat,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "PowerDiversion" ],
-                allPresent = [ AmVic, AmPeri ],
-                hasArtifacts = [ "PowerDiversion" ],
-                dialogue = [
-                    new(AmVic, "smug", "Give 'em hell, Hyperia."),
-                    new(AmPeri, "vengeful", "Yessir."),
-                ]
-            }},
-             {"AquiredRadioRepeater_Vic", new(){
-                type = NodeType.combat,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "RadioRepeater" ],
-                allPresent = [ AmVic, AmIsaac ],
-                hasArtifacts = [ "RadioRepeater" ],
-                dialogue = [
-                    new(AmVic, "neutraltalk", "Do you think your repeater will work on my drones?"),
-                    new(AmIsaac, "explains", "Positive. Give it a try!"),
-                ]
-            }},
-             {"AquiredThermoReactor_Vic", new(){
-                type = NodeType.combat,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "ThermoReactor" ],
-                allPresent = [ AmVic, AmDrake ],
-                hasArtifacts = [ "ThermoReactor" ],
-                dialogue = [
-                    new(AmVic, "observe", "Not sure if I'd take the heat over dirtier engines."),
-                    new(AmDrake, "mad", "This engine is so much better than that hunk of garbage."),
-                ]
-            }},
-             {"AquiredTridimensionalCockpit_Vic", new(){
-                type = NodeType.combat,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "TridimensionalCockpit" ],
-                allPresent = [ AmVic, AmMax ],
-                hasArtifacts = [ "TridimensionalCockpit" ],
-                dialogue = [
-                    new(AmVic, "observe", "The cockpit is...different."),
-                    new(AmMax, "neutral", "I don't really know either, man."),
-                ]
-            }},
-             {"AquiredSummonControl_Vic", new(){
-                type = NodeType.combat,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "SummonControl" ],
-                allPresent = [ AmVic, AmCat ],
-                hasArtifacts = [ "SummonControl" ],
-                dialogue = [
-                    new(AmVic, "pressuredneutral", "Your adaptability is astounding, Cat."),
-                    new(AmCat, "smug", "That's why I'm here!"),
-                ]
-            }},
              {"AquiredOverclockedMissileBay_Vic", new(){
                 type = NodeType.combat,
-                priority = true,
+                priority = false,
                 oncePerRun = true,
                 turnStart = true,
                 maxTurnsThisCombat = 1,
@@ -910,6 +832,19 @@ internal class VicNewCombatDialogue : IRegisterable
                 hasArtifactTypes = [typeof(VicOverclockedMissileBay)],
                 dialogue = [
                     new(AmVic, "pressured", "Be careful in the missile bay. This new model is...unstable.")
+                ]
+            }},
+             {"AquiredPowerReserve_Vic", new(){
+                type = NodeType.combat,
+                priority = true,
+                oncePerRun = true,
+                turnStart = true,
+                maxTurnsThisCombat = 1,
+                oncePerRunTags = [ "VicPowerReserve" ],
+                allPresent = [ AmVic ],
+                hasArtifactTypes = [typeof(VicPowerReserve)],
+                dialogue = [
+                    new(AmVic, "happy", "A proper energy system. Finally.")
                 ]
             }},
              {"AquiredVicLevelheaded_Vic_0", new(){
@@ -922,46 +857,6 @@ internal class VicNewCombatDialogue : IRegisterable
                 hasArtifactTypes = [typeof(VicLevelheaded)], 
                 dialogue = [
                     new(AmVic, "neutraltalk", "I don't believe in ghosts.")
-                ]
-            }},
-             {"AquiredVicLevelheaded_Vic_1", new(){
-                type = NodeType.combat,
-                 priority = true,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "VicLevelheaded" ],
-                allPresent = [ AmVic, AmBooks ],
-                hasArtifactTypes = [typeof(VicLevelheaded)],
-                dialogue = [
-                    new(AmBooks, "paws", "Garrus! Garrus! Do you believe in ghosts?"), 
-                    new(AmVic, "pressuredneutral", "What?! Of course not!")
-                ]
-            }},
-             {"AquiredVicLevelheaded_Vic_2", new(){
-                type = NodeType.combat,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "VicLevelheaded" ],
-                allPresent = [ AmVic, AmMax ],
-                hasArtifactTypes = [typeof(VicLevelheaded)],
-                dialogue = [
-                    new(AmMax, "neutral", "You look a little haunted, man."),
-                    new(AmVic, "pressuredneutral", "I have no idea what you're talking about.")
-                ]
-            }},
-             {"AquiredVicLevelheaded_Vic_3", new(){
-                type = NodeType.combat,
-                oncePerRun = true,
-                turnStart = true,
-                maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "VicLevelheaded" ],
-                allPresent = [ AmVic, AmCat ],
-                hasArtifactTypes =[typeof(VicLevelheaded)],
-                dialogue = [
-                    new(AmCat, "worried", "I'm detecting strange energy signatures near you, Garrus."),
-                    new(AmVic, "pressuredneutral", "Ghosts? Don't be ridiculous.")
                 ]
             }},
              {"AquiredNanofibers_Vic", new(){
@@ -1295,39 +1190,6 @@ internal class VicNewCombatDialogue : IRegisterable
                   new(AmVic, "observe", "Suddenly, we have all the time in the world.")
                 ]
             }},
-             {"ShopkeeperInfinite_Vic_Multi_0", new(){
-                type = NodeType.@event,
-                lookup = [ "shopBefore" ],
-                bg = "BGShop",
-                allPresent = [ AmVic ],
-                dialogue = [
-                    new(AmShopkeeper, "Need some upgrades?", true),
-                    new(AmVic, "neutraltalk", "We're willing to pay top dollar."),
-                    new(new Jump{key = "NewShop"})
-                ]
-            }},
-             {"ShopkeeperInfinite_Vic_Multi_1", new(){
-                type = NodeType.@event,
-                lookup = [ "shopBefore" ],
-                bg = "BGShop",
-                allPresent = [ AmVic ],
-                dialogue = [
-                    new(AmShopkeeper, "Still not satisfied with your ship?", true),
-                    new(AmVic, "neutraltalk", "I have high standards."),
-                    new(new Jump{key = "NewShop"})
-                ]
-            }},
-             {"ShopkeeperInfinite_Vic_Multi_2", new(){
-                type = NodeType.@event,
-                lookup = [ "shopBefore" ],
-                bg = "BGShop",
-                allPresent = [ AmVic ],
-                dialogue = [
-                    new(AmShopkeeper, "Here for business?", true),
-                    new(AmVic, "neutraltalk", "I wouldn't be here otherwise."),
-                    new(new Jump{key = "NewShop"})
-                ]
-            }},
              {"ArtifactTiderunner_Vic", new(){
                 type = NodeType.combat,
                 oncePerRun = true,
@@ -1583,7 +1445,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = ["periWentMissing"],
                 lastTurnPlayerStatuses = [Status.missingPeri],
                 dialogue = [
-                    new(AmVic, "observe", "Hyperia?! Where the hell are you?")
+                    new(AmVic, "panic", "Hyperia?! Where the hell are you?")
                 ]
             }},
             {"RiggsWentMissing_Vic_0", new(){
