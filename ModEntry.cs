@@ -2,6 +2,7 @@
 using Microsoft.Extensions.Logging;
 using Nanoray.PluginManager;
 using Nickel;
+using Nickel.Common;
 using System;
 using System.Collections.Generic;
 using System.Collections.Immutable;
@@ -78,7 +79,7 @@ internal class ModEntry : SimpleMod
      */
     private static List<Type> VicCharacterCommonCardTypes = [
         typeof(VicManeuver),
-        typeof(VicCalmUnderPressure),
+        typeof(VicCalibrate),
         typeof(VicCrisisManagement),
         typeof(VicSeekerSwarm),
         typeof(VicMisdirection),
@@ -89,8 +90,8 @@ internal class ModEntry : SimpleMod
     ];
     private static List<Type> VicCharacterUncommonCardTypes = [
         typeof(VicSensorOverload),
+        typeof(VicCalmUnderPressure),
         typeof(VicBlockade),
-        typeof(VicCalibrate),
         typeof(VicEngineBoosterCard),
         typeof(VicPoisonMissile),
         typeof(VicRowControl),
@@ -110,9 +111,7 @@ internal class ModEntry : SimpleMod
         typeof(VicAux),
         typeof(VicPlan),
         typeof(VicThanix),
-        typeof(VicRecalibrate),
-        typeof(VicDrift),
-        typeof(VicArma)
+        typeof(VicDrift)
     ];
     private static List<Type> VicCharacterEXECardTypes = [
         typeof(VicCatEXE)
@@ -193,7 +192,7 @@ internal class ModEntry : SimpleMod
         ShiftDroneRightSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/ShiftDroneRightSmall.png"));
 
         /*
-         * Koroko dependency
+         * Koroko dependency is mandatory
          */
         KokoroApi = helper.ModRegistry.GetApi<IKokoroApi>("Shockah.Kokoro")!.V2;
 
@@ -241,6 +240,22 @@ internal class ModEntry : SimpleMod
             BorderSprite = RegisterSprite(package, "assets/frame_vic.png").Sprite,
             Name = AnyLocalizations.Bind(["character", "name"]).Localize
         });
+
+        helper.ModRegistry.AwaitApi<IMoreDifficultiesApi>(
+            "TheJazMaster.MoreDifficulties",
+            new SemanticVersion(1, 3, 0),
+            api => api.RegisterAltStarters(
+                deck: VicCharacter.Deck,
+                starterDeck: new StarterDeck
+                {
+                    cards = [
+                        new VicCalibrate(),
+                        new VicSignalAmplifierCard(),
+                    ]
+                }
+
+            )
+        );
 
         /*
          * Initialize IRegisterable types
@@ -300,6 +315,17 @@ internal class ModEntry : SimpleMod
                     new VicSeekerSwarm(),
                     new VicManeuver()
                 ],
+            },
+            SoloStarters = new StarterDeck
+            {
+                cards = [
+                    new VicSeekerSwarm(),
+                    new VicManeuver(),
+                    new VicMobileMine(),
+                    new VicCrisisManagement(),
+                    new CannonColorless(),
+                    new DodgeColorless()
+                ]
             },
             Description = AnyLocalizations.Bind(["character", "desc"]).Localize
         });

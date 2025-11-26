@@ -46,7 +46,7 @@ public class VicRemember : Card, IRegisterable
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicRemember", "descA"])),
                         cost = 2,
                         singleUse = true,
-                        retain = false
+                        retain = true
                     };
                 }
             case Upgrade.B:
@@ -96,17 +96,18 @@ public class VicRemember : Card, IRegisterable
                     {
                         new ACardSelect
                         {
-                            browseAction = new CardSelectAddRetainForever(),
+                            browseAction = new ChooseACardToMakePermanent(),
                             browseSource = CardBrowse.Source.Deck,
-                            filterTemporary = false,
+                            filterTemporary = true,
                             allowCloseOverride = true
                         },
                         new ACardSelect
                         {
-                            browseAction = new CardSelectAddRetainForever(),
+                            browseAction = new ChooseACardToMakePermanent(),
                             browseSource = CardBrowse.Source.Deck,
-                            filterTemporary = false,
-                            allowCloseOverride = true
+                            filterTemporary = true,
+                            allowCloseOverride = true,
+                            dialogueSelector = ".VicRemember"
                         }
                     };
                 }

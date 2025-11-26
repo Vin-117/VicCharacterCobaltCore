@@ -17,7 +17,7 @@ public class VicCalmUnderPressure : Card, IRegisterable
             Meta = new CardMeta
             {
                 deck = ModEntry.Instance.VicCharacter.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 dontOffer = false,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },

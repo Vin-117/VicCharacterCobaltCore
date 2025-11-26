@@ -80,14 +80,9 @@ public class VicThanix : Card, IRegisterable
                     {
                         new AAttack
                         {
-                            damage = GetDmg(s, 2),
+                            damage = GetDmg(s, 4),
                             stunEnemy = true,
-                            fast = false
-                        },
-                        new AAttack
-                        {
-                            damage = GetDmg(s, 2),
-                            stunEnemy = true,
+                            piercing = true,
                             fast = false,
                             dialogueSelector = ".VicThanix"
                         },

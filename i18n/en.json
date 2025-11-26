@@ -114,20 +114,11 @@
 		"VicThanix": {
             "name": "Thanix Cannon"
 		},
-        "VicArma": {
-            "name": "Armageddon"
-		},
-		"VicRecalibrate": {
-            "name": "Recalibrate",
-			"desc": "Add an <c=card>Armageddon</c> to your discard pile.",
-			"descA": "Add an <c=card>Armageddon</c> to your hand.",
-            "descB": "Add an <c=card>Armageddon B</c> to your hand."
-		},
 		"VicCalibrate": {
             "name": "Calibrate",
 			"desc": "Add a <c=card>Thanix Cannon</c> to your discard pile.",
-			"descA": "Add a <c=card>Thanix Cannon</c> to your draw pile.",
-            "descB": "Add a <c=card>Recalibrate</c> to your discard pile."
+			"descA": "Add a <c=card>Thanix Cannon</c> to your discard pile.",
+            "descB": "Add a <c=card>Thanix Cannon B</c> to your discard pile."
 		},
 		"VicTorpedoCard": {
             "name": "Torpedo"
@@ -137,9 +128,9 @@
         },
 		"VicRemember": {
             "name": "Remember",
-			"desc": "Choose a <c=status>temporary</c> card in your deck. It becomes permanent.",
-			"descA": "Choose 2 cards in your deck. They gain <c=status>Retain</c> permanently.",
-            "descB": "Choose a card with <c=status>exhaust</c> in your deck. It no longer exhausts."
+			"desc": "Choose a <c=cardtrait>temporary</c> card in your deck. It becomes permanent.",
+			"descA": "Choose 2 <c=cardtrait>temporary</c> cards in your deck. They become permanent.",
+            "descB": "Choose a card with <c=cardtrait>exhaust</c> in your deck. It no longer exhausts."
 		},
 		"VicSignalAmplifierCard": {
             "name": "Signal Amplifier"

@@ -1003,7 +1003,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicSmallMinefield" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "explains", "Toss enough mines and eventually they'll have an accident.")
+                  new(AmVic, "neutraltalk", "Toss enough mines and eventually they'll have an accident.")
                 ]
             }},
              {"VicSmallMineLaunch_4", new(){
@@ -1036,7 +1036,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "The worst trap is the one you’re forced to step in.")
+                  new(AmVic, "neutraltalk", "The worst trap is the one you're forced to step in.")
                 ]
             }},
              {"VicMobileMineLaunch_1", new(){
@@ -1091,7 +1091,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicMobileMine" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "smug", "I'm arranging for a convenient accident.")
+                  new(AmVic, "neutraltalk", "I'm arranging for a convenient accident.")
                 ]
             }},
              {"VicTorpedoLaunch_0", new(){

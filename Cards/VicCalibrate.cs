@@ -16,7 +16,7 @@ public class VicCalibrate : Card, IRegisterable
             Meta = new CardMeta
             {
                 deck = ModEntry.Instance.VicCharacter.Deck,
-                rarity = Rarity.uncommon,
+                rarity = Rarity.common,
                 dontOffer = false,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
@@ -43,8 +43,9 @@ public class VicCalibrate : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
-                        buoyant = true,
+                        cost = 1,
+                        buoyant = false,
+                        retain = true,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalibrate", "descA"]))
                     };
@@ -100,7 +101,7 @@ public class VicCalibrate : Card, IRegisterable
                             card = new VicThanix()
                             {
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Discard,
                             amount = 1,
                             dialogueSelector = ".VicCalibrate"
                         }
@@ -112,12 +113,13 @@ public class VicCalibrate : Card, IRegisterable
                     {
                         new AAddCard()
                         {
-                            card = new VicRecalibrate()
+                            card = new VicThanix()
                             {
+                                upgrade = Upgrade.B
                             },
                             destination = CardDestination.Discard,
                             amount = 1,
-                            dialogueSelector = ".VicCalibrateB"
+                            dialogueSelector = ".VicCalibrate"
                         }
                     };
                 }
