@@ -89,14 +89,13 @@ public class VicShifterDroneCard : Card, IRegisterable
                     {
                         new ASpawn
                         {
-                            thing = new ShifterDroneLeft
+                            thing = new ShifterDroneUpgradedLeft
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = false,
                                 rightflip = !flipped,
-                                bubbleShield = true
                             },
-                            dialogueSelector = ".VicShifterDrone"
+                            //dialogueSelector = ".VicShifterUpgradedDrone"
                         }
                     };
                 }

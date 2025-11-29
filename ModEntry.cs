@@ -53,9 +53,17 @@ internal class ModEntry : SimpleMod
 
     internal ISpriteEntry ShiftDroneLeftSmall { get; }
 
+    internal ISpriteEntry ShiftDroneUpgradedLeft { get; }
+
+    internal ISpriteEntry ShiftDroneUpgradedLeftSmall { get; }
+
     internal ISpriteEntry ShiftDroneRight { get; }
 
     internal ISpriteEntry ShiftDroneRightSmall { get; }
+
+    internal ISpriteEntry ShiftDroneUpgradedRight { get; }
+
+    internal ISpriteEntry ShiftDroneUpgradedRightSmall { get; }
 
     internal ISpriteEntry DummySeekerSmall { get; }
 
@@ -187,9 +195,13 @@ internal class ModEntry : SimpleMod
 
         ShiftDroneLeft = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/ShiftDroneLeft.png"));
         ShiftDroneLeftSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/ShiftDroneLeftSmall.png"));
+        ShiftDroneUpgradedLeft = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/ShiftDroneLeft_upgraded.png"));
+        ShiftDroneUpgradedLeftSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/ShiftDroneLeftSmall_upgraded.png"));
 
         ShiftDroneRight = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/ShiftDroneRight.png"));
         ShiftDroneRightSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/ShiftDroneRightSmall.png"));
+        ShiftDroneUpgradedRight = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/ShiftDroneRight_upgraded.png"));
+        ShiftDroneUpgradedRightSmall = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/icon/ShiftDroneRightSmall_upgraded.png"));
 
         /*
          * Koroko dependency is mandatory

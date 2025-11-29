@@ -8,8 +8,17 @@ namespace VicCharacter.Cards;
 
 public class VicPoisonMissile : Card, IRegisterable
 {
+
+    private static ISpriteEntry DoubleMissileArt = null!;
+    private static ISpriteEntry SingleMissileArt = null!;
+
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
+
+        DoubleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png"));
+        SingleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png"));
+
+
         helper.Content.Cards.RegisterCard(new CardConfiguration
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
@@ -21,7 +30,7 @@ public class VicPoisonMissile : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicPoisonMissile", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
+            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
         });
     }
 
@@ -35,7 +44,8 @@ public class VicPoisonMissile : Card, IRegisterable
                     {
                         cost = 1,
                         exhaust = true,
-                        artTint = "24ff4f"
+                        artTint = "24ff4f",
+                        art = SingleMissileArt.Sprite
                     };
                 }
             case Upgrade.A:
@@ -44,7 +54,8 @@ public class VicPoisonMissile : Card, IRegisterable
                     {
                         cost = 0,
                         exhaust = true,
-                        artTint = "24ff4f"
+                        artTint = "24ff4f",
+                        art = SingleMissileArt.Sprite
                     };
                 }
             case Upgrade.B:
@@ -53,7 +64,8 @@ public class VicPoisonMissile : Card, IRegisterable
                     {
                         cost = 2,
                         exhaust = true,
-                        artTint = "24ff4f"
+                        artTint = "24ff4f",
+                        art = DoubleMissileArt.Sprite
                     };
                 }
             default:

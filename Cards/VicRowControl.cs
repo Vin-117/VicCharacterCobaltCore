@@ -10,8 +10,16 @@ namespace VicCharacter.Cards;
 
 public class VicRowControl : Card, IRegisterable
 {
+
+    private static ISpriteEntry NormalArt = null!;
+    private static ISpriteEntry UpgradedArt = null!;
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
+
+        NormalArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicRowControl.png"));
+        UpgradedArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicRowControlUpgrade.png"));
+
+
         helper.Content.Cards.RegisterCard(new CardConfiguration
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
@@ -23,7 +31,7 @@ public class VicRowControl : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicRowControl", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicRowControl.png")).Sprite,
+            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicRowControl.png")).Sprite,
         });
     }
 
@@ -38,7 +46,8 @@ public class VicRowControl : Card, IRegisterable
                         cost = 2,
                         buoyant = false,
                         exhaust = true,
-                        artTint = "59f790"
+                        artTint = "59f790",
+                        art = NormalArt.Sprite
                     };
                 }
             case Upgrade.A:
@@ -48,7 +57,8 @@ public class VicRowControl : Card, IRegisterable
                         cost = 1,
                         buoyant = false,
                         exhaust = true,
-                        artTint = "59f790"
+                        artTint = "59f790",
+                        art = NormalArt.Sprite
                     };
                 }
             case Upgrade.B:
@@ -58,7 +68,8 @@ public class VicRowControl : Card, IRegisterable
                         cost = 2,
                         buoyant = false,
                         exhaust = true,
-                        artTint = "59f790"
+                        artTint = "59f790",
+                        art = UpgradedArt.Sprite
                     };
                 }
             default:

@@ -3,51 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\midrow\\vicsignalamplifierupgradedmidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:midrow\\vicsignalamplifierupgradedmidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\victorpedocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\victorpedocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\midrow\\vicsignalamplifiermidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:midrow\\vicsignalamplifiermidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\OneDrive\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Bjorn\\Features\\SmartShield.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\vicseekerswarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicseekerswarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\victhanix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\victhanix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\vicblockade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicblockade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\vicmobilemine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicmobilemine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\viccalmunderpressure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\viccalmunderpressure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\viccalibrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\viccalibrate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\viccrisismanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\viccrisismanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\vicaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicaux.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,150 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VicSignalAmplifierUpgradedMidrow.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Midrow\\VicSignalAmplifierUpgradedMidrow.cs",
-              "RelativeDocumentMoniker": "Midrow\\VicSignalAmplifierUpgradedMidrow.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Midrow\\VicSignalAmplifierUpgradedMidrow.cs",
-              "RelativeToolTip": "Midrow\\VicSignalAmplifierUpgradedMidrow.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAzwCsAAAAtAAAAAAAAAA==",
+              "Title": "VicTorpedoCard.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicTorpedoCard.cs",
+              "RelativeDocumentMoniker": "Cards\\VicTorpedoCard.cs",
+              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicTorpedoCard.cs",
+              "RelativeToolTip": "Cards\\VicTorpedoCard.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwFYAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T14:55:57.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SmartShield.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Bjorn\\Features\\SmartShield.cs",
-              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Bjorn\\Features\\SmartShield.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Bjorn\\Features\\SmartShield.cs",
-              "RelativeToolTip": "..\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Bjorn\\Features\\SmartShield.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAgwFgAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T14:45:59.034Z",
+              "WhenOpened": "2025-11-29T21:23:24.766Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VicSignalAmplifierMidrow.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Midrow\\VicSignalAmplifierMidrow.cs",
-              "RelativeDocumentMoniker": "Midrow\\VicSignalAmplifierMidrow.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Midrow\\VicSignalAmplifierMidrow.cs",
-              "RelativeToolTip": "Midrow\\VicSignalAmplifierMidrow.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAAACsAAAAgAAAAAAAAAA==",
+              "Title": "VicSeekerSwarm.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicSeekerSwarm.cs",
+              "RelativeDocumentMoniker": "Cards\\VicSeekerSwarm.cs",
+              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicSeekerSwarm.cs",
+              "RelativeToolTip": "Cards\\VicSeekerSwarm.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-29T14:31:14.909Z",
+              "WhenOpened": "2025-11-29T21:19:10Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "VicThanix.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicThanix.cs",
-              "RelativeDocumentMoniker": "Cards\\VicThanix.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicThanix.cs",
-              "RelativeToolTip": "Cards\\VicThanix.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T03:52:58.001Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "VicBlockade.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicBlockade.cs",
-              "RelativeDocumentMoniker": "Cards\\VicBlockade.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicBlockade.cs",
-              "RelativeToolTip": "Cards\\VicBlockade.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T02:55:44.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "en.json",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\i18n\\en.json",
-              "RelativeDocumentMoniker": "i18n\\en.json",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\i18n\\en.json",
-              "RelativeToolTip": "i18n\\en.json",
-              "ViewState": "AgIAAE0AAAAAAAAAAAASwF0AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-27T01:49:32.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VicCalmUnderPressure.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicCalmUnderPressure.cs",
-              "RelativeDocumentMoniker": "Cards\\VicCalmUnderPressure.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicCalmUnderPressure.cs",
-              "RelativeToolTip": "Cards\\VicCalmUnderPressure.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T00:04:58.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VicCalibrate.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicCalibrate.cs",
-              "RelativeDocumentMoniker": "Cards\\VicCalibrate.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicCalibrate.cs",
-              "RelativeToolTip": "Cards\\VicCalibrate.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBcAAABxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T00:04:38.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VicCrisisManagement.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicCrisisManagement.cs",
-              "RelativeDocumentMoniker": "Cards\\VicCrisisManagement.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicCrisisManagement.cs",
-              "RelativeToolTip": "Cards\\VicCrisisManagement.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBgAAABxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T00:04:09.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VicMobileMine.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicMobileMine.cs",
-              "RelativeDocumentMoniker": "Cards\\VicMobileMine.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicMobileMine.cs",
-              "RelativeToolTip": "Cards\\VicMobileMine.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBcAAAB2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:57:24.328Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "VicAux.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicAux.cs",
-              "RelativeDocumentMoniker": "Cards\\VicAux.cs",
-              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicAux.cs",
-              "RelativeToolTip": "Cards\\VicAux.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T23:50:20.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "ModEntry.cs",
               "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\ModEntry.cs",
               "RelativeDocumentMoniker": "ModEntry.cs",
               "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\ModEntry.cs",
               "RelativeToolTip": "ModEntry.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAYwHEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T19:31:39.609Z",
+              "WhenOpened": "2025-11-29T21:18:45.435Z",
               "EditorCaption": ""
             }
           ]

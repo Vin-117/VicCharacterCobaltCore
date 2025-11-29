@@ -9,10 +9,19 @@ namespace VicCharacter.Cards;
 
 public class VicSeekerSwarm : Card, IRegisterable
 {
+
+    private static ISpriteEntry DoubleMissileArt = null!;
+    private static ISpriteEntry SingleMissileArt = null!;
+
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
+
+        DoubleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png"));
+        SingleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png"));
+
         helper.Content.Cards.RegisterCard(new CardConfiguration
         {
+
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
             Meta = new CardMeta
             {
@@ -22,7 +31,7 @@ public class VicSeekerSwarm : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicSeekerSwarm", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png")).Sprite,
+            //Art = (helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png")).Sprite),
         });
     }
 
@@ -36,7 +45,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                     {
                         cost = 2,
                         infinite = false,
-                        //artTint = "9944de"
+                        artTint = "9944de",
+                        art = DoubleMissileArt.Sprite
                     };
                 }
             case Upgrade.A:
@@ -45,7 +55,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                     {
                         cost = 2,
                         infinite = false,
-                        //artTint = "9944de"
+                        artTint = "b40003",
+                        art = DoubleMissileArt.Sprite
                     };
                 }
             case Upgrade.B:
@@ -54,7 +65,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                     {
                         cost = 1,
                         infinite = true,
-                        //artTint = "9944de"
+                        artTint = "9944de",
+                        art = SingleMissileArt.Sprite
                     };
                 }
             default:
