@@ -22,7 +22,7 @@ public class VicHURTCard : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicHURTCard", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicHURT.png")).Sprite,
         });
     }
 
@@ -36,7 +36,7 @@ public class VicHURTCard : Card, IRegisterable
                     {
                         cost = 3,
                         exhaust = true,
-                        //artTint = "f5ff00"
+                        artTint = "f5ff00"
                     };
                 }
             case Upgrade.A:
@@ -45,7 +45,7 @@ public class VicHURTCard : Card, IRegisterable
                     {
                         cost = 3,
                         exhaust = false,
-                        //artTint = "f5ff00"
+                        artTint = "f5ff00"
                     };
                 }
             case Upgrade.B:
@@ -54,7 +54,7 @@ public class VicHURTCard : Card, IRegisterable
                     {
                         cost = 3,
                         exhaust = true,
-                        //artTint = "f5ff00"
+                        artTint = "f5ff00"
                     };
                 }
             default:
@@ -62,7 +62,7 @@ public class VicHURTCard : Card, IRegisterable
                     return new CardData
                     {
                         cost = 3,
-                        //artTint = "f5ff00"
+                        artTint = "f5ff00"
                     };
                 }
         }

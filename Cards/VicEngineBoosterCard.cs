@@ -48,8 +48,9 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0,
-                        exhaust = true
+                        cost = 2,
+                        retain = true,
+                        buoyant = true
                     };
                 }
             default:

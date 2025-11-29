@@ -89,9 +89,9 @@
 		},
 		"VicSiphon": {
             "name": "Siphon Power",
-			"desc": "Exhaust a card in hand. Gain 1 <c=card>Auxiliary A</c> to hand.",
-			"descA": "Exhaust a card in hand. Gain 1 <c=card>Auxiliary A</c> to hand.",
-            "descB": "Exhaust a card in draw or discard pile. Gain 1 <c=card>Auxiliary A</c> to hand."
+			"desc": "Exhaust a card in hand. Gain an <c=card>Auxiliary A</c>.",
+			"descA": "Exhaust a card in hand. Gain an <c=card>Auxiliary A</c>.",
+            "descB": "Exhaust a card in draw or discard. Gain an <c=card>Auxiliary A</c>."
 		},
 		"VicPoisonMissile": {
             "name": "Acid Missile"
@@ -210,7 +210,7 @@
     "HeavySeeker": {
       "Normal": {
         "name": "Heavy Seeker",
-        "description": ["This missile is going to deal <c=damage>3</c> DMG.", "<c=damage>It cannot miss!</c>"]
+        "description": ["This missile is going to deal <c=damage>3</c> damage.", "<c=damage>It cannot miss!</c>"]
       }
     },
     "HURT": {

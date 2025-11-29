@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "VicCharacter/0.8.0": {
+      "VicCharacter/0.8.5": {
         "dependencies": {
           "EnumByNameSourceGenerator": "1.1.2",
           "Nickel.ModBuildConfig": "2.0.2"
@@ -27,7 +27,7 @@
     }
   },
   "libraries": {
-    "VicCharacter/0.8.0": {
+    "VicCharacter/0.8.5": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
