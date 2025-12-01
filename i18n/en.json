@@ -37,7 +37,7 @@
             "name": "Glide"
         },
 		"VicCalmUnderPressure": {
-            "name": "Calm Under Pressure",
+            "name": "Battle Analysis",
 			"desc": "Add a <c=card>Plan</c> to your hand.",
 			"descA": "Add a <c=card>Plan A</c> to your hand.",
             "descB": "Add a <c=card>Plan B</c> to your hand."
