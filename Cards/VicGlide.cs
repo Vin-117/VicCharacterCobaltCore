@@ -56,7 +56,7 @@ public class VicGlide : Card, IRegisterable
                 {
                     return new CardData 
                     {
-                        cost = 1,
+                        cost = 0,
                         temporary = true,
                         exhaust = true,
                         retain = true,
@@ -96,11 +96,6 @@ public class VicGlide : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AMove
-                        {
-                            dir = -1,
-                            targetPlayer = true
-                        },
                         new AMove
                         {
                             dir = -1,

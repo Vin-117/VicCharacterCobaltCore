@@ -50,7 +50,7 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0,
+                        cost = 1,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicManeuver", "descB"])),
                         exhaust = false
                     };
