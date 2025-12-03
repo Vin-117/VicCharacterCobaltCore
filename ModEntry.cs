@@ -88,7 +88,7 @@ internal class ModEntry : SimpleMod
     private static List<Type> VicCharacterCommonCardTypes = [
         typeof(VicManeuver),
         typeof(VicCalibrate),
-        typeof(VicCrisisManagement),
+        typeof(VicCalmUnderPressure),
         typeof(VicSeekerSwarm),
         typeof(VicMisdirection),
         typeof(VicShifterDroneCard),
@@ -98,7 +98,7 @@ internal class ModEntry : SimpleMod
     ];
     private static List<Type> VicCharacterUncommonCardTypes = [
         typeof(VicSensorOverload),
-        typeof(VicCalmUnderPressure),
+        typeof(VicCrisisManagement),
         typeof(VicBlockade),
         typeof(VicEngineBoosterCard),
         typeof(VicPoisonMissile),

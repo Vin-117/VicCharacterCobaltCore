@@ -17,7 +17,7 @@ public class VicCrisisManagement : Card, IRegisterable
             Meta = new CardMeta
             {
                 deck = ModEntry.Instance.VicCharacter.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 dontOffer = false,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
@@ -52,7 +52,7 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 3,
+                        cost = 2,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCrisisManagement", "descB"]))
                     };
@@ -79,6 +79,12 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
+                        new AStatus()
+                        {
+                            status = Status.shield,
+                            statusAmount = 1,
+                            targetPlayer = true
+                        },
                         new AAddCard()
                         {
                             card = new VicLockdown()
@@ -93,6 +99,12 @@ public class VicCrisisManagement : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
+                        new AStatus()
+                        {
+                            status = Status.shield,
+                            statusAmount = 1,
+                            targetPlayer = true
+                        },
                         new AAddCard()
                         {
                             card = new VicLockdown()
@@ -114,7 +126,7 @@ public class VicCrisisManagement : Card, IRegisterable
                             {
                                 upgrade = Upgrade.A
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Discard,
                             amount = 1,
                         },
                         new AAddCard()
@@ -123,7 +135,7 @@ public class VicCrisisManagement : Card, IRegisterable
                             {
                                 upgrade = Upgrade.B
                             },
-                            destination = CardDestination.Deck,
+                            destination = CardDestination.Discard,
                             amount = 1,
                         },
                     };

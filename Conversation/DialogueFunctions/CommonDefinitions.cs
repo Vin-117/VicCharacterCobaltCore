@@ -20,6 +20,8 @@ static class CommonDefinitions
     internal static Deck AmVicDeck => Instance.VicCharacter.Deck;
 
     internal const string AmCat = "comp";
+
+    internal const string AmJumbo = "miner";
     internal static string AmDizzy => Deck.dizzy.Key();
     internal static string AmPeri => Deck.peri.Key();
     internal static string AmRiggs => Deck.riggs.Key();

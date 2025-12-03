@@ -50,9 +50,9 @@
 		},
 		"VicCrisisManagement": {
             "name": "Threat Response",
-			"desc": "Add a <c=card>Lockdown</c> to your draw pile.",
-			"descA": "Add a <c=card>Lockdown A</c> to your draw pile.",
-            "descB": "Add a <c=card>Lockdown A and B</c> to your draw pile."
+			"desc": "Gain 1 <c=status>shield</c>. Add a <c=card>Lockdown</c> to your draw pile.",
+			"descA": "Gain 1 <c=status>shield</c>. Add a <c=card>Lockdown A</c> to your draw pile.",
+            "descB": "Add a <c=card>Lockdown A and B</c> to your discard pile."
 		},
 		"VicLockdown": {
             "name": "Lockdown"
