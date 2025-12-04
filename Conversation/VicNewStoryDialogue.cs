@@ -50,8 +50,7 @@ internal class VicNewStoryDialogue : IRegisterable
                     new(AmVic, "pressured", "So we're back at the start again? After everything that just happened?"),
                     new(AmCat, "Yep!"),
                     new(AmVic, "annoyed", "Figures. Blasted experimentation with the Cobalt..."),
-                    new(AmCat, "squint", "How much do you know about the Cobalt?"),
-                    new(AmCat, "squint", "You sound suspiciously well informed."),
+                    new(AmCat, "squint", "...You sound suspiciously well informed."),
                     new(AmVic, "neutraltalk", "That's because I am."),
                     new(AmCat, "squint", "I take it you won't elaborate?"),
                     new(AmVic, "neutraltalk", "I'd prefer not to. Not right now, anyway."),
@@ -171,10 +170,85 @@ internal class VicNewStoryDialogue : IRegisterable
                     new(AmJumbo, "Oh you know, hunting a bounty.", flipped: true),
                     new(AmVic, "happyneutral", "As one does. Who's ship has a bounty?"),
                     new(AmJumbo, "Yours.", flipped: true),
+                    new(AmVic, "panic", "Wait what?"),
+                ]
+            }},
+            {"Vic_JumboFirstFight_11", new(){
+                type = NodeType.@event,
+                lookup = ["miner_midcombat"],
+                requiredScenes = ["Miner_1"],
+                allPresent = [AmVic],
+                nonePresent = [AmDrake],
+                once = true,
+                priority = true,
+                dialogue = [
+
+                    new(AmVic, "neutraltalk", "I hadn't realized we were in a time loop."),
+                    new(AmJumbo, "I figured.", flipped: true),
+                    new(AmVic, "pressured", "Nothing really matters, does it?"),
+                    new(AmJumbo, "Nope.", flipped: true),
+                    new(AmVic, "observe", "Hmm. Mind doing me a favor before we kill each other?"),
+                    new(AmJumbo, "Sure.", flipped: true),
+                    new(AmVic, "neutraltalk", "Who placed the bounty?"),
+                    new(AmJumbo, "Drake.", flipped: true),
+                    new(AmVic, "doubtful", "Figures. Thank you."),
+                ]
+            }},
+            {"Jumbo_Vic_Banter", new(){
+                type = NodeType.combat,
+                allPresent = [AmVic, AmJumbo],
+                turnStart = true,
+                enemyIntent = "wideBigAttack",
+                maxTurnsThisCombat = 1,
+                oncePerCombatTags = [ "MinerGonnaSmackYa4X" ],
+                dialogue = [
+                    new(AmJumbo, "Do you think this is too many cannons?"),
+                    new(AmVic, "neutraltalk", "I think you need more missile bays."),
                 ]
             }},
 
+            {"Vic_Drake_Meet_00", new(){
+                type = NodeType.@event,
+                lookup = [ "zone_first" ],
+                once = true,
+                allPresent = [ AmVic, AmDrake ],
+                requiredScenes = ["Vic_JumboFirstFight_11"],
+                bg = "BGRunStart",
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Drake? I need to ask you something."),
+                    new(AmDrake, "What's up?"),
+                    new(AmVic, "annoyed", "Jumbo told me you put a bounty on our ship."),
+                    new(AmDrake, "squint", "He's still spreading that around?"),
+                    new(AmDrake, "squint", "That was a FAKE bounty!"),
+                    new(AmVic, "annoyed", "Why the hell did you even do that in the first place!?"),
+                    new(AmDrake, "sly", "So I could distract and rob you guys."),
+                    new(AmVic, "annoyed", "That's a stupid plan."),
+                    new(AmDrake, "reallymad", "Shut up."),
+                ]
+            }},
+            {"Vic_JumboFirstFight_22", new(){
+                type = NodeType.@event,
+                lookup = ["miner_midcombat"],
+                requiredScenes = ["Vic_Drake_Meet_00"],
+                allPresent = [AmVic, AmDrake],
+                once = true,
+                priority = true,
+                dialogue = [
 
+                    new(AmJumbo, "Oh look, my bounty just arrived.", flipped: true),
+                    new(AmDrake, "mad", "Could you quit it with that?"),
+                    new(AmDrake, "mad", "It's bad enough that my plan didn't work."),
+                    new(AmDrake, "mad", "But now I have this old geezer on my case about it."),
+                    new(AmVic, "annoyed", "Excuse me?"),
+                    new(AmJumbo, "Hm. No.", flipped: true),
+                    new(AmDrake, "reallymad", "Seriously?"),
+                    new(AmJumbo, "You insulted a fellow professional.", flipped: true),
+                    new(AmJumbo, "I'll have to kill you for that.", flipped: true),
+                    new(AmDrake, "reallymad", "How the HELL does that make sense?!"),
+                    new(AmDrake, "reallymad", "You'd literally blow him up with me!"),
+                    new(AmVic, "happy", "You heard him, Drake."),
+                ]
+            }},
 
             // {"", new(){
 
