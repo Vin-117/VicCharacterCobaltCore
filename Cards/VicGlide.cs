@@ -8,8 +8,16 @@ namespace VicCharacter.Cards;
 
 public class VicGlide : Card, IRegisterable
 {
+
+    private static ISpriteEntry GlideArtNormal = null!;
+    private static ISpriteEntry GlideArtFlipped = null!;
+
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
+
+        GlideArtNormal = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicGlide.png"));
+        GlideArtFlipped = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicGlideFlipped.png"));
+
         helper.Content.Cards.RegisterCard(new CardConfiguration
         {
             CardType = MethodBase.GetCurrentMethod()!.DeclaringType!,
@@ -21,7 +29,6 @@ public class VicGlide : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicGlide", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicGlide.png")).Sprite,
         });
     }
 
@@ -38,7 +45,8 @@ public class VicGlide : Card, IRegisterable
                         temporary = true,
                         exhaust = true,
                         retain = true,
-                        flippable = false
+                        flippable = false,
+                        art = flipped ? GlideArtFlipped.Sprite : GlideArtNormal.Sprite
                     };
                 }
             case Upgrade.A:
@@ -49,7 +57,8 @@ public class VicGlide : Card, IRegisterable
                         temporary = true,
                         exhaust = false,
                         retain = true,
-                        flippable = true
+                        flippable = true,
+                        art = flipped ? GlideArtFlipped.Sprite : GlideArtNormal.Sprite
                     };
                 }
             case Upgrade.B: 
@@ -60,7 +69,8 @@ public class VicGlide : Card, IRegisterable
                         temporary = true,
                         exhaust = true,
                         retain = true,
-                        flippable = true
+                        flippable = true,
+                        art = flipped ? GlideArtFlipped.Sprite : GlideArtNormal.Sprite
                     };
                 }
             default:
@@ -71,7 +81,8 @@ public class VicGlide : Card, IRegisterable
                         temporary = true,
                         exhaust = true,
                         retain = true,
-                        flippable = false
+                        flippable = false,
+                        art = flipped ? GlideArtFlipped.Sprite : GlideArtNormal.Sprite
                     };
                 }
         }

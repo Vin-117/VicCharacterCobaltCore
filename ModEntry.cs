@@ -339,7 +339,8 @@ internal class ModEntry : SimpleMod
                     new DodgeColorless()
                 ]
             },
-            Description = AnyLocalizations.Bind(["character", "desc"]).Localize
+            Description = AnyLocalizations.Bind(["character", "desc"]).Localize,
+            ExeCardType = typeof(VicCatEXE)
         });
 
         /*

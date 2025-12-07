@@ -6,6 +6,9 @@
   "RequiredApiVersion": "1.5.7",
   "EntryPointAssembly": "VicCharacter.dll",
   "LoadPhase": "AfterDbInit",
+  "GitHub" : {
+      "Repository" : "Vin-117/VicCharacterCobaltCore"
+  },
   "Dependencies": [
     {
       "UniqueName": "Shockah.Kokoro",

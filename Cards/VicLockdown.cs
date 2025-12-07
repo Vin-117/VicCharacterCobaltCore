@@ -36,7 +36,8 @@ public class VicLockdown : Card, IRegisterable
                     {
                         cost = 0,
                         temporary = true,
-                        retain = false
+                        retain = false,
+                        artTint = "9fd0ff"
                     };
                 }
             case Upgrade.A:
@@ -45,7 +46,8 @@ public class VicLockdown : Card, IRegisterable
                     {
                         cost = 0,
                         temporary = true,
-                        retain = false
+                        retain = false,
+                        artTint = "9fd0ff"
                     };
                 }
             case Upgrade.B: 
@@ -55,7 +57,8 @@ public class VicLockdown : Card, IRegisterable
                         cost = 1,
                         temporary = true,
                         retain = false,
-                        exhaust = true
+                        exhaust = true,
+                        artTint = "9fd0ff"
                     };
                 }
             default:
@@ -64,7 +67,8 @@ public class VicLockdown : Card, IRegisterable
                     {
                         cost = 0,
                         temporary = true,
-                        retain = false
+                        retain = false,
+                        artTint = "9fd0ff"
                     };
                 }
         }

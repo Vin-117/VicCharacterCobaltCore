@@ -247,7 +247,7 @@
     "VicSmallSpaceMine": {
       "Normal": {
         "name": "Small Space Mine",
-        "description": "Destroying it will damage it's destroyer for <c=damage>1</c>."
+        "description": "Destroying it will damage its destroyer for <c=boldPink>1</c>."
       }
     },
     "SignalAmplifier2": {
