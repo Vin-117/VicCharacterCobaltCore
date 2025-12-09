@@ -67,6 +67,8 @@ internal class ModEntry : SimpleMod
 
     internal ISpriteEntry DummySeekerSmall { get; }
 
+    //For missing status 
+    internal static IPlayableCharacterEntryV2 VicPlayableCharacter { get; private set; } = null!;
 
     //Initiate status variables
     internal IStatusEntry VicAuxPower;
@@ -316,7 +318,7 @@ internal class ModEntry : SimpleMod
             ]
         });
 
-        helper.Content.Characters.V2.RegisterPlayableCharacter("VicCharacterFullMod", new PlayableCharacterConfigurationV2
+        VicPlayableCharacter = helper.Content.Characters.V2.RegisterPlayableCharacter("VicCharacterFullMod", new PlayableCharacterConfigurationV2
         {
 
             Deck = VicCharacter.Deck,

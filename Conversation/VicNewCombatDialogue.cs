@@ -22,7 +22,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "All these loops...all these memories...")
+                  new(AmVic, "panic", "All these loops...all these memories...")
                 ]
             }},
             {"VicRemember_1", new(){
@@ -32,7 +32,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "...How long have we been here? How long have we been alive?")
+                  new(AmVic, "panic", "...How long have we been here? How long have we been alive?")
                 ]
             }},
             {"VicRemember_2", new(){
@@ -42,7 +42,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "Will life be the same when we escape? If we escape?")
+                  new(AmVic, "panic", "Will life be the same when we escape? If we escape?")
                 ]
             }},
             {"VicRemember_3", new(){
@@ -52,7 +52,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "Does any of it matter? Will any of this be remembered?")
+                  new(AmVic, "panic", "Does any of it matter? Will any of this be remembered?")
                 ]
             }},
             {"VicRemember_4", new(){
@@ -62,7 +62,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "I remember it so clearly. And yet, it blurs together...")
+                  new(AmVic, "panic", "I remember it so clearly. And yet, it blurs together...")
                 ]
             }},
             {"VicRemember_5", new(){
@@ -72,7 +72,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "Will we be here forever? Will we even know?")
+                  new(AmVic, "panic", "Will we be here forever? Will we even know?")
                 ]
             }},
             {"VicRemember_6", new(){
@@ -82,7 +82,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "Who are we anymore? Are we still the same as before the loop?")
+                  new(AmVic, "panic", "Who are we anymore? Are we still the same as before the loop?")
                 ]
             }},
             {"VicRemember_7", new(){
@@ -92,7 +92,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pressured", "...I almost don't want to remember. To be blissfully ignorant...")
+                  new(AmVic, "panic", "...I almost don't want to remember. To be blissfully ignorant...")
                 ]
             }},
             {"VicSeekerSwarmLaunch_0", new(){
@@ -216,6 +216,78 @@ internal class VicNewCombatDialogue : IRegisterable
                   new(AmVic, "pda", "Better hope you don't get motion sickness.")
                 ]
             }},
+            {"VicIsaacShifterDroneLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmIsaac, "sly", "I'm feeling a little shifty..."),
+                  new(AmVic, "annoyed", "Not funny.")
+                ]
+            }},
+            {"VicIsaacShifterDroneLaunch_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmIsaac, "sly", "Did you always have a habit of pushing people away?"),
+                    new(AmVic, "doubtful", "Very funny.")
+                ]
+            }},
+            {"VicIsaacShifterDroneLaunch_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicShifterDrone" ],
+                anyDronesFriendly = ["VicShifterDroneTag"],
+                oncePerCombatTags = [ "VicShifterDroneOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmIsaac, "shy", "It's hard to track where their ship is going to go."),
+                    new(AmVic, "observe", "Absolutely. We'll need to be careful with this.")
+                ]
+            }},
+            {"VicIsaacEngineBoosterLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
+                oncePerCombatTags = [ "VicEngineBoosterOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmIsaac, "shy", "Aren't some of those parts a little expensive?"),
+                    new(AmVic, "observe", "They were never designed to be mass produced.")
+                ]
+            }},
+            {"VicIsaacEngineBoosterLaunch_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
+                oncePerCombatTags = [ "VicEngineBoosterOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmIsaac, "Kind of like a shield drone, huh?"),
+                    new(AmVic, "neutraltalk", "Yes. It cycles power into the engines instead of shields.")
+                ]
+            }},
+            {"VicIsaacEngineBoosterLaunch_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
+                oncePerCombatTags = [ "VicEngineBoosterOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "If I’m going to name this one, I’ll go with Wing."),
+                    new(AmIsaac, "shy", "Try a different name.")
+                ]
+            }},
             {"VicEngineBoosterLaunch_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
@@ -337,6 +409,42 @@ internal class VicNewCombatDialogue : IRegisterable
                   new(AmVic, "pda", "Uploading logistical data to the bridge now.")
                 ]
             }},
+            {"VicIsaacSatelliteLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicSatellite" ],
+                anyDronesFriendly = ["SignalAmplifierTag"],
+                oncePerCombatTags = [ "VicSatelliteOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmIsaac, "Why don't you name your drones?"),
+                  new(AmVic, "neutraltalk", "They never live that long."),
+                ]
+            }},
+            {"VicIsaacSatelliteLaunch_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicSatellite" ],
+                anyDronesFriendly = ["SignalAmplifierTag"],
+                oncePerCombatTags = [ "VicSatelliteOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmIsaac, "Did you design that satellite yourself?"),
+                  new(AmVic, "observe", "Built? Yes. Designed? No."),
+                ]
+            }},
+            {"VicIsaacSatelliteLaunch_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicSatellite" ],
+                anyDronesFriendly = ["SignalAmplifierTag"],
+                oncePerCombatTags = [ "VicSatelliteOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmIsaac, "shy", "These sensor nodes seem a little archaic..."),
+                  new(AmVic, "pda", "It's an older design, but it checks out."),
+                ]
+            }},
             {"VicSatelliteUpgradedLaunch_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
@@ -392,6 +500,30 @@ internal class VicNewCombatDialogue : IRegisterable
                   new(AmVic, "pda", "You might need a second monitor for all this data.")
                 ]
             }},
+            {"VicIsaacSatelliteUpgradedLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicSatelliteUpgraded" ],
+                anyDronesFriendly = ["SignalAmplifierUpgradedTag"],
+                oncePerCombatTags = [ "VicSatelliteOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmIsaac, "Wow! That's a big improvement!"),
+                  new(AmVic, "explains", "Saw you working on your drones and had to stay ahead.")
+                ]
+            }},
+            {"VicIsaacSatelliteUpgradedLaunch_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicSatelliteUpgraded" ],
+                anyDronesFriendly = ["SignalAmplifierUpgradedTag"],
+                oncePerCombatTags = [ "VicSatelliteOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmIsaac, "shy", "I might need to make MKIII drone at this rate."),
+                  new(AmVic, "happy", "I'd welcome the competition.")
+                ]
+            }},
             {"VicBarrierLaunch_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
@@ -409,7 +541,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicBarrierOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "neutraltalk", "Don't shoot this. Trust me.")
+                  new(AmVic, "observe", "Don't shoot this. Trust me.")
                 ]
             }},
             {"VicBarrierLaunch_2", new(){
@@ -440,6 +572,50 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombat = true,
                 dialogue = [
                   new(AmVic, "pda", "Field has stabilized. They won't get past it now.")
+                ]
+            }},
+            {"VicIsaacBarrierLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicKineticBarrierUp" ],
+                oncePerCombatTags = [ "VicBarrierOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmIsaac, "shy", "What is that thing?"),
+                    new(AmVic, "pda", "Indestructible.")
+                ]
+            }},
+            {"VicIsaacBarrierLaunch_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "VicKineticBarrierUp" ],
+                oncePerCombatTags = [ "VicBarrierOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmIsaac, "shy", "...That took a lot of energy."),
+                    new(AmVic, "pda", "Well worth it, I assure you.")
+                ]
+            }},
+            {"VicDizzyBarrierLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDizzy ],
+                lookup = [ "VicKineticBarrierUp" ],
+                oncePerCombatTags = [ "VicBarrierOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmVic, "pda", "With just the right balance, you create a nigh indestructible EM field."),
+                    new(AmDizzy, "Fascinating!")
+                ]
+            }},
+            {"VicDizzyBarrierLaunch_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDizzy ],
+                lookup = [ "VicKineticBarrierUp" ],
+                oncePerCombatTags = [ "VicBarrierOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmDizzy, "Is that thing actually invincible?"),
+                    new(AmVic, "observe", "It'll linger until the heat death of the universe."),
                 ]
             }},
              {"VicNukeLaunch_0", new(){
@@ -626,7 +802,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombat = true,
                 allPresent = [ AmVic ],
                 dialogue = [
-                    new(AmVic, "happy", "Hull untouched.")
+                    new(AmVic, "happyneutral", "Hull untouched.")
                 ]
             }},
              {"WeGotShotButTookNoDamage_Vic_4", new(){
@@ -649,7 +825,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombat = true,
                 oncePerCombatTags = [ "NoOverlapBetweenShips" ],
                 dialogue = [
-                    new(AmVic, "happy", "Line of fire: avoided.")
+                    new(AmVic, "happyneutral", "Line of fire: avoided.")
                 ]
             }},
              {"WeDontOverlapWithEnemyAtAll_Vic_1", new(){
@@ -1459,6 +1635,17 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(AmVic, "observe", "...Where did our pilot go?")
                 ]
             }},
+            //{"VicWentMissing_Peri_0", new(){
+            //    type = NodeType.combat,
+            //    allPresent = [ AmVic, AmPeri ],
+            //    priority = true,
+            //    oncePerRun = true,
+            //    oncePerCombatTags = ["VicWentMissing"],
+            //    lastTurnPlayerStatuses = [MissingVic],
+            //    dialogue = [
+            //        new(AmPeri, "panic", "...Sir?!")
+            //    ]
+            //}},
             {"EnemyHasBrittle_Vic_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
@@ -1603,6 +1790,31 @@ internal class VicNewCombatDialogue : IRegisterable
                 allPresent = [ AmVic ],
                 dialogue = [
                     new(AmVic, "happyneutral", "Amazing job!")
+                ]
+            }},
+            {"BanditThreats_Multi_0", new(){
+                edit = [
+                    new(EMod.countFromStart, 1, AmVic, "smug", "How about we give you a double portion?")
+                ]
+            }},
+            {"CrabFacts1_Multi_0", new(){
+                edit = [
+                    new(EMod.countFromStart, 2, AmVic, "annoyed", "What the hell are you talking about?")
+                ]
+            }},
+            {"CrabFacts2_Multi_0", new(){
+                edit = [
+                    new(EMod.countFromStart, 2, AmVic, "doubtful", "This is complete rubbish.")
+                ]
+            }},
+            {"CrabFactsAreOverNow_Multi_0", new(){
+                edit = [
+                    new(EMod.countFromStart, 1, AmVic, "annoyed", "I'd had enough of your nonsense.")
+                ]
+            }},
+            {"DillianShouts", new(){
+                edit = [
+                    new(EMod.countFromStart, 1, AmVic, "neutraltalk", "Good day.")
                 ]
             }},
             // {"", new(){
