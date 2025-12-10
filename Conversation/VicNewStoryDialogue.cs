@@ -276,7 +276,6 @@ internal class VicNewStoryDialogue : IRegisterable
                 allPresent = [AmVic, AmJumbo],
                 turnStart = true,
                 enemyIntent = "wideBigAttack",
-                maxTurnsThisCombat = 1,
                 oncePerCombatTags = [ "MinerGonnaSmackYa4X" ],
                 dialogue = [
                     new(AmJumbo, "Do you think this is too many cannons?"),
@@ -326,6 +325,22 @@ internal class VicNewStoryDialogue : IRegisterable
                     new(AmVic, "happy", "You heard him, Drake."),
                 ]
             }},
+
+            {"Vic_JumboInfinite_0", new(){
+                type = NodeType.@event,
+                lookup = ["miner_midcombat"],
+                requiredScenes = ["Vic_JumboFirstFight_2"],
+                allPresent = [AmVic, AmJumbo],
+                once = false,
+                priority = false,
+                dialogue = [
+
+                    new(AmJumbo, "Dead or alive, baby!", flipped: true),
+                    new(AmVic, "happy", "Dead."),
+                    new(AmJumbo, "Good choice.", flipped: true),
+                ]
+            }},
+
             {"Vic_Max_Meet_0", new(){
                 type = NodeType.@event,
                 lookup = [ "zone_first" ],

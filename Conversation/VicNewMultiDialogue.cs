@@ -353,6 +353,150 @@ internal class VicNewMultiDialogue : IRegisterable
                     new(AmDizzy, "explains", "This photon condenser really makes the difference.")
                 ]
             }},
+             {"JustHitRiggs_VicMulti_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                allPresent = [ AmVic, AmRiggs ],
+                playerShotJustHit = true,
+                whoDidThat = Deck.riggs,
+                minDamageDealtToEnemyThisAction = 8,
+                dialogue = [
+                    new(AmVic, "pressured", "Where did you get that gun?"),
+                    new(AmRiggs, "gun", "Don't worry about it!")
+                ]
+            }},
+             {"JustHitIsaac_VicMulti_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                allPresent = [ AmVic, AmIsaac ],
+                playerShotJustHit = true,
+                whoDidThat = Deck.goat,
+                minDamageDealtToEnemyThisAction = 1,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Good shot there, Isaac."),
+                    new(AmIsaac, "Thanks!")
+                ]
+            }},
+             {"JustHitDrake_VicMulti_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                allPresent = [ AmVic, AmDrake ],
+                playerShotJustHit = true,
+                whoDidThat = Deck.eunice,
+                minDamageDealtToEnemyThisAction = 4,
+                dialogue = [
+                    new(AmVic, "annoyed", "I suppose that was good enough."),
+                    new(AmDrake, "sly", "You know you love me, gramps.")
+                ]
+            }},
+             {"JustHitMax_VicMulti_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                allPresent = [ AmVic, AmMax ],
+                playerShotJustHit = true,
+                whoDidThat = Deck.hacker,
+                minDamageDealtToEnemyThisAction = 2,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "That was a good shot, Max."),
+                    new(AmDrake, "smile", "Thanks man.")
+                ]
+            }},
+             {"JustHitBooks_VicMulti_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                allPresent = [ AmVic, AmBooks ],
+                playerShotJustHit = true,
+                whoDidThat = Deck.shard,
+                minDamageDealtToEnemyThisAction = 3,
+                dialogue = [
+                    new(AmVic, "observe", "For a kid, you're good with a gun."),
+                    new(AmBooks, "squint", "I'm not a kid!!!")
+                ]
+            }},
+             {"JustHitCat_VicMulti_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                allPresent = [ AmVic, AmCat ],
+                playerShotJustHit = true,
+                whoDidThat = Deck.colorless,
+                minDamageDealtToEnemyThisAction = 3,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Excellent shot as always, Cat."),
+                    new(AmCat, "smug", "You know it!")
+                ]
+            }},
+             {"JustHitVic_PeriMulti_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmPeri ],
+                lookup = [ "VicThanix" ],
+                oncePerCombatTags = [ "VicGetsComplimented" ],
+                minDamageDealtToEnemyThisAction = 3,
+                oncePerRun = true,
+                dialogue = [
+                    new(AmPeri, "Excellent shot, sir."),
+                    new(AmVic, "explains", "A little calibration goes a long way.")
+                ]
+            }},
+             {"JustHitVic_DrakeMulti_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDrake ],
+                lookup = [ "VicThanix" ],
+                oncePerCombatTags = [ "VicGetsComplimented" ],
+                minDamageDealtToEnemyThisAction = 3,
+                oncePerRun = true,
+                dialogue = [
+                    new(AmDrake, "...Okay, that was pretty good."),
+                    new(AmVic, "annoyed", "See what happens when you don't abuse the heatsinks?")
+                ]
+            }},
+             {"JustHitVic_MaxMulti_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmMax ],
+                lookup = [ "VicThanix" ],
+                oncePerCombatTags = [ "VicGetsComplimented" ],
+                minDamageDealtToEnemyThisAction = 3,
+                oncePerRun = true,
+                dialogue = [
+                    new(AmMax, "Eyyy, good one."),
+                    new(AmVic, "happyneutral", "All in a days work!")
+                ]
+            }},
+
+             {"StardogGetsChatty_Multi_Vic", new(){
+                type = NodeType.combat,
+                allPresent = [AmVic, AmStardog],
+                hasArtifacts = ["CargoHold"],
+                turnStart = true,
+                oncePerCombatTags = [ "StardogLeaveUsAlone" ],
+                dialogue = [
+                    new(AmStardog, "Only one missile bay? Pathetic."),
+                    new(AmVic, "determined", "I only need one to take you down."),
+                ]
+            }},
+
+             {"StardogGetsChatty_Multi_Vic2", new(){
+                type = NodeType.combat,
+                allPresent = [AmVic, AmStardog],
+                hasArtifacts = ["ControlRods"],
+                turnStart = true,
+                oncePerCombatTags = [ "StardogLeaveUsAlone" ],
+                dialogue = [
+                    new(AmStardog, "Only one missile bay? Pathetic."),
+                    new(AmVic, "determined", "I only need one to take you down."),
+                ]
+            }},
+
+             {"StardogGetsHumbled_Multi_Vic", new(){
+                type = NodeType.combat,
+                allPresent = [AmVic, AmStardog],
+                lookup = [ "VicMisdirection" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmStardog, "panic", "Uh..."),
+                    new(AmVic, "smug", "Regretting the three missile bays now?"),
+                ]
+            }},
+
              {"WeDontOverlapWithEnemyAtAll_VicMulti_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic, AmRiggs ],
@@ -366,6 +510,111 @@ internal class VicNewMultiDialogue : IRegisterable
                     new(AmRiggs, "I do my best!")
                 ]
             }},
+
+             {"Vic_AboutToDieAndLoop_Dizzy_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDizzy ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmDizzy, "squint", "This looks like a lost timeline."),
+                    new(AmVic, "determined", "Don't you start giving up now.")
+                ]
+            }},
+
+             {"Vic_AboutToDieAndLoop_Peri_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmPeri ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmVic, "determined", "Fight to the last breath!"),
+                    new(AmPeri, "vengeful", "Yes sir!")
+                ]
+            }},
+
+             {"Vic_AboutToDieAndLoop_Riggs_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmRiggs ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmRiggs, "banana", "Anyone want a banana before we die?"),
+                    new(AmVic, "annoyed", "...Sure.")
+                ]
+            }},
+
+             {"Vic_AboutToDieAndLoop_Isaac_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmIsaac, "squint", "...Is it over, Garrus?"),
+                    new(AmVic, "pensive", "I'm sorry, Isaac.")
+                ]
+            }},
+
+             {"Vic_AboutToDieAndLoop_Drake_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDrake ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmDrake, "squint", "Seriously? We die here?"),
+                    new(AmVic, "annoyed", "This wouldn't have happened if you were less reckless.")
+                ]
+            }},
+
+             {"Vic_AboutToDieAndLoop_Max_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmMax ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmMax, "intense", "Game over man!"),
+                    new(AmVic, "determined", "Don't log off just yet.")
+                ]
+            }},
+
+             {"Vic_AboutToDieAndLoop_Books_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmBooks ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmBooks, "plan", "We can still do this! Just believe!"),
+                    new(AmVic, "pensive", "You've got a good heart, kid.")
+                ]
+            }},
+
+             {"Vic_AboutToDieAndLoop_Cat_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmCat ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmVic, "annoyed", "Well, this was a disappointment."),
+                    new(AmCat, "grumpy", "Were you always so jaded?"),
+                ]
+            }},
+
             // {"", new(){
 
             //     dialogue = [

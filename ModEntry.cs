@@ -67,7 +67,7 @@ internal class ModEntry : SimpleMod
 
     internal ISpriteEntry DummySeekerSmall { get; }
 
-    //For missing status 
+    //For missing status
     internal static IPlayableCharacterEntryV2 VicPlayableCharacter { get; private set; } = null!;
 
     //Initiate status variables
@@ -269,13 +269,7 @@ internal class ModEntry : SimpleMod
                 }
 
             )
-        );
-
-        /*
-         * Initialize IRegisterable types
-         */
-        foreach (var type in AllRegisterableTypes)
-            AccessTools.DeclaredMethod(type, nameof(IRegisterable.Register))?.Invoke(null, [package, helper]);
+        );   
 
         /*
          * Define character sprites
@@ -390,6 +384,14 @@ internal class ModEntry : SimpleMod
         });
 
         _ = new VicRowControlStatusManager();
+
+
+        /*
+         * Initialize IRegisterable types
+         */
+        foreach (var type in AllRegisterableTypes)
+            AccessTools.DeclaredMethod(type, nameof(IRegisterable.Register))?.Invoke(null, [package, helper]);
+
     }
 
     public static ISpriteEntry RegisterSprite(IPluginPackage<IModManifest> package, string dir)

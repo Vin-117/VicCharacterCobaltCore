@@ -56,7 +56,7 @@ public class VicOverclockedMissileBay : Artifact, IRegisterable
     public override void OnTurnStart(State state, Combat combat)
     {
         VicOverclockedMissileBayCount++;
-        if (VicOverclockedMissileBayCount >= 2)
+        if (VicOverclockedMissileBayCount >= 3)
         {
             VicOverclockedMissileBayCount = 0;
             combat.QueueImmediate(new ASpawn

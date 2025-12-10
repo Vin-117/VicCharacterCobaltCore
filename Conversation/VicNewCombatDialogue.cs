@@ -95,6 +95,61 @@ internal class VicNewCombatDialogue : IRegisterable
                   new(AmVic, "panic", "...I almost don't want to remember. To be blissfully ignorant...")
                 ]
             }},
+            {"VicHeavySeekerSwarmLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = [ "VicSeekerOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pdasmile", "Heavy seekers locked.")
+                ]
+            }},
+            {"VicHeavySeekerSwarmLaunch_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = [ "VicSeekerOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Get ready for the fireworks.")
+                ]
+            }},
+            {"VicHeavySeekerSwarmLaunch_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = [ "VicSeekerOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pdasmile", "If you thought regular seekers were bad enough...")
+                ]
+            }},
+            {"VicHeavySeekerSwarmLaunch_3", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = [ "VicSeekerOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pdasmile", "You'll wish these could miss.")
+                ]
+            }},
+            {"VicHeavySeekerSwarmLaunch_4", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = [ "VicSeekerOnce" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pdasmile", "Heavy seekers locked on.")
+                ]
+            }},
             {"VicSeekerSwarmLaunch_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
@@ -103,7 +158,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "pdasmile", "I have you now.")
+                  new(AmVic, "pda", "Missile payload ready.")
                 ]
             }},
             {"VicSeekerSwarmLaunch_1", new(){
@@ -114,7 +169,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "pdasmile", "Just try and dodge this.")
+                  new(AmVic, "pda", "Let's see how they deal with this.")
                 ]
             }},
             {"VicSeekerSwarmLaunch_3", new(){
@@ -125,7 +180,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "pda", "Seekers locked.")
+                  new(AmVic, "pda", "I have a lock.")
                 ]
             }},
             {"VicSeekerSwarmLaunch_4", new(){
@@ -148,6 +203,152 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombat = true,
                 dialogue = [
                   new(AmVic, "pda", "Missile targets confirmed.")
+                ]
+            }},
+
+
+            {"VicHeavySeekerSwarmAntiAutoDodgeLeft_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeLeft],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Autododge? I don't think so.")
+                ]
+            }},
+            {"VicHeavySeekerSwarmAntiAutoDodgeLeft_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeLeft],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pdasmile", "I told you. I don't miss.")
+                ]
+            }},
+            {"VicHeavySeekerSwarmAntiAutoDodgeLeft_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeLeft],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Nice try with those evasive maneuvers.")
+                ]
+            }},
+            {"VicHeavySeekerSwarmAntiAutoDodgeRight_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeRight],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Autododge? I don't think so.")
+                ]
+            }},
+            {"VicHeavySeekerSwarmAntiAutoDodgeRight_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeRight],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pdasmile", "I told you. I don't miss.")
+                ]
+            }},
+            {"VicHeavySeekerSwarmAntiAutoDodgeRight_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicHeavySeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeRight],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Nice try with those evasive maneuvers.")
+                ]
+            }},
+            {"VicSeekerSwarmAntiAutoDodgeLeft_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeLeft],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Autododge? I don't think so.")
+                ]
+            }},
+            {"VicSeekerSwarmAntiAutoDodgeLeft_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeLeft],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                anyDrones = [ "missile_seeker" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pdasmile", "I told you. I don't miss.")
+                ]
+            }},
+            {"VicSeekerSwarmAntiAutoDodgeLeft_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarm" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                lastTurnEnemyStatuses = [Status.autododgeLeft],
+                anyDrones = [ "missile_seeker" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Nice try with those evasive maneuvers.")
+                ]
+            }},
+            {"VicSeekerSwarmAntiAutoDodgeRight_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeRight],
+                anyDrones = [ "VicHeavySeekerTag" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Autododge? I don't think so.")
+                ]
+            }},
+            {"VicSeekerSwarmAntiAutoDodgeRight_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarm" ],
+                lastTurnEnemyStatuses = [Status.autododgeRight],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                anyDrones = [ "missile_seeker" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "pdasmile", "I told you. I don't miss.")
+                ]
+            }},
+            {"VicSeekerSwarmAntiAutoDodgeRight_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarm" ],
+                oncePerCombatTags = ["VicLaughsAtAutoDodge"],
+                lastTurnEnemyStatuses = [Status.autododgeRight],
+                anyDrones = [ "missile_seeker" ],
+                oncePerCombat = true,
+                dialogue = [
+                  new(AmVic, "smug", "Nice try with those evasive maneuvers.")
                 ]
             }},
             {"VicShifterDroneLaunch_0", new(){
@@ -1635,17 +1836,94 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(AmVic, "observe", "...Where did our pilot go?")
                 ]
             }},
-            //{"VicWentMissing_Peri_0", new(){
-            //    type = NodeType.combat,
-            //    allPresent = [ AmVic, AmPeri ],
-            //    priority = true,
-            //    oncePerRun = true,
-            //    oncePerCombatTags = ["VicWentMissing"],
-            //    lastTurnPlayerStatuses = [MissingVic],
-            //    dialogue = [
-            //        new(AmPeri, "panic", "...Sir?!")
-            //    ]
-            //}},
+            {"VicWentMissing_Peri_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmPeri ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["VicWentMissing"],
+                lastTurnPlayerStatuses = [MissingVic],
+                dialogue = [
+                    new(AmPeri, "panic", "...Sir?!")
+                ]
+            }},
+            {"VicWentMissing_Isaac_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["VicWentMissing"],
+                lastTurnPlayerStatuses = [MissingVic],
+                dialogue = [
+                    new(AmIsaac, "panic", "Garrus?!")
+                ]
+            }},
+            {"VicWentMissing_Riggs_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmRiggs ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["VicWentMissing"],
+                lastTurnPlayerStatuses = [MissingVic],
+                dialogue = [
+                    new(AmRiggs, "squint", "Are we missing someone? Or is that just me?")
+                ]
+            }},
+            {"VicWentMissing_Dizzy_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDizzy ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["VicWentMissing"],
+                lastTurnPlayerStatuses = [MissingVic],
+                dialogue = [
+                    new(AmDizzy, "intense", "Hey guys? The commander is gone.")
+                ]
+            }},
+            {"VicWentMissing_Drake_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDrake ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["VicWentMissing"],
+                lastTurnPlayerStatuses = [MissingVic],
+                dialogue = [
+                    new(AmDrake, "sly", "Finally. Now he won't boss me around anymore.")
+                ]
+            }},
+            {"VicWentMissing_Books_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmBooks ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["VicWentMissing"],
+                lastTurnPlayerStatuses = [MissingVic],
+                dialogue = [
+                    new(AmBooks, "paws", "Wow! Garrus is playing hide and seek!")
+                ]
+            }},
+            {"VicWentMissing_Cat_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmCat ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["VicWentMissing"],
+                lastTurnPlayerStatuses = [MissingVic],
+                dialogue = [
+                    new(AmCat, "worried", "Garrus?")
+                ]
+            }},
+            {"VicWentMissing_Max_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmMax ],
+                priority = true,
+                oncePerRun = true,
+                oncePerCombatTags = ["VicWentMissing"],
+                lastTurnPlayerStatuses = [MissingVic],
+                dialogue = [
+                    new(AmMax, "intense", "Uh...Garrus?")
+                ]
+            }},
             {"EnemyHasBrittle_Vic_0", new(){
                 type = NodeType.combat,
                 allPresent = [ AmVic ],

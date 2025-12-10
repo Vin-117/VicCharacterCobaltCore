@@ -22,6 +22,7 @@ static class CommonDefinitions
     internal const string AmCat = "comp";
 
     internal const string AmJumbo = "miner";
+    internal const string AmStardog = "wolf";
     internal static string AmDizzy => Deck.dizzy.Key();
     internal static string AmPeri => Deck.peri.Key();
     internal static string AmRiggs => Deck.riggs.Key();
@@ -32,7 +33,7 @@ static class CommonDefinitions
     internal const string AmVoid = "void";
     internal const string AmShopkeeper = "nerd";
     internal const string AmBrimford = "walrus";
-    //internal static Status MissingVic => ModEntry.VicPlayableCharacter.MissingStatus.Status;
+    internal static Status MissingVic => ModEntry.VicPlayableCharacter.MissingStatus.Status;
 
     //internal static Status MissingVic => ModEntry.VicCharacter.MissingStatus.Status;
 

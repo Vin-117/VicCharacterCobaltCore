@@ -162,7 +162,7 @@
 		},
         "VicOverclockedMissileBay" : {
 			"name" : "OVERCLOCKED MISSILE BAY",
-			"desc": "Gain 1 extra Energy every turn. Every other turn, deploy a <c=midrow>Seeker</c> aimed at yourself."
+			"desc": "Gain 1 extra Energy every turn. Every third turn, deploy a <c=midrow>Seeker</c> aimed at yourself."
 		},
         "VicLevelheaded" : {
 			"name" : "TEMPORARY BOOSTER",

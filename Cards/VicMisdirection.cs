@@ -35,7 +35,7 @@ public class VicMisdirection : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         exhaust = true,
                         retain = true,
                         infinite = false
@@ -55,7 +55,7 @@ public class VicMisdirection : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         exhaust = false,
                         retain = true,
                         infinite = false
@@ -65,7 +65,7 @@ public class VicMisdirection : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         exhaust = true,
                         retain = true,
                         infinite = false
@@ -87,7 +87,8 @@ public class VicMisdirection : Card, IRegisterable
                         {
                             statusAmount = 1,
                             status = Status.backwardsMissiles,
-                            targetPlayer = false
+                            targetPlayer = false,
+                            dialogueSelector = ".VicMisdirection"
                         }
                     };
                 }
@@ -97,9 +98,10 @@ public class VicMisdirection : Card, IRegisterable
                     {
                         new AStatus
                         {
-                            statusAmount = 1,
+                            statusAmount = 2,
                             status = Status.backwardsMissiles,
-                            targetPlayer = false
+                            targetPlayer = false,
+                            dialogueSelector = ".VicMisdirection"
                         }
                     };
                 }
@@ -111,7 +113,8 @@ public class VicMisdirection : Card, IRegisterable
                         {
                             statusAmount = 1,
                             status = Status.backwardsMissiles,
-                            targetPlayer = false
+                            targetPlayer = false,
+                            dialogueSelector = ".VicMisdirection"
                         }
                     };
                 }

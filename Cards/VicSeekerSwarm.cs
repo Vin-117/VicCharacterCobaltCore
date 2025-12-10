@@ -128,7 +128,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                             {
                                 yAnimation = 0.0
                             },
-                            offset = 1
+                            offset = 1,
+                            dialogueSelector = ".VicHeavySeekerSwarm"
                         }
                     };
                 }
