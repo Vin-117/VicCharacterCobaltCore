@@ -1226,6 +1226,34 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(AmVic, "pressured", "Be careful in the missile bay. This new model is...unstable.")
                 ]
             }},
+            {"AquiredOverclockedMissileBay_VicIsaac", new(){
+                type = NodeType.combat,
+                priority = false,
+                oncePerRun = true,
+                turnStart = true,
+                maxTurnsThisCombat = 1,
+                oncePerRunTags = [ "VicOverclockedMissileBay" ],
+                allPresent = [ AmVic, AmIsaac ],
+                hasArtifactTypes = [typeof(VicOverclockedMissileBay)],
+                dialogue = [
+                    new(AmIsaac, "shy", "A model S-Z bay? This thing is banned in five sectors."),
+                    new(AmVic, "observe", "That is true. But no other model beats it for energy efficiency.")
+                ]
+            }},
+            {"AquiredOverclockedMissileBay_VicPeri", new(){
+                type = NodeType.combat,
+                priority = false,
+                oncePerRun = true,
+                turnStart = true,
+                maxTurnsThisCombat = 1,
+                oncePerRunTags = [ "VicOverclockedMissileBay" ],
+                allPresent = [ AmVic, AmPeri ],
+                hasArtifactTypes = [typeof(VicOverclockedMissileBay)],
+                dialogue = [
+                    new(AmPeri, "Is the missile bay supposed to make those sounds?"),
+                    new(AmVic, "observe", "Don't worry about it.")
+                ]
+            }},
              {"AquiredPowerReserve_Vic", new(){
                 type = NodeType.combat,
                 priority = true,
