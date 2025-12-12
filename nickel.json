@@ -2,17 +2,17 @@
   "UniqueName": "Vintage.VicCharacter",
   "Version": "1.0.0",
   "Author": "Vintage",
-  "Description": "A mod that adds a new playable character to the video game Cobalt Core.",
+  "Description": "A mod that adds Garrus, a new playable character to Cobalt Core.",
   "RequiredApiVersion": "1.5.7",
   "EntryPointAssembly": "VicCharacter.dll",
   "LoadPhase": "AfterDbInit",
-  "GitHub" : {
-      "Repository" : "Vin-117/VicCharacterCobaltCore"
-  },
   "Dependencies": [
     {
       "UniqueName": "Shockah.Kokoro",
       "Version": "2.0"
     }
   ]
+  "UpdateChecks": {
+		"GitHub" : { "Repository" : "Vin-117/VicCharacterCobaltCore" }
+	}
 }
