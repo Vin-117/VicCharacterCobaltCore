@@ -166,7 +166,7 @@
 		},
         "VicLevelheaded" : {
 			"name" : "TEMPORARY BOOSTER",
-			"desc": "The first 2 times you play a <c=status>Temporary</c> card each turn, draw 1 card."
+			"desc": "The first two times you play a <c=cardtrait>temporary</c> card each turn, draw a card."
 		},
 	},
 	
