@@ -1,13 +1,13 @@
 {
   "UniqueName": "Vintage.VicCharacter",
-  "Version": "1.0.0",
+  "Version": "1.0.1",
   "Author": "Vintage",
   "Description": "A mod that adds a new playable character to the video game Cobalt Core.",
   "RequiredApiVersion": "1.5.7",
   "EntryPointAssembly": "VicCharacter.dll",
   "LoadPhase": "AfterDbInit",
   "GitHub" : {
-      "Repository" : "Vin-117/VicCharacterCobaltCore"
+      "NexusMods": { "ID": 74 }
   },
   "Dependencies": [
     {
