@@ -440,7 +440,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombat = true,
                 dialogue = [
                     new(AmIsaac, "sly", "Did you always have a habit of pushing people away?"),
-                    new(AmVic, "doubtful", "Very funny.")
+                    new(AmVic, "doubtful", "When did you become a comedian?")
                 ]
             }},
             {"VicIsaacShifterDroneLaunch_2", new(){
@@ -492,7 +492,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombat = true,
                 dialogue = [
                     new(AmVic, "neutraltalk", "If I'm going to name this one, I'll go with Wing."),
-                    new(AmIsaac, "shy", "Try a different name.")
+                    new(AmIsaac, "shy", "Try again.")
                 ]
             }},
             {"VicEngineBoosterLaunch_0", new(){
