@@ -52,7 +52,7 @@ public class VicSensorOverload : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         exhaust = true,
                         retain = true
                     };
