@@ -376,7 +376,7 @@ internal class ModEntry : SimpleMod
             {
                 isGood = true,
                 affectedByTimestop = false,
-                color = new Color("7a78ff"),
+                color = new Color("59F790"),
                 icon = RegisterSprite(package, "assets/icon/VicRowControlStatus.png").Sprite
             },
             Name = AnyLocalizations.Bind(["status", "VicRowControlStatus", "name"]).Localize,

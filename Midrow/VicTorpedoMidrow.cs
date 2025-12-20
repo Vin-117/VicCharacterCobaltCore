@@ -46,6 +46,7 @@ namespace VicCharacter.Midrow
                     Description = ModEntry.Instance.Localizations.Localize(["midrow", "Torpedo", MissileType.ToString(), "description"])
                 }
             ];
+            tooltips.Add((Tooltip)new TTGlossary("status.lockdown", Array.Empty<object>()));
             if (this.bubbleShield)
                 tooltips.Add((Tooltip)new TTGlossary("midrow.bubbleShield", Array.Empty<object>()));
             return tooltips;

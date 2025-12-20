@@ -9,6 +9,7 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using VicCharacter.Actions;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace VicCharacter.Midrow
@@ -47,6 +48,7 @@ namespace VicCharacter.Midrow
                     Description = ModEntry.Instance.Localizations.Localize(["midrow", "SignalAmplifier", DroneType.ToString(), "description"])
                 }
             ];
+            tooltips.Add((Tooltip)new TTGlossary("action.drawCard", 1, Array.Empty<object>()));
             if (this.bubbleShield)
                 tooltips.Add((Tooltip)new TTGlossary("midrow.bubbleShield", Array.Empty<object>()));
             return tooltips;
@@ -62,14 +64,15 @@ namespace VicCharacter.Midrow
         {
             return new List<CardAction>
             {
-                new AAttack
+                new AVicAttack
                 {
                     isBeam = true,
                     fromDroneX = x,
                     targetPlayer = targetPlayer,
                     damage = 0,
-                    status = Status.drawNextTurn,
-                    statusAmount = 1
+                    givesDraw = 1
+                    //status = Status.drawNextTurn,
+                    //statusAmount = 1
                 }
             };
         }

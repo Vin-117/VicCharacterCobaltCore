@@ -1,7 +1,7 @@
 ﻿{
     "character": {
         "name": "Garrus",
-        "desc": ["<c=C8C8C8>GARRUS</c>", "A seasoned veteran. His cards create <c=boldPink>midrow</c> objects and add other <c=boldPink>temporary</c> cards to your deck."]
+        "desc": ["<c=C8C8C8>GARRUS</c>", "A seasoned veteran. His cards create <c=boldPink>midrow</c> objects and add <c=boldPink>temporary</c> cards to your deck during combat."]
     },
     "status": {
 		"VicAuxPower": {
@@ -14,7 +14,7 @@
         },
 		"VicRowControlStatus": {
             "name": "Row Control",
-            "desc": "Gain {0} <c=midrow>Droneshift</c> every turn."
+            "desc": "Gain {0} <c=status>DRONESHIFT</c> every turn."
         },
 
     },
@@ -162,7 +162,7 @@
 		},
         "VicOverclockedMissileBay" : {
 			"name" : "OVERCLOCKED MISSILE BAY",
-			"desc": "Gain 1 extra Energy every turn. Every third turn, deploy a <c=midrow>Seeker</c> aimed at yourself."
+			"desc": "Gain 1 extra <c=energy>ENERGY</c> every turn. Every 3 turns, deploy a <c=midrow>Seeker</c> aimed at yourself."
 		},
         "VicLevelheaded" : {
 			"name" : "TEMPORARY BOOSTER",
@@ -253,13 +253,13 @@
     "SignalAmplifier2": {
       "Normal": {
         "name": "Signal Amplifier MKII",
-        "description": "Beams 2 <c=status>DRAW NEXT TURN</c> at its target once per turn."
+        "description": "Beams <c=action>2 DRAW</c> at its target once per turn."
       }
       },
 	"SignalAmplifier": {
       "Normal": {
         "name": "Signal Amplifier",
-        "description": "Beams 1 <c=status>DRAW NEXT TURN</c> at its target once per turn."
+        "description": "Beams <c=action>1 DRAW</c> at its target once per turn."
       },
     },
 }

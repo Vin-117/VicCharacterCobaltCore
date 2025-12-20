@@ -17,6 +17,8 @@ public class AVicAttack : CardAction
 
     public int? givesEnergy;
 
+    public int? givesDraw;
+
     public Status? status;
 
     public int statusAmount;
@@ -236,6 +238,14 @@ public class AVicAttack : CardAction
                     c.QueueImmediate(new AEnergy
                     {
                         changeAmount = givesEnergy.Value
+                    });
+                }
+
+                if (givesDraw.HasValue && targetPlayer)
+                {
+                    c.QueueImmediate(new ADrawCard 
+                    {
+                        count = givesDraw.Value
                     });
                 }
 
