@@ -185,10 +185,11 @@ internal class VicNibbsNewDialogue : IRegisterable
             {"JustHitNibbs_VicMulti_0", new(){
                 type = NodeType.combat,
                 oncePerRun = true,
+                priority = true,
                 oncePerCombatTags = [ "NibbsHitEmYo" ],
                 allPresent = [ AmVic, AmNibbs ],
                 playerShotJustHit = true,
-                //whoDidThat = NibbsDeck,
+                whoDidThatName = AmNibbs,
                 minDamageDealtToEnemyThisAction = 2,
                 dialogue = [
                     new(AmNibbs, "cheeky", "Nya! I got ‘em!"),

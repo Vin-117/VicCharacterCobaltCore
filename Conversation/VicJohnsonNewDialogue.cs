@@ -173,7 +173,7 @@ internal class VicJohnsonNewDialogue : IRegisterable
                 oncePerCombatTags = [ "JohnsonHitEmYo" ],
                 allPresent = [ AmVic, AmJohnson ],
                 playerShotJustHit = true,
-                //whoDidThat = Deck.JohnsonDeck,
+                whoDidThatName = AmJohnson,
                 minDamageDealtToEnemyThisAction = 2,
                 dialogue = [
                     new(AmVic, "neutraltalk", "Excellent shot."),
@@ -187,7 +187,7 @@ internal class VicJohnsonNewDialogue : IRegisterable
                 oncePerCombatTags = [ "JohnsonHitEmYo" ],
                 allPresent = [ AmVic, AmJohnson ],
                 playerShotJustHit = true,
-                //whoDidThat = [JohnsonDeck],
+                whoDidThatName = AmJohnson,
                 minDamageDealtToEnemyThisAction = 2,
                 dialogue = [
                     new(AmVic, "pda", "High impact confirmed."),
