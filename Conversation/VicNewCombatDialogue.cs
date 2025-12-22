@@ -147,7 +147,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicSeekerOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "pdasmile", "Heavy seekers locked on.")
+                  new(AmVic, "pdasmile", "Heavy seekers in play.")
                 ]
             }},
             {"VicSeekerSwarmLaunch_0", new(){
@@ -1210,7 +1210,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 allPresent = [ AmVic ],
                 hasArtifacts = [ "HiFreqIntercom" ],
                 dialogue = [
-                    new(AmVic, "annoyed", "This intercom is too bloody loud!")
+                    new(AmVic, "annoyed", "This intercom is too bloody loud.")
                 ]
             }},
              {"AquiredOverclockedMissileBay_Vic", new(){
@@ -1664,13 +1664,57 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(EMod.countFromStart, 1, AmVic, "annoyed", "Really, Drake?"),
                 ]
             }},
+             {"TookChipDamage_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                enemyShotJustHit = true,
+                oncePerCombatTags = ["VicYappedAboutMinorDMG"],
+                minDamageDealtToPlayerThisTurn = 1,
+                maxDamageDealtToPlayerThisTurn = 2,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "Minor damage sustained.")
+                ]
+            }},
+             {"TookChipDamage_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                enemyShotJustHit = true,
+                oncePerCombatTags = ["VicYappedAboutMinorDMG"],
+                minDamageDealtToPlayerThisTurn = 1,
+                maxDamageDealtToPlayerThisTurn = 2,
+                dialogue = [
+                    new(AmVic, "observe", "Not ideal, but fixable.")
+                ]
+            }},
+             {"TookChipDamage_Vic_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                enemyShotJustHit = true,
+                oncePerCombatTags = ["VicYappedAboutMinorDMG"],
+                minDamageDealtToPlayerThisTurn = 1,
+                maxDamageDealtToPlayerThisTurn = 2,
+                dialogue = [
+                    new(AmVic, "pda", "Let's try and avoid more damage if we can help it.")
+                ]
+            }},
+             {"TookChipDamage_Vic_3", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                enemyShotJustHit = true,
+                oncePerCombatTags = ["VicYappedAboutMinorDMG"],
+                minDamageDealtToPlayerThisTurn = 1,
+                maxDamageDealtToPlayerThisTurn = 2,
+                dialogue = [
+                    new(AmVic, "neutraltalk", "I'll consider that an acceptable loss.")
+                ]
+            }},
              {"ThatsALotOfDamageToUs_Vic_0", new(){
                 type = NodeType.combat,
                 enemyShotJustHit = true,
                 minDamageDealtToPlayerThisTurn = 3,
                 allPresent = [ AmVic ],
                 dialogue = [
-                    new(AmVic, "panic", "Our hull can't sustain hits like that!")
+                    new(AmVic, "panic", "This level of damage isn't sustainable!")
                 ]
             }},
              {"ThatsALotOfDamageToUs_Vic_1", new(){

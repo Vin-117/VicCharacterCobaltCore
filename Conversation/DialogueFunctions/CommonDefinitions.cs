@@ -33,9 +33,15 @@ static class CommonDefinitions
     internal const string AmVoid = "void";
     internal const string AmShopkeeper = "nerd";
     internal const string AmBrimford = "walrus";
-    internal static Status MissingVic => ModEntry.VicPlayableCharacter.MissingStatus.Status;
 
-    //internal static Status MissingVic => ModEntry.VicCharacter.MissingStatus.Status;
+    internal readonly static string AmJohnson = "Shockah.Johnson::Johnson";
+    internal readonly static string JohnsonDeck = "Shockah.Johnson.JohnsonDeck";
+    internal readonly static string JohnsonFrugal = "Shockah.Johnson.FrugalityArtifact";
+
+    internal readonly static string AmNibbs = "TheJazMaster.Nibbs::Nibbs";
+    internal readonly static string NibbsDeck = "TheJazMaster.Nibbs.NibbsDeck";
+
+    internal static Status MissingVic => ModEntry.VicPlayableCharacter.MissingStatus.Status;
 
     //internal static Status TryGetMissing(this string who)
     //{

@@ -62,7 +62,8 @@ public class VicTorpedoCard : Card, IRegisterable
                     {
                         cost = 2,
                         artTint = "00FFFF",
-                        art = DoubleMissileArt.Sprite
+                        art = DoubleMissileArt.Sprite,
+                        exhaust = true
                     };
                 }
             default:
