@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Cards\\VicTorpedoCard.cs",
               "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicTorpedoCard.cs",
               "RelativeToolTip": "Cards\\VicTorpedoCard.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAQwD4AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwD4AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-24T05:18:07.674Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAgwBkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T04:29:00.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T04:29:00.729Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "ModEntry.cs",
               "ViewState": "AgIAAFgBAAAAAAAAAAAcwFYBAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T03:15:46.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T03:15:46.553Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "Conversation\\VicJohnsonNewDialogue.cs",
               "ViewState": "AgIAAKQAAAAAAAAAAAAiwMkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T03:07:14.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T03:07:14.518Z"
             }
           ]
         }

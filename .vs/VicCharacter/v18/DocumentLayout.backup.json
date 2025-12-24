@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\cards\\victorpedocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\victorpedocard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\onedrive\\desktop\\viccharacter\\modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "VicTorpedoCard.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicTorpedoCard.cs",
+              "RelativeDocumentMoniker": "Cards\\VicTorpedoCard.cs",
+              "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Cards\\VicTorpedoCard.cs",
+              "RelativeToolTip": "Cards\\VicTorpedoCard.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAYwD4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T05:18:07.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CommonDefinitions.cs",
               "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Conversation\\DialogueFunctions\\CommonDefinitions.cs",
               "RelativeDocumentMoniker": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
@@ -34,12 +51,11 @@
               "RelativeToolTip": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAgwBkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T04:29:00.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T04:29:00.729Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ModEntry.cs",
               "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\ModEntry.cs",
               "RelativeDocumentMoniker": "ModEntry.cs",
@@ -47,12 +63,11 @@
               "RelativeToolTip": "ModEntry.cs",
               "ViewState": "AgIAAFgBAAAAAAAAAAAcwFYBAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T03:15:46.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T03:15:46.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "VicJohnsonNewDialogue.cs",
               "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\Conversation\\VicJohnsonNewDialogue.cs",
               "RelativeDocumentMoniker": "Conversation\\VicJohnsonNewDialogue.cs",
@@ -60,8 +75,7 @@
               "RelativeToolTip": "Conversation\\VicJohnsonNewDialogue.cs",
               "ViewState": "AgIAAKQAAAAAAAAAAAAiwMkAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T03:07:14.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T03:07:14.518Z"
             }
           ]
         }
