@@ -22,7 +22,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "panic", "All these loops...all these memories...")
+                  new(AmVic, "pensive", "All these loops...all these memories...")
                 ]
             }},
             {"VicRemember_1", new(){
@@ -32,7 +32,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "panic", "...How long have we been here? How long have we been alive?")
+                  new(AmVic, "pensive", "...How long have we been here? How long have we been alive?")
                 ]
             }},
             {"VicRemember_2", new(){
@@ -42,7 +42,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "panic", "Will life be the same when we escape? If we escape?")
+                  new(AmVic, "pensive", "Will life be the same when we escape? If we escape?")
                 ]
             }},
             {"VicRemember_3", new(){
@@ -52,7 +52,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "panic", "Does any of it matter? Will any of this be remembered?")
+                  new(AmVic, "pensive", "Does any of it matter? Will any of this be remembered?")
                 ]
             }},
             {"VicRemember_4", new(){
@@ -62,7 +62,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "panic", "I remember it so clearly. And yet, it blurs together...")
+                  new(AmVic, "pensive", "I remember it so clearly. And yet, it blurs together...")
                 ]
             }},
             {"VicRemember_5", new(){
@@ -72,7 +72,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "panic", "Will we be here forever? Will we even know?")
+                  new(AmVic, "pensive", "Will we be here forever? Will we even know?")
                 ]
             }},
             {"VicRemember_6", new(){
@@ -82,7 +82,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "panic", "Who are we anymore? Are we still the same as before the loop?")
+                  new(AmVic, "pensive", "Who are we anymore? Are we still the same as before the loop?")
                 ]
             }},
             {"VicRemember_7", new(){
@@ -92,7 +92,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "panic", "...I almost don't want to remember. To be blissfully ignorant...")
+                  new(AmVic, "pensive", "...I almost don't want to remember. To be blissfully ignorant...")
                 ]
             }},
             {"VicHeavySeekerSwarmLaunch_0", new(){
@@ -743,7 +743,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicBarrierOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "determined", "This is where they'll stop.")
+                  new(AmVic, "pda", "This'll last a long time.")
                 ]
             }},
             {"VicBarrierLaunch_1", new(){
@@ -783,7 +783,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = [ "VicBarrierOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "pda", "Field has stabilized. They won't get past it now.")
+                  new(AmVic, "pda", "Kinetic barrier stabilized.")
                 ]
             }},
             {"VicIsaacBarrierLaunch_0", new(){
@@ -1279,6 +1279,29 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(AmVic, "neutraltalk", "I don't believe in ghosts.")
                 ]
             }},
+
+             {"CATsummonedGarrusCard_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                allPresent = [ AmCat ],
+                nonePresent = [ AmVic ],
+                lookup = [ "summonGarrus" ],
+                dialogue = [
+                    new(AmCat, "squint", "What would Garrus do here?")
+                ]
+            }},
+
+             {"CATsummonedGarrusAndGarrusIsHereCard_0", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                allPresent = [ AmCat, AmVic ],
+                lookup = [ "summonGarrus" ],
+                dialogue = [
+                    new(AmVic, "happyneutral", "Your adaptability is astounding, Cat."),
+                    new(AmCat, "smug", "That's why I'm here!"),
+                ]
+            }},
+
              {"AquiredNanofibers_Vic", new(){
                 type = NodeType.combat,
                 oncePerRun = true,
@@ -1291,6 +1314,40 @@ internal class VicNewCombatDialogue : IRegisterable
                     new(AmVic, "neutraltalk", "Nanofibers are excellent, but don't use them as a crutch.")
                 ]
             }},
+
+             {"NanofibersCantHelpThat_Vic_0", new(){
+                type = NodeType.combat,
+                enemyShotJustHit = true,
+                minDamageDealtToPlayerThisTurn = 2,
+                hasArtifacts = [ "NanofiberHull" ],
+                doesNotHaveArtifacts = [ "HealBooster" ],
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "doubtful", "What did I say about relying too much on nanofibers?")
+                ]
+            }},
+             {"BoostedNanofibersCantHelpThat_Vic_0", new(){
+                type = NodeType.combat,
+                enemyShotJustHit = true,
+                minDamageDealtToPlayerThisTurn = 3,
+                hasArtifacts = [ "NanofiberHull", "HealBooster" ],
+                allPresent = [ AmVic ],
+                dialogue = [
+                    new(AmVic, "doubtful", "Got overconfident with boosted nanofibers, didn't you?")
+                ]
+            }},
+             {"AquiredNanofibersAndHealbooster_Vic", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                turnStart = true,
+                maxTurnsThisCombat = 1,
+                oncePerRunTags = [ "NanofiberHullVic" ],
+                allPresent = [ AmVic ],
+                hasArtifacts = [ "NanofiberHull", "HealBooster" ],
+                dialogue = [
+                    new(AmVic, "observe", "Don't get overconfident. Even boosted nanofibers aren't enough at times.")
+                ]
+            }},
              {"AquiredCrosslink_Vic", new(){
                 type = NodeType.combat,
                 oncePerRun = true,
@@ -1298,11 +1355,74 @@ internal class VicNewCombatDialogue : IRegisterable
                 maxTurnsThisCombat = 1,
                 oncePerRunTags = [ "CrosslinkVic" ],
                 allPresent = [ AmVic ],
+                nonePresent = [ AmPeri ],
                 hasArtifacts = [ "Crosslink" ],
                 dialogue = [
-                    new(AmVic, "neutraltalk", "Personally, I prefer the sidelink variation.")
+                    new(AmVic, "observe", "Personally, I prefer the sidelink variation.")
                 ]
             }},
+             {"AquiredCrosslinkBut_VicAndPeriFightAboutit", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                turnStart = true,
+                maxTurnsThisCombat = 1,
+                oncePerRunTags = [ "CrosslinkVic" ],
+                allPresent = [ AmVic, AmPeri ],
+                hasArtifacts = [ "Crosslink" ],
+                dialogue = [
+                    new(AmVic, "neutraltalk", "The sidelink variant was better."),
+                    new(AmPeri, "squint", "I'll have to respectfully disagree with that, sir.")
+                ]
+            }},
+
+             {"AquiredLightSpeedBootDisk_Vic", new(){
+                type = NodeType.combat,
+                oncePerRun = true,
+                turnStart = true,
+                maxTurnsThisCombat = 1,
+                allPresent = [ AmVic, AmMax ],
+                hasArtifacts = [ "LightspeedBootDisk" ],
+                dialogue = [
+                    new(AmVic, "pdasmile", "Ah, an LSB model? Good taste."),
+                    new(AmMax, "smile", "All the best PCs have it!")
+                ]
+            }},
+
+             {"AquiredSidelink_Vic", new(){
+                type = NodeType.combat,
+                priority = false,
+                oncePerRun = true,
+                turnStart = true,
+                maxTurnsThisCombat = 1,
+                oncePerRunTags = [ "VicLovesSidelink" ],
+                allPresent = [ AmVic ],
+                hasArtifactTypes = [typeof(VicSidelink)],
+                dialogue = [
+                    new(AmVic, "happyneutral", "Ah, sidelink...")
+                ]
+            }},
+             {"VicSidelinkKickedIn_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "SidelinkTrigger" ],
+                oncePerCombatTags = ["YappingAboutSidelink"],
+                oncePerRun = true,
+                dialogue = [
+                  new(AmVic, "explains", "Every ship should come with sidelink.")
+                ]
+            }},
+             {"VicSidelinkKickedInWithIsaac_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                lookup = [ "SidelinkTrigger" ],
+                oncePerCombatTags = ["YappingAboutSidelink"],
+                oncePerRun = true,
+                dialogue = [
+                  new(AmIsaac, "I had no idea there was a crosslink variation for drones!"),
+                  new(AmVic, "happyneutral", "Convenient, isn't it?")
+                ]
+            }},
+
              {"AquiredRecalibrator_Vic", new(){
                 type = NodeType.combat,
                 oncePerRun = true,
@@ -1313,6 +1433,79 @@ internal class VicNewCombatDialogue : IRegisterable
                 hasArtifacts = [ "Recalibrator" ],
                 dialogue = [
                     new(AmVic, "happyneutral", "Ah, recalibrator...")
+                ]
+            }},
+             {"WeAreRecalibrating_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                playerShotJustMissed = true,
+                oncePerCombatTags = [ "VicMissedShotOnce" ],
+                oncePerCombat = true,
+                hasArtifacts = [ "Recalibrator"],
+                dialogue = [
+                    new(AmVic, "pdasmile", "Recalibrator is working seamlessly.")
+                ]
+            }},
+             {"WeAreRecalibrating_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                playerShotJustMissed = true,
+                oncePerCombatTags = [ "VicMissedShotOnce" ],
+                oncePerCombat = true,
+                hasArtifacts = [ "Recalibrator"],
+                dialogue = [
+                    new(AmVic, "explains", "Nothing but a calculated miss.")
+                ]
+            }},
+
+             {"WeAreRecalibrating_VicPeri_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmPeri ],
+                playerShotJustMissed = true,
+                oncePerCombatTags = [ "VicMissedShotOnce" ],
+                oncePerCombat = true,
+                oncePerRun = true,
+                hasArtifacts = [ "Recalibrator"],
+                dialogue = [
+                    new(AmVic, "happyneutral", "Hyperia? Miss again."),
+                    new(AmPeri, "vengeful", "Sir yes sir.")
+                ]
+            }},
+
+             {"WeAreRecalibrating_VicDrake_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDrake ],
+                playerShotJustMissed = true,
+                oncePerCombatTags = [ "VicMissedShotOnce" ],
+                oncePerCombat = true,
+                oncePerRun = true,
+                hasArtifacts = [ "Recalibrator"],
+                dialogue = [
+                    new(AmDrake, "squint", "Really? Missing on purpose?"),
+                    new(AmVic, "explains", "Recalibrating is its own joy.")
+                ]
+            }},
+
+             {"WeAreRecalibratingANDGrazing_Vic_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                playerShotJustMissed = true,
+                oncePerCombatTags = [ "VicMissedShotOnce" ],
+                oncePerCombat = true,
+                hasArtifacts = [ "Recalibrator", "GrazerBeam" ],
+                dialogue = [
+                    new(AmVic, "happyneutral", "Recalibrating grazer beam? Excellent!")
+                ]
+            }},
+             {"WeAreRecalibratingANDGrazing_Vic_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                playerShotJustMissed = true,
+                oncePerCombatTags = [ "VicMissedShotOnce" ],
+                oncePerCombat = true,
+                hasArtifacts = [ "Recalibrator", "GrazerBeam" ],
+                dialogue = [
+                    new(AmVic, "happyneutral", "At this point, why not miss on purpose?")
                 ]
             }},
              {"ArtifactEnergyPrep_Vic", new(){
@@ -1668,6 +1861,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 enemyShotJustHit = true,
+                doesNotHaveArtifacts = [ "NanofiberHull" ],
                 oncePerCombatTags = ["VicYappedAboutMinorDMG"],
                 minDamageDealtToPlayerThisTurn = 1,
                 maxDamageDealtToPlayerThisTurn = 2,
@@ -1679,6 +1873,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 enemyShotJustHit = true,
+                doesNotHaveArtifacts = [ "NanofiberHull" ],
                 oncePerCombatTags = ["VicYappedAboutMinorDMG"],
                 minDamageDealtToPlayerThisTurn = 1,
                 maxDamageDealtToPlayerThisTurn = 2,
@@ -1690,6 +1885,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 enemyShotJustHit = true,
+                doesNotHaveArtifacts = [ "NanofiberHull" ],
                 oncePerCombatTags = ["VicYappedAboutMinorDMG"],
                 minDamageDealtToPlayerThisTurn = 1,
                 maxDamageDealtToPlayerThisTurn = 2,
@@ -1701,6 +1897,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 type = NodeType.combat,
                 allPresent = [ AmVic ],
                 enemyShotJustHit = true,
+                doesNotHaveArtifacts = [ "NanofiberHull" ],
                 oncePerCombatTags = ["VicYappedAboutMinorDMG"],
                 minDamageDealtToPlayerThisTurn = 1,
                 maxDamageDealtToPlayerThisTurn = 2,
@@ -1714,7 +1911,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 minDamageDealtToPlayerThisTurn = 3,
                 allPresent = [ AmVic ],
                 dialogue = [
-                    new(AmVic, "panic", "This level of damage isn't sustainable!")
+                    new(AmVic, "neutraltalk", "Keep your cool. We aren't debris yet.")
                 ]
             }},
              {"ThatsALotOfDamageToUs_Vic_1", new(){
@@ -1723,7 +1920,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 minDamageDealtToPlayerThisTurn = 3,
                 allPresent = [ AmVic ],
                 dialogue = [
-                    new(AmVic, "pdapressured", "This is not good...")
+                    new(AmVic, "pdapressured", "This...isn't good.")
                 ]
             }},
              {"ThatsALotOfDamageToUs_Vic_2", new(){
@@ -1732,7 +1929,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 minDamageDealtToPlayerThisTurn = 3,
                 allPresent = [ AmVic ],
                 dialogue = [
-                    new(AmVic, "panic", "We're going to be nothing but debris if this keeps up!")
+                    new(AmVic, "pressuredneutral", "Multiple hull breaches, but...we're alive.")
                 ]
             }},
              {"JustHitGeneric_Vic_0", new(){

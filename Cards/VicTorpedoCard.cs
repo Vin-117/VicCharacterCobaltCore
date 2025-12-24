@@ -60,7 +60,7 @@ public class VicTorpedoCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         artTint = "00FFFF",
                         art = DoubleMissileArt.Sprite,
                         exhaust = true

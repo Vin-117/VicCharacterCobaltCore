@@ -89,8 +89,8 @@ internal class VicNewMultiDialogue : IRegisterable
                 allPresent = [ AmVic, AmCat ],
                 hasArtifacts = [ "SummonControl" ],
                 dialogue = [
-                    new(AmVic, "pressuredneutral", "Your adaptability is astounding, Cat."),
-                    new(AmCat, "smug", "That's why I'm here!"),
+                    new(AmVic, "pda", "Your control over these systems is amazing, Cat."),
+                    new(AmCat, "smug", "I'm just getting started!"),
                 ]
             }},
              {"AquiredVicLevelheaded_Vic_1", new(){

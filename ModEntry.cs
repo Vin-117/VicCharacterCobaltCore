@@ -339,8 +339,8 @@ internal class ModEntry : SimpleMod
                 cards = [
                     new VicSeekerSwarm(),
                     new VicManeuver(),
-                    new VicMobileMine(),
-                    new VicCrisisManagement(),
+                    new VicCalibrate(),
+                    new VicSignalAmplifierCard(),
                     new CannonColorless(),
                     new DodgeColorless()
                 ]

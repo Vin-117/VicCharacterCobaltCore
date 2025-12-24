@@ -85,8 +85,8 @@ public class VicCatEXE : Card, IRegisterable
                             overrideUpgradeChances = false,
                             canSkip = false,
                             inCombat = true,
-                            discount = -1
-                            //dialogueSelector = $".summon{ModEntry.Instance.BlochDeck.UniqueName}"
+                            discount = -1,
+                            dialogueSelector = ".summonGarrus"
                         }
                     };
                 }
@@ -102,8 +102,8 @@ public class VicCatEXE : Card, IRegisterable
                             overrideUpgradeChances = false,
                             canSkip = false,
                             inCombat = true,
-                            discount = -1
-                            //dialogueSelector = $".summon{ModEntry.Instance.BlochDeck.UniqueName}"
+                            discount = -1,
+                            dialogueSelector = ".summonGarrus"
                         }
                     };
                 }
@@ -119,8 +119,8 @@ public class VicCatEXE : Card, IRegisterable
                             overrideUpgradeChances = false,
                             canSkip = false,
                             inCombat = true,
-                            discount = -1
-                            //dialogueSelector = $".summon{ModEntry.Instance.BlochDeck.UniqueName}"
+                            discount = -1,
+                            dialogueSelector = ".summonGarrus"
                         }
                     };
                 }
@@ -136,8 +136,8 @@ public class VicCatEXE : Card, IRegisterable
                             overrideUpgradeChances = false,
                             canSkip = false,
                             inCombat = true,
-                            discount = -1
-                            //dialogueSelector = $".summon{ModEntry.Instance.BlochDeck.UniqueName}"
+                            discount = -1,
+                            dialogueSelector = ".summonGarrus"
                         }
                     };
                 }

@@ -77,7 +77,8 @@ namespace VicCharacter.Midrow
             {
                 new AVicAttack
                 {
-                    damage = Card.GetActualDamage(s, 1),
+                    //damage = Card.GetActualDamage(s, 1),
+                    damage = 1,
                     targetPlayer = wasPlayer,
                     piercing = false,
                     fromDroneX = this.x

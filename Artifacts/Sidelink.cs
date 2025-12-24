@@ -44,7 +44,7 @@ public class VicSidelink : Artifact, IRegisterable
                 status = Status.evade,
                 statusAmount = 1,
                 artifactPulse = Key(),
-                //dialogueSelector = ".CrosslinkTrigger"
+                dialogueSelector = ".SidelinkTrigger"
             });
         }
     }
