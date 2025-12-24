@@ -32,7 +32,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pensive", "...How long have we been here? How long have we been alive?")
+                  new(AmVic, "pressured", "...How long have we been here? How long have we been alive?")
                 ]
             }},
             {"VicRemember_2", new(){
@@ -42,7 +42,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pensive", "Will life be the same when we escape? If we escape?")
+                  new(AmVic, "pressured", "Will life be the same when we escape? If we escape?")
                 ]
             }},
             {"VicRemember_3", new(){
@@ -52,7 +52,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pensive", "Does any of it matter? Will any of this be remembered?")
+                  new(AmVic, "pressured", "Does any of it matter? Will any of this be remembered?")
                 ]
             }},
             {"VicRemember_4", new(){
@@ -72,7 +72,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pensive", "Will we be here forever? Will we even know?")
+                  new(AmVic, "pressured", "Will we be here forever? Will we even know?")
                 ]
             }},
             {"VicRemember_6", new(){
@@ -82,7 +82,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerRunTags = [ "VicRemember" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pensive", "Who are we anymore? Are we still the same as before the loop?")
+                  new(AmVic, "pressured", "Who are we anymore? Are we still the same as before the loops?")
                 ]
             }},
             {"VicRemember_7", new(){
@@ -1408,7 +1408,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = ["YappingAboutSidelink"],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "explains", "Every ship should come with sidelink.")
+                  new(AmVic, "pdasmile", "Crosslink just kicked in.")
                 ]
             }},
              {"VicSidelinkKickedInWithIsaac_0", new(){
