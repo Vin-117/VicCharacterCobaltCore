@@ -106,7 +106,53 @@ internal class VicNewMemoryDialogue : IRegisterable
                 ]
             }},
 
-            
+            {"Vic_Memory_1", new(){
+                type = NodeType.@event,
+                introDelay = false,
+                bg = "BGVault",
+                lookup = [
+                    "vault", $"vault_{AmVic}"
+                ],
+                dialogue = [
+                    new("T-100 days"),
+                    new(new Wait{secs = 2}),
+                    new(title: null),  // Clears title card
+                    new(new Wait{secs = 1}),
+                    new(AmVic, "pensive", "..."),
+                ]
+            }},
+
+            {"Vic_Memory_2", new(){
+                type = NodeType.@event,
+                introDelay = false,
+                bg = "BGVault",
+                lookup = [
+                    "vault", $"vault_{AmVic}"
+                ],
+                dialogue = [
+                    new("T-100 days"),
+                    new(new Wait{secs = 2}),
+                    new(title: null),  // Clears title card
+                    new(new Wait{secs = 1}),
+                    new(AmVic, "pensive", "..."),
+                ]
+            }},
+
+            {"Vic_Memory_3", new(){
+                type = NodeType.@event,
+                introDelay = false,
+                bg = "BGVault",
+                lookup = [
+                    "vault", $"vault_{AmVic}"
+                ],
+                dialogue = [
+                    new("T-100 days"),
+                    new(new Wait{secs = 2}),
+                    new(title: null),  // Clears title card
+                    new(new Wait{secs = 1}),
+                    new(AmVic, "pensive", "..."),
+                ]
+            }},
 
             // {"", new(){
 

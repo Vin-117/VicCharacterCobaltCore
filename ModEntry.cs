@@ -66,6 +66,7 @@ internal class ModEntry : SimpleMod
     internal ISpriteEntry ShiftDroneUpgradedRightSmall { get; }
 
     internal ISpriteEntry DummySeekerSmall { get; }
+    public Spr VicEnd { get; private set; }
 
     //For missing status
     internal static IPlayableCharacterEntryV2 VicPlayableCharacter { get; private set; } = null!;
@@ -132,7 +133,8 @@ internal class ModEntry : SimpleMod
         typeof(VicNewEventDialogue),
         typeof(VicNewMultiDialogue),
         typeof(VicJohnsonNewDialogue),
-        typeof(VicNibbsNewDialogue)
+        typeof(VicNibbsNewDialogue),
+        typeof(VicNewMemoryDialogue),
     ];
     private static IEnumerable<Type> VicCharacterFullModCardTypes =
         VicCharacterCommonCardTypes
@@ -318,7 +320,7 @@ internal class ModEntry : SimpleMod
             CharacterType = VicCharacter.Deck.Key(),
             LoopTag = "mini",
             Frames = [
-                RegisterSprite(package, "assets/Animation/VicCharacterMini.png").Sprite,
+                RegisterSprite(package, "assets/VicCharacterMini.png").Sprite,
             ]
         });
 
@@ -348,6 +350,10 @@ internal class ModEntry : SimpleMod
             Description = AnyLocalizations.Bind(["character", "desc"]).Localize,
             ExeCardType = typeof(VicCatEXE)
         });
+
+        VicEnd = RegisterSprite(package, "assets/vic_memory.png").Sprite;
+        BGRunWin.charFullBodySprites.Add(VicCharacter.Deck, VicEnd);
+        Vault.charsWithLore.Add(VicCharacter.Deck);
 
         /*
          * Define Statuses
