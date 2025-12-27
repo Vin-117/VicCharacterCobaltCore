@@ -1,4 +1,5 @@
-﻿using HarmonyLib;
+﻿using FMOD;
+using HarmonyLib;
 using Microsoft.Extensions.Logging;
 using Nanoray.PluginManager;
 using Nickel;
@@ -66,7 +67,12 @@ internal class ModEntry : SimpleMod
     internal ISpriteEntry ShiftDroneUpgradedRightSmall { get; }
 
     internal ISpriteEntry DummySeekerSmall { get; }
+
+    internal ISpriteEntry SmallShip { get; }
+
+    //Memory related
     public Spr VicEnd { get; private set; }
+    internal static INonPlayableCharacterEntryV2 vic_theclient { get; private set; } = null!;
 
     //For missing status
     internal static IPlayableCharacterEntryV2 VicPlayableCharacter { get; private set; } = null!;
@@ -166,6 +172,10 @@ internal class ModEntry : SimpleMod
     {
         Instance = this;
         Harmony = new Harmony("Vintage.VicCharacterFullModMod");
+        DialogueDrawShift.Apply(Harmony);
+
+        //Sprites for memories
+        SmallShip = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Memory/shuttle.png"));
 
         //Assign sprites to icon variables
         HeavySeekerMidrow = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/midrow/missile_heavy_seeker.png"));
@@ -264,7 +274,7 @@ internal class ModEntry : SimpleMod
 
             DefaultCardArt = StableSpr.cards_colorless,
             BorderSprite = RegisterSprite(package, "assets/frame_vic.png").Sprite,
-            Name = AnyLocalizations.Bind(["character", "name"]).Localize
+            Name = AnyLocalizations.Bind(["character", "Vic", "name"]).Localize
         });
 
         helper.ModRegistry.AwaitApi<IMoreDifficultiesApi>(
@@ -307,6 +317,8 @@ internal class ModEntry : SimpleMod
         RegisterAnimation(package, "pressuredstatic", "assets/Animation/Pressured/VicPressured", 1);
         RegisterAnimation(package, "explains", "assets/Animation/Explains/VicExplains", 5);
         RegisterAnimation(package, "depressed", "assets/Animation/Depressed/VicDepressed", 4);
+        RegisterAnimationClient(package, "client_neutral", "assets/Animation/Client/noise", 6);
+
         Instance.Helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2
         {
             CharacterType = VicCharacter.Deck.Key(),
@@ -347,13 +359,23 @@ internal class ModEntry : SimpleMod
                     new DodgeColorless()
                 ]
             },
-            Description = AnyLocalizations.Bind(["character", "desc"]).Localize,
+            Description = AnyLocalizations.Bind(["character", "Vic", "desc"]).Localize,
             ExeCardType = typeof(VicCatEXE)
         });
 
+
+        // Memory related
         VicEnd = RegisterSprite(package, "assets/vic_memory.png").Sprite;
         BGRunWin.charFullBodySprites.Add(VicCharacter.Deck, VicEnd);
         Vault.charsWithLore.Add(VicCharacter.Deck);
+        DB.backgrounds.Add("BGVicVault", typeof(BGVicVault));
+
+        vic_theclient = helper.Content.Characters.V2.RegisterNonPlayableCharacter("vic_theclient", new NonPlayableCharacterConfigurationV2
+        {
+            CharacterType = "vic_theclient",
+            Name = AnyLocalizations.Bind(["character", "vic_theclient", "name"]).Localize,
+            BorderSprite = RegisterSprite(package, "assets/char_frame_client.png").Sprite,
+        });
 
         /*
          * Define Statuses
@@ -429,5 +451,18 @@ internal class ModEntry : SimpleMod
                 .ToImmutableList()
         });
     }
+
+    public static void RegisterAnimationClient(IPluginPackage<IModManifest> package, string tag, string dir, int frames)
+    {
+        Instance.Helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2
+        {
+            CharacterType = "Vintage.VicCharacter::vic_theclient",
+            LoopTag = tag,
+            Frames = Enumerable.Range(0, frames)
+                .Select(i => RegisterSprite(package, dir + i + ".png").Sprite)
+                .ToImmutableList()
+        });
+    }
+
 }
 

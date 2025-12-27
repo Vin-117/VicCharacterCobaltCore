@@ -1,7 +1,14 @@
 ﻿{
     "character": {
-        "name": "Garrus",
-        "desc": ["<c=C8C8C8>GARRUS</c>", "A seasoned veteran. His cards create <c=boldPink>midrow</c> objects and add <c=boldPink>temporary</c> cards to your deck during combat."]
+        "Vic":
+        {
+            "name": "Garrus",
+            "desc": ["<c=C8C8C8>GARRUS</c>", "A seasoned veteran. His cards create <c=boldPink>midrow</c> objects and add <c=boldPink>temporary</c> cards to your deck during combat."]
+        },
+        "vic_theclient":
+        {
+            "name": "???",
+        }
     },
     "status": {
 		"VicAuxPower": {

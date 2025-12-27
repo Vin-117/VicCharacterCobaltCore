@@ -19,6 +19,8 @@ static class CommonDefinitions
     internal static string AmVic => Instance.VicCharacter.UniqueName;
     internal static Deck AmVicDeck => Instance.VicCharacter.Deck;
 
+    internal static string AmClient => ModEntry.vic_theclient.CharacterType;
+
     internal const string AmCat = "comp";
 
     internal const string AmJumbo = "miner";

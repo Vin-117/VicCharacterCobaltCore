@@ -109,16 +109,25 @@ internal class VicNewMemoryDialogue : IRegisterable
             {"Vic_Memory_1", new(){
                 type = NodeType.@event,
                 introDelay = false,
-                bg = "BGVault",
+                bg = "BGVicVault",
                 lookup = [
                     "vault", $"vault_{AmVic}"
                 ],
                 dialogue = [
-                    new("T-100 days"),
+                    new("T-400 days"),
                     new(new Wait{secs = 2}),
                     new(title: null),  // Clears title card
-                    new(new Wait{secs = 1}),
-                    new(AmVic, "pensive", "..."),
+                    new(new Wait{secs = 3}),
+                    new(AmClient, "client_neutral", "Status report."),
+                    new(AmVic, "pda", "I have a visual on the Cobalt.", flipped: true),
+                    new(AmVic, "pda", "No other warp core signatures within 10 parsecs.", flipped: true),
+                    new(AmVic, "pda", "For now, the Cobalt remains undetected.", flipped: true),
+                    new(AmClient, "client_neutral", "Good."),
+                    new(AmClient, "client_neutral", "Maintain your orbit. You will receive instructions within the next solar day."),
+                    new(AmVic, "observe", "Should I not board?", flipped: true),
+                    new(AmClient, "client_neutral", "No."),
+                    new(AmClient, "client_neutral", "You are not to enter the ship under any circumstance."),
+                    new(AmVic, "neutraltalk", "Understood.", flipped: true),
                 ]
             }},
 

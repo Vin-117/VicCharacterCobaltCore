@@ -3,31 +3,42 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\Desktop\\VicCharacter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\conversation\\bgvic\\bgvicvault.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\bgvic\\bgvicvault.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\conversation\\vicnewmemorydialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\vicnewmemorydialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\TwosCompany-main\\TwosCompany-main\\ModBG\\BGVaultTwos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\BGCraigShip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\conversation\\dialoguefunctions\\dialoguedrawshift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\dialoguefunctions\\dialoguedrawshift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\DialogueDrawShift.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\conversation\\dialoguefunctions\\commondefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\dialoguefunctions\\commondefinitions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\external\\dialoguemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:external\\dialoguemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\conversation\\vicjohnsonnewdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\vicjohnsonnewdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\conversation\\vicnibbsnewdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\vicnibbsnewdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewMemoryDialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Johnson\\Artifacts\\FrugalityArtifact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\conversation\\vicnewcombatdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\vicnewcombatdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\ModEntry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,96 +48,149 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CommonDefinitions.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\DialogueFunctions\\CommonDefinitions.cs",
-              "RelativeDocumentMoniker": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\DialogueFunctions\\CommonDefinitions.cs",
-              "RelativeToolTip": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAzwCYAAABPAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "BGVaultTwos.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\TwosCompany-main\\TwosCompany-main\\ModBG\\BGVaultTwos.cs",
+              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\TwosCompany-main\\TwosCompany-main\\ModBG\\BGVaultTwos.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\TwosCompany-main\\TwosCompany-main\\ModBG\\BGVaultTwos.cs",
+              "RelativeToolTip": "..\\Cobalt Core Mods\\TwosCompany-main\\TwosCompany-main\\ModBG\\BGVaultTwos.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAKUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T22:42:45.17Z",
+              "WhenOpened": "2025-12-27T03:58:17.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "VicNibbsNewDialogue.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicNibbsNewDialogue.cs",
-              "RelativeDocumentMoniker": "Conversation\\VicNibbsNewDialogue.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicNibbsNewDialogue.cs",
-              "RelativeToolTip": "Conversation\\VicNibbsNewDialogue.cs",
-              "ViewState": "AgIAAKkAAAAAAAAAAAAgwLsAAAAgAAAAAAAAAA==",
+              "Title": "BGCraigShip.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\BGCraigShip.cs",
+              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\BGCraigShip.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\BGCraigShip.cs",
+              "RelativeToolTip": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\BGCraigShip.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAAewK0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T22:06:22.81Z",
+              "WhenOpened": "2025-12-27T03:53:54.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BGVicVault.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\BGVic\\BGVicVault.cs",
+              "RelativeDocumentMoniker": "Conversation\\BGVic\\BGVicVault.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\BGVic\\BGVicVault.cs",
+              "RelativeToolTip": "Conversation\\BGVic\\BGVicVault.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T03:50:53.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "FrugalityArtifact.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Johnson\\Artifacts\\FrugalityArtifact.cs",
-              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Johnson\\Artifacts\\FrugalityArtifact.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Johnson\\Artifacts\\FrugalityArtifact.cs",
-              "RelativeToolTip": "..\\Cobalt Core Mods\\Cobalt-Core-Mods-master\\Cobalt-Core-Mods-master\\Johnson\\Artifacts\\FrugalityArtifact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Title": "story.json",
+              "DocumentMoniker": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json",
+              "ToolTip": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json",
+              "RelativeToolTip": "..\\..\\..\\..\\Program Files (x86)\\Steam\\steamapps\\common\\Cobalt Core\\Data\\story.json",
+              "ViewState": "AgIAAM87AAAAAAAAAAApwN47AABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-27T03:39:38.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NewMemoryDialogue.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewMemoryDialogue.cs",
+              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewMemoryDialogue.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewMemoryDialogue.cs",
+              "RelativeToolTip": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\NewMemoryDialogue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T02:50:40.037Z",
+              "WhenOpened": "2025-12-27T03:30:21.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ModEntry.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\ModEntry.cs",
+              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\ModEntry.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\ModEntry.cs",
+              "RelativeToolTip": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\ModEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoBAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T03:28:40.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "VicNewCombatDialogue.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicNewCombatDialogue.cs",
-              "RelativeDocumentMoniker": "Conversation\\VicNewCombatDialogue.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicNewCombatDialogue.cs",
-              "RelativeToolTip": "Conversation\\VicNewCombatDialogue.cs",
-              "ViewState": "AgIAALEEAAAAAAAAAAAewMQEAAAnAAAAAAAAAA==",
+              "Title": "DialogueDrawShift.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\DialogueDrawShift.cs",
+              "RelativeDocumentMoniker": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\DialogueDrawShift.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\DialogueDrawShift.cs",
+              "RelativeToolTip": "..\\Cobalt Core Mods\\cobaltcorecharactre-TheCraig-master\\cobaltcorecharactre-TheCraig-master\\Conversation\\FunctionalStuff\\DialogueDrawShift.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T22:28:00.32Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VicJohnsonNewDialogue.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicJohnsonNewDialogue.cs",
-              "RelativeDocumentMoniker": "Conversation\\VicJohnsonNewDialogue.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicJohnsonNewDialogue.cs",
-              "RelativeToolTip": "Conversation\\VicJohnsonNewDialogue.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAgwL4AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T22:26:31.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ModEntry.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\ModEntry.cs",
-              "RelativeDocumentMoniker": "ModEntry.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\ModEntry.cs",
-              "RelativeToolTip": "ModEntry.cs",
-              "ViewState": "AgIAANQAAAAAAAAAAAAqwOkAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T23:24:01.505Z",
+              "WhenOpened": "2025-12-27T03:28:29.048Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DialogueMachine.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\External\\DialogueMachine.cs",
-              "RelativeDocumentMoniker": "External\\DialogueMachine.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\External\\DialogueMachine.cs",
-              "RelativeToolTip": "External\\DialogueMachine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Title": "VicNewMemoryDialogue.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicNewMemoryDialogue.cs",
+              "RelativeDocumentMoniker": "Conversation\\VicNewMemoryDialogue.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicNewMemoryDialogue.cs",
+              "RelativeToolTip": "Conversation\\VicNewMemoryDialogue.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAgwHQAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T21:59:06.98Z",
+              "WhenOpened": "2025-12-27T03:25:16.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommonDefinitions.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\DialogueFunctions\\CommonDefinitions.cs",
+              "RelativeDocumentMoniker": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\DialogueFunctions\\CommonDefinitions.cs",
+              "RelativeToolTip": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIAxwBUAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T03:21:06.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ModEntry.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\ModEntry.cs",
+              "RelativeDocumentMoniker": "ModEntry.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\ModEntry.cs",
+              "RelativeToolTip": "ModEntry.cs",
+              "ViewState": "AgIAAKIAAAAAAAAAAAAawK4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T03:20:32.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DialogueDrawShift.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\DialogueFunctions\\DialogueDrawShift.cs",
+              "RelativeDocumentMoniker": "Conversation\\DialogueFunctions\\DialogueDrawShift.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\DialogueFunctions\\DialogueDrawShift.cs",
+              "RelativeToolTip": "Conversation\\DialogueFunctions\\DialogueDrawShift.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T03:20:24.293Z",
               "EditorCaption": ""
             }
           ]
