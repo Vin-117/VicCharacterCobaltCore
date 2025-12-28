@@ -1408,7 +1408,7 @@ internal class VicNewCombatDialogue : IRegisterable
                 oncePerCombatTags = ["YappingAboutSidelink"],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmVic, "pdasmile", "Crosslink just kicked in.")
+                  new(AmVic, "pda", "Crosslink just kicked in.")
                 ]
             }},
              {"VicSidelinkKickedInWithIsaac_0", new(){

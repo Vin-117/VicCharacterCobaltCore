@@ -369,6 +369,8 @@ internal class ModEntry : SimpleMod
         BGRunWin.charFullBodySprites.Add(VicCharacter.Deck, VicEnd);
         Vault.charsWithLore.Add(VicCharacter.Deck);
         DB.backgrounds.Add("BGVicVault", typeof(BGVicVault));
+        DB.backgrounds.Add("BGVicVaultSecond", typeof(BGVicVaultSecond));
+        DB.backgrounds.Add("BGVicVaultThird", typeof(BGVicVaultThird));
 
         vic_theclient = helper.Content.Characters.V2.RegisterNonPlayableCharacter("vic_theclient", new NonPlayableCharacterConfigurationV2
         {

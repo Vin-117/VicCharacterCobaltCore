@@ -202,7 +202,7 @@ internal class VicNewStoryDialogue : IRegisterable
                     new(AmPeri, "I did not remember between loops for a long time."),
                     new(AmVic, "observe", "Perhaps proximity to the blast?", flipped : true),
                     new(AmVic, "neutraltalk", "You and the crew were near the epicenter.", flipped : true),
-                    new(AmVic, "pda", "I was in a ship about a parsec away.", flipped : true),
+                    new(AmVic, "pda", "I was in a ship a ways away.", flipped : true),
                     new(AmPeri, "squint", "The blast reached that far?"),
                     new(AmVic, "neutraltalk", "No less than three sectors are under its influence.", flipped : true),
                     new(AmVic, "pressured", "Whatever the true scale is, it's colossal.", flipped : true),

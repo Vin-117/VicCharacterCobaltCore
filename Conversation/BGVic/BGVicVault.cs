@@ -14,7 +14,6 @@ public class BGVicVault : BG
 
     public override void Render(G g, double t, Vec offset)
     {
-        UpdateSounds();
         Vec shifted_vec = new Vec(150.0, 25.0);
         BGVault.DrawVaultBg(g, letterbox: true, shuttle: false, lookAway: shifted_vec);
 
