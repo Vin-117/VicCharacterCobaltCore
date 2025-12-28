@@ -53,7 +53,6 @@ public class VicKineticBarrier : Card, IRegisterable
                     return new CardData
                     {
                         cost = 5,
-                        flippable = true,
                         exhaust = true
                     };
                 }
@@ -118,8 +117,10 @@ public class VicKineticBarrier : Card, IRegisterable
                             thing = new KineticBarrier
                             {
                                 yAnimation = 0.0
-                            }
-                        }
+                            },
+                            dialogueSelector = ".VicKineticBarrierUp",
+                            offset = 1
+                        },
                     };
                 }
             default:

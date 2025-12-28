@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\Desktop\\VicCharacter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\conversation\\vicnewmemorydialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\vicnewmemorydialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\cards\\vickineticbarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vickineticbarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VicNewMemoryDialogue.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicNewMemoryDialogue.cs",
-              "RelativeDocumentMoniker": "Conversation\\VicNewMemoryDialogue.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Conversation\\VicNewMemoryDialogue.cs",
-              "RelativeToolTip": "Conversation\\VicNewMemoryDialogue.cs",
-              "ViewState": "AgIAAMEAAAAAAAAAAAAgwNIAAABUAAAAAAAAAA==",
+              "Title": "VicKineticBarrier.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicKineticBarrier.cs",
+              "RelativeDocumentMoniker": "Cards\\VicKineticBarrier.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicKineticBarrier.cs",
+              "RelativeToolTip": "Cards\\VicKineticBarrier.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAwwHkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T23:41:37.715Z",
+              "WhenOpened": "2025-12-28T22:31:45.956Z",
               "EditorCaption": ""
             }
           ]
