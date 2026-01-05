@@ -421,7 +421,7 @@ internal class VicNewMultiDialogue : IRegisterable
                 whoDidThat = Deck.colorless,
                 minDamageDealtToEnemyThisAction = 3,
                 dialogue = [
-                    new(AmVic, "neutraltalk", "Excellent shot as always, Cat."),
+                    new(AmVic, "neutraltalk", "Excellent shot, Cat."),
                     new(AmCat, "smug", "You know it!")
                 ]
             }},
@@ -434,7 +434,7 @@ internal class VicNewMultiDialogue : IRegisterable
                 oncePerRun = true,
                 dialogue = [
                     new(AmPeri, "Excellent shot, sir."),
-                    new(AmVic, "explains", "A little calibration goes a long way.")
+                    new(AmVic, "pensive", "Thank you.")
                 ]
             }},
              {"JustHitVic_DrakeMulti_0", new(){
