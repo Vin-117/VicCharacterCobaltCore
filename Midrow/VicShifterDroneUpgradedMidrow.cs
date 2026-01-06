@@ -101,7 +101,7 @@ namespace VicCharacter.Midrow
                     {
                         fromDroneX = x,
                         targetPlayer = targetPlayer,
-                        damage = 0,
+                        damage = 1,
                         moveEnemy = -3
                     },
                 };
@@ -114,7 +114,7 @@ namespace VicCharacter.Midrow
                     {
                         fromDroneX = x,
                         targetPlayer = targetPlayer,
-                        damage = 0,
+                        damage = 1,
                         moveEnemy = 3
                     },
                 };
