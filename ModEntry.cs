@@ -100,14 +100,14 @@ internal class ModEntry : SimpleMod
         typeof(VicCalmUnderPressure),
         typeof(VicSeekerSwarm),
         typeof(VicMisdirection),
-        typeof(VicShifterDroneCard),
+        typeof(VicCrisisManagement),
         typeof(VicMobileMine),
         typeof(VicSignalAmplifierCard),
         typeof(VicMinefield)
     ];
     private static List<Type> VicCharacterUncommonCardTypes = [
         typeof(VicSensorOverload),
-        typeof(VicCrisisManagement),
+        typeof(VicShifterDroneCard),
         typeof(VicBlockade),
         typeof(VicEngineBoosterCard),
         typeof(VicPoisonMissile),
