@@ -17,7 +17,7 @@ public class VicShifterDroneCard : Card, IRegisterable
             Meta = new CardMeta
             {
                 deck = ModEntry.Instance.VicCharacter.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 dontOffer = false,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
@@ -34,7 +34,7 @@ public class VicShifterDroneCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1
+                        cost = 2
                     };
                 }
             case Upgrade.A:
@@ -48,15 +48,14 @@ public class VicShifterDroneCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
-                        flippable = true
+                        cost = 2
                     };
                 }
             default:
                 {
                     return new CardData
                     {
-                        cost = 1
+                        cost = 2
                     };
                 }
         }
@@ -89,13 +88,13 @@ public class VicShifterDroneCard : Card, IRegisterable
                     {
                         new ASpawn
                         {
-                            thing = new ShifterDroneUpgradedLeft
+                            thing = new ShifterDroneLeft
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = false,
                                 rightflip = !flipped,
                             },
-                            //dialogueSelector = ".VicShifterUpgradedDrone"
+                            dialogueSelector = ".VicShifterDrone"
                         }
                     };
                 }
@@ -105,7 +104,7 @@ public class VicShifterDroneCard : Card, IRegisterable
                     {
                         new ASpawn
                         {
-                            thing = new ShifterDroneLeft
+                            thing = new ShifterDroneUpgradedLeft
                             {
                                 yAnimation = 0.0,
                                 targetPlayer = false,
