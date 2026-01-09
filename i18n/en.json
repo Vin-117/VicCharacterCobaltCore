@@ -194,7 +194,7 @@
     "ShifterDroneUpgradedLeft": {
       "Normal": {
         "name": "Left Shift Drone MKII",
-        "description": "Shoots a <c=damage>1</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>3</c> spaces to the <c=boldPink>LEFT</c>."
+        "description": "Shoots a <c=damage>0</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>3</c> spaces to the <c=boldPink>LEFT</c>."
       }
     },
     "ShifterDroneRight": {
@@ -206,7 +206,7 @@
     "ShifterDroneUpgradedRight": {
       "Normal": {
         "name": "Right Shift Drone MKII",
-        "description": "Shoots a <c=damage>1</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>3</c> spaces to the <c=boldPink>RIGHT</c>."
+        "description": "Shoots a <c=damage>0</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>3</c> spaces to the <c=boldPink>RIGHT</c>."
       }
     },
 	"EngineBooster": {

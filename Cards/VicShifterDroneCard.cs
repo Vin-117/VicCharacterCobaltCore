@@ -34,21 +34,27 @@ public class VicShifterDroneCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2
+                        cost = 1,
+                        exhaust = true,
+                        flippable = true
                     };
                 }
             case Upgrade.A:
                 {
                     return new CardData
                     {
-                        cost = 1
+                        cost = 1,
+                        exhaust = true,
+                        flippable = true
                     };
                 }
             case Upgrade.B:
                 {
                     return new CardData
                     {
-                        cost = 2
+                        cost = 1,
+                        flippable = true,
+                        exhaust = true
                     };
                 }
             default:
@@ -93,6 +99,7 @@ public class VicShifterDroneCard : Card, IRegisterable
                                 yAnimation = 0.0,
                                 targetPlayer = false,
                                 rightflip = !flipped,
+                                bubbleShield = true
                             },
                             dialogueSelector = ".VicShifterDrone"
                         }
