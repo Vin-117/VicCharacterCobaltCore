@@ -318,6 +318,7 @@ internal class ModEntry : SimpleMod
         RegisterAnimation(package, "explains", "assets/Animation/Explains/VicExplains", 5);
         RegisterAnimation(package, "depressed", "assets/Animation/Depressed/VicDepressed", 4);
         RegisterAnimationClient(package, "client_neutral", "assets/Animation/Client/noise", 6);
+        RegisterAnimationClient(package, "neutral", "assets/Animation/Client/noise", 1);
 
         Instance.Helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2
         {
