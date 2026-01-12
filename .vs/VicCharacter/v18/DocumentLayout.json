@@ -40,15 +40,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "VicCharacter",
+              "Title": "VicCharacter.csproj",
               "DocumentMoniker": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\VicCharacter.csproj",
               "RelativeDocumentMoniker": "VicCharacter.csproj",
               "ToolTip": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\VicCharacter.csproj",
               "RelativeToolTip": "VicCharacter.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-10T15:14:44.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T15:14:44.916Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "ModEntry.cs",
               "ViewState": "AgIAACgBAAAAAAAAAAAAwEABAABWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T15:12:42.733Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-10T15:12:42.733Z"
             }
           ]
         }
