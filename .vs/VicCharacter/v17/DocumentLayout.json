@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\Desktop\\VicCharacter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\midrow\\vichurtmidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:midrow\\vichurtmidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\midrow\\vicpainmidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:midrow\\vicpainmidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\midrow\\victorpedomidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:midrow\\victorpedomidrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\cards\\vicseekerswarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicseekerswarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\cards\\vickineticbarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vickineticbarrier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\viccharacter\\nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +34,84 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VicCharacter",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
-              "RelativeDocumentMoniker": "VicCharacter.csproj",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
-              "RelativeToolTip": "VicCharacter.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-31T00:10:35.635Z",
+              "DocumentIndex": 1,
+              "Title": "VicPAINMidrow.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Midrow\\VicPAINMidrow.cs",
+              "RelativeDocumentMoniker": "Midrow\\VicPAINMidrow.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Midrow\\VicPAINMidrow.cs",
+              "RelativeToolTip": "Midrow\\VicPAINMidrow.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAIAwwFAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:44:58.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VicKineticBarrier.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicKineticBarrier.cs",
-              "RelativeDocumentMoniker": "Cards\\VicKineticBarrier.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicKineticBarrier.cs",
-              "RelativeToolTip": "Cards\\VicKineticBarrier.cs",
-              "ViewState": "AgIAAF0AAAAAAAAAAAAwwHkAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "VicSeekerSwarm.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicSeekerSwarm.cs",
+              "RelativeDocumentMoniker": "Cards\\VicSeekerSwarm.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Cards\\VicSeekerSwarm.cs",
+              "RelativeToolTip": "Cards\\VicSeekerSwarm.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowF0AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-28T22:31:45.956Z",
+              "WhenOpened": "2026-01-13T02:43:23.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VicTorpedoMidrow.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Midrow\\VicTorpedoMidrow.cs",
+              "RelativeDocumentMoniker": "Midrow\\VicTorpedoMidrow.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Midrow\\VicTorpedoMidrow.cs",
+              "RelativeToolTip": "Midrow\\VicTorpedoMidrow.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwD4AAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:42:15.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VicHURTMidrow.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\Midrow\\VicHURTMidrow.cs",
+              "RelativeDocumentMoniker": "Midrow\\VicHURTMidrow.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\Midrow\\VicHURTMidrow.cs",
+              "RelativeToolTip": "Midrow\\VicHURTMidrow.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAIAwwFAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-13T02:42:13.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "nickel.json",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\nickel.json",
+              "RelativeDocumentMoniker": "nickel.json",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\nickel.json",
+              "RelativeToolTip": "nickel.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-13T02:41:58.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VicCharacter.csproj",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
+              "RelativeDocumentMoniker": "VicCharacter.csproj",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
+              "RelativeToolTip": "VicCharacter.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-31T00:10:35.635Z",
               "EditorCaption": ""
             }
           ]

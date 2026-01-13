@@ -60,7 +60,7 @@ namespace VicCharacter.Midrow
                 {
                     worldX = x,
                     outgoingDamage = 2,
-                    targetPlayer = targetPlayer,
+                    //targetPlayer = targetPlayer,
                     status = Status.lockdown,
                     statusAmount = 1
                 }

@@ -1,16 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "vu+HlI9sxek=",
+  "dgSpecHash": "gs4e5OKeGYU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\conce\\OneDrive\\Desktop\\VicCharacter\\VicCharacter.csproj",
+  "projectFilePath": "C:\\Users\\conce\\Desktop\\VicCharacter\\VicCharacter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\conce\\.nuget\\packages\\enumbynamesourcegenerator\\1.1.2\\enumbynamesourcegenerator.1.1.2.nupkg.sha512",
     "C:\\Users\\conce\\.nuget\\packages\\fayti1703.assemblytasks\\1.1.0\\fayti1703.assemblytasks.1.1.0.nupkg.sha512",
     "C:\\Users\\conce\\.nuget\\packages\\nanoray.extractsinglefileapplicationresourcetask\\1.0.0\\nanoray.extractsinglefileapplicationresourcetask.1.0.0.nupkg.sha512",
-    "C:\\Users\\conce\\.nuget\\packages\\nickel.modbuildconfig\\2.0.2\\nickel.modbuildconfig.2.0.2.nupkg.sha512",
-    "C:\\Users\\conce\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.22\\microsoft.windowsdesktop.app.ref.8.0.22.nupkg.sha512",
-    "C:\\Users\\conce\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.22\\microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
-    "C:\\Users\\conce\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.22\\microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+    "C:\\Users\\conce\\.nuget\\packages\\nickel.modbuildconfig\\2.0.2\\nickel.modbuildconfig.2.0.2.nupkg.sha512"
   ],
   "logs": []
 }

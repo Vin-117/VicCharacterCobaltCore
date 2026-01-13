@@ -62,7 +62,7 @@ namespace VicCharacter.Midrow
                     {
                         worldX = x,
                         outgoingDamage = 7,
-                        targetPlayer = targetPlayer,
+                        //targetPlayer = targetPlayer,
                     },
                     new AStunPart
                     {
@@ -78,7 +78,7 @@ namespace VicCharacter.Midrow
                     {
                         worldX = x,
                         outgoingDamage = 6,
-                        targetPlayer = targetPlayer
+                        //targetPlayer = targetPlayer
                     }
                 };
             }
