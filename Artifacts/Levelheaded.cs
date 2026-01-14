@@ -19,7 +19,8 @@ public class VicLevelheaded : Artifact, IRegisterable
             Meta = new ArtifactMeta
             {
                 pools = [ArtifactPool.Boss],
-                owner = ModEntry.Instance.VicCharacter.Deck
+                owner = ModEntry.Instance.VicCharacter.Deck,
+                unremovable = true
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["artifact", "VicLevelheaded", "name"]).Localize,
             Description = ModEntry.Instance.AnyLocalizations.Bind(["artifact", "VicLevelheaded", "desc"]).Localize,

@@ -18,7 +18,8 @@ public class VicPowerReserve : Artifact, IRegisterable
             Meta = new ArtifactMeta
             {
                 pools = [ArtifactPool.Boss],
-                owner = ModEntry.Instance.VicCharacter.Deck
+                owner = ModEntry.Instance.VicCharacter.Deck,
+                unremovable = true
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["artifact", "VicPowerReserve", "name"]).Localize,
             Description = ModEntry.Instance.AnyLocalizations.Bind(["artifact", "VicPowerReserve", "desc"]).Localize,
@@ -44,10 +45,11 @@ public class VicPowerReserve : Artifact, IRegisterable
     {
         combat.QueueImmediate(new AAddCard
         {
-            card = new VicAux() 
+            card = new VicAux()
             {
                 upgrade = Upgrade.None
             },
+            artifactPulse = Key(),
             destination = CardDestination.Hand,
             amount = 3
         });

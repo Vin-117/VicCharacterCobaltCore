@@ -52,7 +52,7 @@ public class VicCalmUnderPressure : Card, IRegisterable
                     {
                         cost = 1,
                         exhaust = false,
-                        infinite = true,
+                        infinite = false,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalmUnderPressure", "descB"]))
                     };
                 }
@@ -106,6 +106,7 @@ public class VicCalmUnderPressure : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
+                        new ADiscard(),
                         new AAddCard()
                         {
                             card = new VicPlan()

@@ -47,7 +47,7 @@
             "name": "Battle Analysis",
 			"desc": "Add a <c=card>Plan</c> to your hand.",
 			"descA": "Add a <c=card>Plan A</c> to your hand.",
-            "descB": "Add a <c=card>Plan B</c> to your hand."
+            "descB": "Discard your hand, then add a <c=card>Plan B</c> to your hand."
 		},
 		"VicPlan": {
             "name": "Plan"
@@ -169,7 +169,7 @@
 		},
         "VicOverclockedMissileBay" : {
 			"name" : "OVERCLOCKED MISSILE BAY",
-			"desc": "Gain 1 extra <c=energy>ENERGY</c> every turn. Every 3 turns, deploy a <c=midrow>Seeker</c> aimed at yourself."
+			"desc": "Gain 1 extra <c=energy>ENERGY</c> every turn. <c=downside>Every 3 turns, deploy a <c=midrow>Seeker</c> aimed at yourself.</c>"
 		},
         "VicLevelheaded" : {
 			"name" : "TEMPORARY BOOSTER",

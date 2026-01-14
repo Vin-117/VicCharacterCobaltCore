@@ -17,7 +17,8 @@ public class VicOverclockedMissileBay : Artifact, IRegisterable
             Meta = new ArtifactMeta
             {
                 pools = [ArtifactPool.Boss],
-                owner = ModEntry.Instance.VicCharacter.Deck
+                owner = ModEntry.Instance.VicCharacter.Deck,
+                unremovable = true
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["artifact", "VicOverclockedMissileBay", "name"]).Localize,
             Description = ModEntry.Instance.AnyLocalizations.Bind(["artifact", "VicOverclockedMissileBay", "desc"]).Localize,

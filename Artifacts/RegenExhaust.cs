@@ -49,7 +49,8 @@ public class VicRegenExhaust : Artifact, IRegisterable
                 upgrade = Upgrade.None
             },
             destination = CardDestination.Hand,
-            amount = 1
+            amount = 1,
+            artifactPulse = Key()
         });
     }
 }
