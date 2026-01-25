@@ -5,6 +5,7 @@ using Nanoray.PluginManager;
 using Nickel;
 using Nickel.Common;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.Linq;
@@ -363,6 +364,20 @@ internal class ModEntry : SimpleMod
             Description = AnyLocalizations.Bind(["character", "Vic", "desc"]).Localize,
             ExeCardType = typeof(VicCatEXE)
         });
+
+
+        helper.ModRegistry.AwaitApi<ICustomRunOptionsApi>("Shockah.CustomRunOptions", cro =>
+        {
+            cro.RegisterPartialDuoDeck(VicCharacter.Deck, new StarterDeck
+            {
+                cards = [
+                    new VicSeekerSwarm(),
+                    new VicManeuver(),
+                    new VicSignalAmplifierCard()
+                ]
+            });
+        });
+
 
 
         // Memory related
