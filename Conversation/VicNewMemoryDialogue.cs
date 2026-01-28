@@ -29,7 +29,7 @@ internal class VicNewMemoryDialogue : IRegisterable
 {
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
-        LocalDB.DumpStoryToLocalLocale("en", "TheJazMaster.Nibbs", new Dictionary<string, DialogueMachine>(){
+        LocalDB.DumpStoryToLocalLocale("en", new Dictionary<string, DialogueMachine>(){
             {"RunWinWho_Vic_1", new(){
                 type = NodeType.@event,
                 introDelay = false,
