@@ -2108,7 +2108,7 @@ internal class VicNewCombatDialogue : IRegisterable
             }},
             {"VicWentMissing_Peri_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmPeri ],
+                allPresent = [ AmPeri ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],
@@ -2119,7 +2119,7 @@ internal class VicNewCombatDialogue : IRegisterable
             }},
             {"VicWentMissing_Isaac_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmIsaac ],
+                allPresent = [ AmIsaac ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],
@@ -2130,7 +2130,7 @@ internal class VicNewCombatDialogue : IRegisterable
             }},
             {"VicWentMissing_Riggs_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmRiggs ],
+                allPresent = [ AmRiggs ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],
@@ -2141,7 +2141,7 @@ internal class VicNewCombatDialogue : IRegisterable
             }},
             {"VicWentMissing_Dizzy_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmDizzy ],
+                allPresent = [ AmDizzy ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],
@@ -2152,7 +2152,7 @@ internal class VicNewCombatDialogue : IRegisterable
             }},
             {"VicWentMissing_Drake_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmDrake ],
+                allPresent = [ AmDrake ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],
@@ -2163,7 +2163,7 @@ internal class VicNewCombatDialogue : IRegisterable
             }},
             {"VicWentMissing_Books_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmBooks ],
+                allPresent = [ AmBooks ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],
@@ -2174,7 +2174,7 @@ internal class VicNewCombatDialogue : IRegisterable
             }},
             {"VicWentMissing_Cat_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmCat ],
+                allPresent = [ AmCat ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],
@@ -2185,7 +2185,7 @@ internal class VicNewCombatDialogue : IRegisterable
             }},
             {"VicWentMissing_Max_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmMax ],
+                allPresent = [ AmMax ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],

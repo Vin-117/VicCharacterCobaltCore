@@ -45,31 +45,4 @@ static class CommonDefinitions
 
     internal static Status MissingVic => ModEntry.VicPlayableCharacter.MissingStatus.Status;
 
-    //internal static Status TryGetMissing(this string who)
-    //{
-    //    if (
-    //        who is not null &&
-    //        // ModEntry.Instance.Helper.Content.Decks.LookupByUniqueName(who) is IDeckEntry ide &&
-    //        // ModEntry.Instance.Helper.Content.Characters.V2.LookupByDeck(ide.Deck) is IPlayableCharacterEntryV2 ipce
-    //        ModEntry.Instance.Helper.Content.Characters.V2.LookupByUniqueName(who) is IPlayableCharacterEntryV2 ipce
-    //        )
-    //    {
-    //        return ipce.MissingStatus.Status;
-    //    }
-    //    ModEntry.Instance.Logger.LogWarning("Couldn't find a missing!");
-    //    return MissingIlleana;
-    //}
-
-
-
-
-    /// <summary>
-    /// Converts the short name into the full name that the game will recognise
-    /// </summary>
-    /// <param name="Name">Name of artifact or item</param>
-    /// <returns>Full name</returns>
-    //internal static string F(this string Name)
-    //{
-    //    return $"{Instance.UniqueName}::{Name}";
-    //}
 }
