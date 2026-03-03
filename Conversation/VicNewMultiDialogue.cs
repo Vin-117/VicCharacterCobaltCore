@@ -519,7 +519,7 @@ internal class VicNewMultiDialogue : IRegisterable
                 oncePerCombatTags = ["aboutToDie"],
                 oncePerRun = true,
                 dialogue = [
-                    new(AmDizzy, "squint", "This looks like a lost timeline."),
+                    new(AmDizzy, "frown", "This looks like a lost timeline."),
                     new(AmVic, "determined", "Don't you start giving up now.")
                 ]
             }},
