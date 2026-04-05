@@ -21,7 +21,7 @@ public class VicMisdirection : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicMisdirection", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicJammer.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicMisdirection.png")).Sprite,
         });
     }
 
@@ -37,8 +37,7 @@ public class VicMisdirection : Card, IRegisterable
                     {
                         cost = 1,
                         exhaust = true,
-                        retain = true,
-                        infinite = false
+                        retain = true
                     };
                 }
             case Upgrade.A:
@@ -46,9 +45,7 @@ public class VicMisdirection : Card, IRegisterable
                     return new CardData
                     {
                         cost = 1,
-                        exhaust = true,
-                        retain = true,
-                        infinite = false
+                        retain = true
                     };
                 }
             case Upgrade.B:
@@ -56,9 +53,8 @@ public class VicMisdirection : Card, IRegisterable
                     return new CardData
                     {
                         cost = 1,
-                        exhaust = false,
                         retain = true,
-                        infinite = false
+                        exhaust = true
                     };
                 }
             default:
@@ -98,7 +94,7 @@ public class VicMisdirection : Card, IRegisterable
                     {
                         new AStatus
                         {
-                            statusAmount = 2,
+                            statusAmount = 1,
                             status = Status.backwardsMissiles,
                             targetPlayer = false,
                             dialogueSelector = ".VicMisdirection"
@@ -111,7 +107,14 @@ public class VicMisdirection : Card, IRegisterable
                     {
                         new AStatus
                         {
-                            statusAmount = 1,
+                            statusAmount = 2,
+                            status = Status.backwardsMissiles,
+                            targetPlayer = true,
+                            dialogueSelector = ".VicMisdirection"
+                        },
+                        new AStatus
+                        {
+                            statusAmount = 5,
                             status = Status.backwardsMissiles,
                             targetPlayer = false,
                             dialogueSelector = ".VicMisdirection"

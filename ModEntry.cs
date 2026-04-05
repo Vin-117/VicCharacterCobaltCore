@@ -129,7 +129,8 @@ internal class ModEntry : SimpleMod
         typeof(VicAux),
         typeof(VicPlan),
         typeof(VicThanix),
-        typeof(VicDrift)
+        typeof(VicDrift),
+        typeof(VicHeavySalvo)
     ];
     private static List<Type> VicCharacterEXECardTypes = [
         typeof(VicCatEXE)
@@ -158,7 +159,8 @@ internal class ModEntry : SimpleMod
     private static List<Type> VicCharacterFullModBossArtifacts = [
         typeof(VicOverclockedMissileBay),
         typeof(VicLevelheaded),
-        typeof(VicPowerReserve)
+        typeof(VicPowerReserve),
+        typeof(VicSalvoUpgrade)
     ];
     private static IEnumerable<Type> VicCharacterFullModArtifactTypes =
         VicCharacterFullModCommonArtifacts
@@ -297,9 +299,9 @@ internal class ModEntry : SimpleMod
         /*
          * Define character sprites
          */
-        RegisterAnimation(package, "neutral", "assets/Animation/Neutral/VicNeutral", 1);
+        RegisterAnimation(package, "neutral", "assets/Animation/Neutral/VicNeutral", 4);
         RegisterAnimation(package, "pensive", "assets/Animation/Pensive/VicPensive", 5);
-        RegisterAnimation(package, "neutraltalk", "assets/Animation/Neutral/VicNeutral", 4);
+        RegisterAnimation(package, "neutraltalk", "assets/Animation/NeutralTalk/NeutralTalk", 4);
         RegisterAnimation(package, "squint", "assets/Animation/Squint/VicSquint", 4);
         RegisterAnimation(package, "annoyed", "assets/Animation/Annoyed/VicAnnoyed", 4);
         RegisterAnimation(package, "doubtful", "assets/Animation/Doubtful/VicDoubtful", 4);
@@ -312,14 +314,14 @@ internal class ModEntry : SimpleMod
         RegisterAnimation(package, "pdasmile", "assets/Animation/PDASmile/VicPDASmile", 4);
         RegisterAnimation(package, "pdapressured", "assets/Animation/PDAPressured/VicPDAPressured", 4);
         RegisterAnimation(package, "observe", "assets/Animation/Observe/VicObserve", 4);
-        RegisterAnimation(package, "observestatic", "assets/Animation/Observe/VicObserve", 1);
+        RegisterAnimation(package, "observestatic", "assets/Animation/ObserveStatic/VicObserveStatic", 4);
         RegisterAnimation(package, "pressured", "assets/Animation/Pressured/VicPressured", 4);
         RegisterAnimation(package, "pressuredneutral", "assets/Animation/PressuredNeutral/VicPressuredNeutral", 4);
-        RegisterAnimation(package, "pressuredstatic", "assets/Animation/Pressured/VicPressured", 1);
+        RegisterAnimation(package, "pressuredstatic", "assets/Animation/PressuredStatic/VicPressuredStatic", 4);
         RegisterAnimation(package, "explains", "assets/Animation/Explains/VicExplains", 5);
         RegisterAnimation(package, "depressed", "assets/Animation/Depressed/VicDepressed", 4);
         RegisterAnimationClient(package, "client_neutral", "assets/Animation/Client/noise", 6);
-        RegisterAnimationClient(package, "neutral", "assets/Animation/Client/noise", 1);
+        RegisterAnimationClient(package, "neutral", "assets/Animation/ClientStatic/ClientStatic", 1);
 
         Instance.Helper.Content.Characters.V2.RegisterCharacterAnimation(new CharacterAnimationConfigurationV2
         {

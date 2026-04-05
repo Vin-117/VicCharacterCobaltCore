@@ -43,8 +43,8 @@ public class VicHURTCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 3,
-                        exhaust = false,
+                        cost = 2,
+                        exhaust = true,
                         artTint = "f5ff00"
                     };
                 }
@@ -52,7 +52,7 @@ public class VicHURTCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 3,
+                        cost = 4,
                         exhaust = true,
                         artTint = "f5ff00"
                     };

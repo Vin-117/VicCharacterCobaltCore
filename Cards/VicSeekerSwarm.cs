@@ -17,7 +17,7 @@ public class VicSeekerSwarm : Card, IRegisterable
     {
 
         DoubleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png"));
-        SingleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png"));
+        SingleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarmSingle.png"));
 
         helper.Content.Cards.RegisterCard(new CardConfiguration
         {
@@ -54,8 +54,8 @@ public class VicSeekerSwarm : Card, IRegisterable
                     return new CardData
                     {
                         cost = 2,
-                        infinite = false,
-                        artTint = "b40003",
+                        retain = true,
+                        artTint = "9944de",
                         art = DoubleMissileArt.Sprite
                     };
                 }
@@ -63,10 +63,10 @@ public class VicSeekerSwarm : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
-                        infinite = true,
+                        cost = 0,
+                        exhaust = true,
                         artTint = "9944de",
-                        art = SingleMissileArt.Sprite
+                        art = DoubleMissileArt.Sprite
                     };
                 }
             default:
@@ -116,32 +116,12 @@ public class VicSeekerSwarm : Card, IRegisterable
                     {
                         new ASpawn
                         {
-                            thing = new VicHeavySeeker
+                            thing = new Missile
                             {
                                 yAnimation = 0.0,
+                                missileType = MissileType.seeker
                             },
                             offset = -1
-                        },
-                        new ASpawn
-                        {
-                            thing = new VicHeavySeeker
-                            {
-                                yAnimation = 0.0
-                            },
-                            offset = 1,
-                            dialogueSelector = ".VicHeavySeekerSwarm"
-                        }
-                    };
-                }
-            case Upgrade.B:
-                {
-                    return new List<CardAction>
-                    {
-                        new AStatus
-                        {
-                            status = Status.droneShift,
-                            statusAmount = 1,
-                            targetPlayer = true
                         },
                         new ASpawn
                         {
@@ -150,6 +130,32 @@ public class VicSeekerSwarm : Card, IRegisterable
                                 yAnimation = 0.0,
                                 missileType = MissileType.seeker
                             },
+                            offset = 1,
+                            dialogueSelector = ".VicSeekerSwarm"
+                        }
+                    };
+                }
+            case Upgrade.B:
+                {
+                    return new List<CardAction>
+                    {
+                        new ASpawn
+                        {
+                            thing = new Missile
+                            {
+                                yAnimation = 0.0,
+                                missileType = MissileType.seeker
+                            },
+                            offset = -1
+                        },
+                        new ASpawn
+                        {
+                            thing = new Missile
+                            {
+                                yAnimation = 0.0,
+                                missileType = MissileType.seeker
+                            },
+                            offset = 1,
                             dialogueSelector = ".VicSeekerSwarm"
                         }
                     };

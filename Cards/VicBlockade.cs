@@ -22,7 +22,7 @@ public class VicBlockade : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicBlockade", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicMineBigAlt.png")).Sprite
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicBlockade.png")).Sprite
         });
     }
 
@@ -53,7 +53,7 @@ public class VicBlockade : Card, IRegisterable
                     return new CardData
                     {
                         cost = 3,
-                        exhaust = false,
+                        exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicBlockade", "descB"]))
                     };
                 }
@@ -118,9 +118,10 @@ public class VicBlockade : Card, IRegisterable
                         {
                             card = new VicTrapCharge()
                             {
+                                upgrade = Upgrade.B
                             },
                             destination = CardDestination.Hand,
-                            amount = 3,
+                            amount = 2,
                         }
                     };
                 }

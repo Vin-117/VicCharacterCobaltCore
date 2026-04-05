@@ -153,7 +153,7 @@ internal class VicNewMemoryDialogue : IRegisterable
                     new(AmVic, "pda", "With the amount offered, you will have no problem bringing them onboard."),
                     new(AmPeri, "squint", "Just three?", flipped: true),
                     new(AmVic, "neutraltalk", "That's correct. Only three, plus yourself."),
-                    new(AmVic, "observe", "The client is...secretative. And specific in their instruction."),
+                    new(AmVic, "observe", "The client is...secretive. And specific in their instruction."),
                     new(AmPeri, "You won't be onboard?", flipped: true),
                     new(AmVic, "neutraltalk", "No."),
                     new(AmVic, "neutraltalk", "I will be in a small monitoring ship a small distance away."),

@@ -21,7 +21,7 @@ public class VicTrapCharge : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicTrapCharge", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicMineSmol.png")).Sprite
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicTrapCharge.png")).Sprite
         });
     }
 
@@ -47,7 +47,7 @@ public class VicTrapCharge : Card, IRegisterable
                         cost = 0,
                         retain = true,
                         temporary = true,
-                        exhaust = false
+                        exhaust = true
                     };
                 }
             case Upgrade.B:
@@ -57,7 +57,7 @@ public class VicTrapCharge : Card, IRegisterable
                         cost = 0,
                         retain = true,
                         temporary = true,
-                        exhaust = true
+                        exhaust = false
                     };
                 }
             default:
@@ -99,7 +99,16 @@ public class VicTrapCharge : Card, IRegisterable
                             thing = new SpaceMine
                             {
                                 yAnimation = 0.0
-                            }
+                            },
+                            offset = -1
+                        },
+                        new ASpawn
+                        {
+                            thing = new SpaceMine
+                            {
+                                yAnimation = 0.0
+                            },
+                            offset = 1
                         }
                     };
                 }
@@ -112,16 +121,7 @@ public class VicTrapCharge : Card, IRegisterable
                             thing = new SpaceMine
                             {
                                 yAnimation = 0.0
-                            },
-                            offset = 1
-                        },
-                        new ASpawn
-                        {
-                            thing = new SpaceMine
-                            {
-                                yAnimation = 0.0
-                            },
-                            offset = -1
+                            }
                         }
                     };
                 }

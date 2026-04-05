@@ -35,7 +35,7 @@ public class VicSidelink : Artifact, IRegisterable
     public override void OnPlayerSpawnSomething(State state, Combat combat, StuffBase thing)
     {
         VicSidelinkCount++;
-        if (VicSidelinkCount >= 3)
+        if (VicSidelinkCount >= 4)
         {
             VicSidelinkCount = 0;
             combat.QueueImmediate(new AStatus

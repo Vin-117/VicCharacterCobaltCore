@@ -27,6 +27,8 @@ internal sealed class AVicMissileHit : CardAction
 
     public int xPush;
 
+    public bool stunAllonHit;
+
     public override bool CanSkipTimerIfLastEvent()
     {
         return false;
@@ -99,6 +101,11 @@ internal sealed class AVicMissileHit : CardAction
                     targetPlayer = targetPlayer,
                     dir = xPush
                 });
+            }
+
+            if (stunAllonHit && !(targetPlayer)) 
+            {
+                c.QueueImmediate(new AStunShip());
             }
 
             Part? partAtWorldX3 = ship.GetPartAtWorldX(raycastResult.worldX);

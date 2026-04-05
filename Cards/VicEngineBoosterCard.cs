@@ -22,7 +22,7 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicEngineBoosterCard", "name"]).Localize,
-            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicDrone.png")).Sprite,
+            Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicEngineBoosterCard.png")).Sprite,
         });
     }
 
@@ -34,7 +34,8 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2
+                        cost = 2,
+                        exhaust = true
                     };
                 }
             case Upgrade.A:
@@ -48,7 +49,8 @@ public class VicEngineBoosterCard : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0,
+                        cost = 2,
+                        buoyant = true,
                         exhaust = true
                     };
                 }
@@ -91,8 +93,7 @@ public class VicEngineBoosterCard : Card, IRegisterable
                             thing = new EngineBooster
                             {
                                 yAnimation = 0.0,
-                                targetPlayer = true,
-                                bubbleShield = true
+                                targetPlayer = true
                             },
                             dialogueSelector = ".VicEngineBooster"
                         }
@@ -107,7 +108,8 @@ public class VicEngineBoosterCard : Card, IRegisterable
                             thing = new EngineBooster
                             {
                                 yAnimation = 0.0,
-                                targetPlayer = true
+                                targetPlayer = true,
+                                bubbleShield = true
                             },
                             dialogueSelector = ".VicEngineBooster"
                         }

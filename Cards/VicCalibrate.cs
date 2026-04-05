@@ -45,7 +45,6 @@ public class VicCalibrate : Card, IRegisterable
                     {
                         cost = 1,
                         buoyant = false,
-                        retain = true,
                         exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicCalibrate", "descA"]))
                     };

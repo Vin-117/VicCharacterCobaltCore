@@ -15,8 +15,8 @@ public class VicPoisonMissile : Card, IRegisterable
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
 
-        DoubleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png"));
-        SingleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png"));
+        DoubleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicPoisonMissileDouble.png"));
+        SingleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicPoisonMissile.png"));
 
 
         helper.Content.Cards.RegisterCard(new CardConfiguration
@@ -30,7 +30,6 @@ public class VicPoisonMissile : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicPoisonMissile", "name"]).Localize,
-            //Art = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png")).Sprite,
         });
     }
 
@@ -62,10 +61,11 @@ public class VicPoisonMissile : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         exhaust = true,
+                        buoyant = true,
                         artTint = "24ff4f",
-                        art = DoubleMissileArt.Sprite
+                        art = SingleMissileArt.Sprite
                     };
                 }
             default:
@@ -123,17 +123,7 @@ public class VicPoisonMissile : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 missileType = MissileType.corrode
-                            },
-                            offset = -1
-                        },
-                        new ASpawn
-                        {
-                            thing = new Missile
-                            {
-                                yAnimation = 0.0,
-                                missileType = MissileType.corrode
-                            },
-                            offset = 1
+                            }
                         }
                     };
                 }

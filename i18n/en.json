@@ -74,7 +74,10 @@
             "name": "Phasor"
 		},
 		"VicSeekerSwarm": {
-            "name": "Seeker Salvo"
+            "name": "Seeker Swarm"
+		},
+        "VicHeavySalvo": {
+            "name": "Super Salvo"
 		},
 		"VicSensorOverload": {
             "name": "Sensor Overload"
@@ -90,9 +93,9 @@
 		},
 		"VicBlockade": {
             "name": "Blockade",
-			"desc": "Add 3 <c=card>Trap Charges</c> to your hand.",
-			"descA": "Add 3 <c=card>Trap Charges</c> to your hand and gain 2 <c=status>droneshift</c>.",
-            "descB": "Add 3 <c=card>Trap Charges</c> to your hand."
+			"desc": "Add 3 <c=card>Trap Charge</c>s to your hand.",
+			"descA": "Add 3 <c=card>Trap Charge</c>s to your hand and gain 2 <c=status>droneshift</c>.",
+            "descB": "Add 2 <c=card>Trap Charge B</c>s to your hand."
 		},
 		"VicSiphon": {
             "name": "Siphon Power",
@@ -157,7 +160,7 @@
 		},
         "VicSidelink" : {
 			"name" : "SIDELINK",
-			"desc": "Every 3 midrow objects launched, gain 1 <c=status>EVADE</c>."
+			"desc": "Every 4 midrow objects launched, gain 1 <c=status>EVADE</c>."
 		},
         "VicRegenExhaust" : {
 			"name" : "ENGINE ACCELERATOR",
@@ -169,11 +172,15 @@
 		},
         "VicOverclockedMissileBay" : {
 			"name" : "OVERCLOCKED MISSILE BAY",
-			"desc": "Gain 1 extra <c=energy>ENERGY</c> every turn. <c=downside>Every 3 turns, deploy a <c=midrow>Seeker</c> aimed at yourself.</c>"
+			"desc": "Draw <c=card>+2 cards</c> every turn. <c=downside>Every 3 turns, deploy a <c=midrow>Seeker</c> aimed at yourself.</c>"
 		},
         "VicLevelheaded" : {
 			"name" : "TEMPORARY BOOSTER",
-			"desc": "The first two times you play a <c=cardtrait>temporary</c> card each turn, draw a card."
+			"desc": "The first time you play a <c=cardtrait>temporary</c> card every turn, gain 1 <c=energy>ENERGY</c>."
+		},
+        "VicSalvoUpgrade" : {
+			"name" : "SALVO UPGRADE",
+			"desc": "On pickup, remove 1 card. Then gain a <c=card>Super Salvo</c>."
 		},
 	},
 	
@@ -194,7 +201,7 @@
     "ShifterDroneUpgradedLeft": {
       "Normal": {
         "name": "Left Shift Drone MKII",
-        "description": "Shoots a <c=damage>0</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>3</c> spaces to the <c=boldPink>LEFT</c>."
+        "description": "Shoots a <c=damage>1</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>3</c> spaces to the <c=boldPink>LEFT</c>."
       }
     },
     "ShifterDroneRight": {
@@ -206,7 +213,7 @@
     "ShifterDroneUpgradedRight": {
       "Normal": {
         "name": "Right Shift Drone MKII",
-        "description": "Shoots a <c=damage>0</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>3</c> spaces to the <c=boldPink>RIGHT</c>."
+        "description": "Shoots a <c=damage>1</c> damage shot once per turn. If it hits, it will move its target <c=boldPink>3</c> spaces to the <c=boldPink>RIGHT</c>."
       }
     },
 	"EngineBooster": {
@@ -242,7 +249,7 @@
     "PAIN": {
       "Normal": {
         "name": "P.A.I.N",
-        "description": "The end. It is going to deal <c=damage>10</c> damage and stun its targeted ship part."
+        "description": "The end. It is going to deal <c=damage>10</c> damage and inflict a total stun."
       }
     },
     "TorpedoUpgraded": {

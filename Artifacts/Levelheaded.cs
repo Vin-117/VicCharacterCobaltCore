@@ -11,8 +11,14 @@ namespace VicCharacter.Artifacts;
 
 public class VicLevelheaded : Artifact, IRegisterable
 {
+
+    private static Spr UsedUpSpr;
+
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
+
+        UsedUpSpr = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Artifact/LevelheadedUsed.png")).Sprite;
+
         helper.Content.Artifacts.RegisterArtifact(new ArtifactConfiguration
         {
             ArtifactType = MethodBase.GetCurrentMethod()!.DeclaringType!,
@@ -28,35 +34,42 @@ public class VicLevelheaded : Artifact, IRegisterable
         });
     }
 
-    public int LevelheadedCount = 0;
-
-    public override int? GetDisplayNumber(State s)
-    {
-        return LevelheadedCount;
-    }
+    public bool LevelheadedUsed = false;
 
     public override void OnPlayerPlayCard(int energyCost, Deck deck, Card card, State state, Combat combat, int handPosition, int handCount)
     {
 
-        if ((card.GetDataWithOverrides(state).temporary) && LevelheadedCount <= 1)
+        if ((card.GetDataWithOverrides(state).temporary) && (!LevelheadedUsed))
         {
-            LevelheadedCount++;
+            LevelheadedUsed = true;
             Pulse();
-            combat.QueueImmediate(new ADrawCard
+            combat.QueueImmediate(new AEnergy
             {
-                count = 1
+                changeAmount = 1
             });
         }
     }
 
-    public override void OnTurnEnd(State state, Combat combat)
+    public override void OnTurnStart(State state, Combat combat)
     {
-        LevelheadedCount = 0;
+        LevelheadedUsed = false;
     }
 
     public override void OnCombatEnd(State state)
     {
-        LevelheadedCount = 0;
+        LevelheadedUsed = false;
+    }
+
+    public override Spr GetSprite()
+    {
+        if (LevelheadedUsed)
+        {
+            return UsedUpSpr;
+        }
+        else
+        {
+            return base.GetSprite();
+        }
     }
 
 

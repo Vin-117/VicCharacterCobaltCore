@@ -33,22 +33,14 @@ public class VicOverclockedMissileBay : Artifact, IRegisterable
         return VicOverclockedMissileBayCount;
     }
 
-    //public override List<Tooltip>? GetExtraTooltips()
-    //{
-    //    return new List<Tooltip>
-    //    {
-    //        new TTGlossary("midrow.missile_seeker")
-    //    };
-    //}
-
     public override void OnReceiveArtifact(State state)
     {
-        state.ship.baseEnergy++;
+        state.ship.baseDraw += 2;
     }
 
     public override void OnRemoveArtifact(State state)
     {
-        state.ship.baseEnergy--;
+        state.ship.baseDraw -= 2;
     }
 
     public override List<Tooltip>? GetExtraTooltips()

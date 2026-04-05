@@ -16,8 +16,8 @@ public class VicTorpedoCard : Card, IRegisterable
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
 
-        DoubleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png"));
-        SingleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicbasicMissile.png"));
+        DoubleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicTorpedoCardDouble.png"));
+        SingleMissileArt = helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicTorpedoCard.png"));
 
         helper.Content.Cards.RegisterCard(new CardConfiguration
         {
@@ -62,8 +62,7 @@ public class VicTorpedoCard : Card, IRegisterable
                     {
                         cost = 1,
                         artTint = "00FFFF",
-                        art = DoubleMissileArt.Sprite,
-                        exhaust = true
+                        art = SingleMissileArt.Sprite
                     };
                 }
             default:
@@ -106,9 +105,10 @@ public class VicTorpedoCard : Card, IRegisterable
                                 yAnimation = 0.0
                             }
                         },
-                        new AMove
+                        new AStatus
                         {
-                            dir = -2,
+                            status = Status.droneShift,
+                            statusAmount = 1,
                             targetPlayer = true
                         },
                     };
@@ -122,17 +122,13 @@ public class VicTorpedoCard : Card, IRegisterable
                             thing = new VicTorpedo
                             {
                                 yAnimation = 0.0
-                            },
-                            offset = -1
+                            }
                         },
-                        new ASpawn
+                        new AMove
                         {
-                            thing = new VicTorpedo
-                            {
-                                yAnimation = 0.0
-                            },
-                            offset = 1
-                        }
+                            dir = -2,
+                            targetPlayer = true
+                        },
                     };
                 }
             default:
