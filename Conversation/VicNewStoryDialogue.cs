@@ -320,8 +320,8 @@ internal class VicNewStoryDialogue : IRegisterable
                     new(AmDrake, "reallymad", "Seriously?"),
                     new(AmJumbo, "You insulted a fellow professional.", flipped: true),
                     new(AmJumbo, "I'll have to kill you for that.", flipped: true),
-                    new(AmDrake, "reallymad", "How the HELL does that make sense?!"),
-                    new(AmDrake, "reallymad", "You'd literally blow him up with me!"),
+                    new(AmDrake, "mad", "How the HELL does that make sense?!"),
+                    new(AmDrake, "mad", "You'd literally blow him up with me!"),
                     new(AmVic, "happy", "You heard him, Drake."),
                 ]
             }},
