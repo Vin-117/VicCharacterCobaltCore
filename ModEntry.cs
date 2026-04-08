@@ -130,7 +130,7 @@ internal class ModEntry : SimpleMod
         typeof(VicPlan),
         typeof(VicThanix),
         typeof(VicDrift),
-        typeof(VicHeavySalvo)
+        //typeof(VicHeavySalvo)
     ];
     private static List<Type> VicCharacterEXECardTypes = [
         typeof(VicCatEXE)
@@ -160,7 +160,7 @@ internal class ModEntry : SimpleMod
         typeof(VicOverclockedMissileBay),
         typeof(VicLevelheaded),
         typeof(VicPowerReserve),
-        typeof(VicSalvoUpgrade)
+        //typeof(VicSalvoUpgrade)
     ];
     private static IEnumerable<Type> VicCharacterFullModArtifactTypes =
         VicCharacterFullModCommonArtifacts

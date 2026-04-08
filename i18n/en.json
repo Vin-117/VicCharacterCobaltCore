@@ -93,8 +93,8 @@
 		},
 		"VicBlockade": {
             "name": "Blockade",
-			"desc": "Add 3 <c=card>Trap Charge</c>s to your hand.",
-			"descA": "Add 3 <c=card>Trap Charge</c>s to your hand and gain 2 <c=status>droneshift</c>.",
+			"desc": "Add 3 <c=card>Trap Charges</c> to your hand.",
+			"descA": "Add 3 <c=card>Trap Charges</c> to your hand and gain 2 <c=status>droneshift</c>.",
             "descB": "Add 2 <c=card>Trap Charge B</c>s to your hand."
 		},
 		"VicSiphon": {
@@ -188,7 +188,7 @@
     "KineticBarrier": {
       "Normal": {
         "name": "Kinetic Barrier",
-        "description": "A highly reflective field of energy. It's <c=boldPink>Indesctructible</c>. Attacking it will damage its attacker for <c=damage>1</c>."
+        "description": "A highly reflective field of energy. It's <c=boldPink>indestructible</c>. Attacking it will damage its attacker for <c=damage>1</c>."
       }
     },
     "ShifterDroneLeft": {

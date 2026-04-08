@@ -69,7 +69,7 @@ public class VicRowControl : Card, IRegisterable
                         buoyant = false,
                         exhaust = true,
                         artTint = "59f790",
-                        art = UpgradedArt.Sprite
+                        art = NormalArt.Sprite
                     };
                 }
             default:
@@ -120,8 +120,14 @@ public class VicRowControl : Card, IRegisterable
                     {
                         new AStatus
                         {
-                            status = ModEntry.Instance.VicRowControlStatus.Status,
+                            status = Status.droneShift,
                             statusAmount = 2,
+                            targetPlayer = true
+                        },
+                        new AStatus
+                        {
+                            status = ModEntry.Instance.VicRowControlStatus.Status,
+                            statusAmount = 1,
                             targetPlayer = true
                         }
                     };

@@ -1,7 +1,36 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\features\\vicauxpowermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:features\\vicauxpowermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\cards\\vicseekerswarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicseekerswarm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\cards\\vicrowcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicrowcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +55,97 @@
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "VicAuxPowerManager.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Features\\VicAuxPowerManager.cs",
+              "RelativeDocumentMoniker": "Features\\VicAuxPowerManager.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Features\\VicAuxPowerManager.cs",
+              "RelativeToolTip": "Features\\VicAuxPowerManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T23:01:00.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "nickel.json",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\nickel.json",
+              "RelativeDocumentMoniker": "nickel.json",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\nickel.json",
+              "RelativeToolTip": "nickel.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-08T22:59:37.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VicCharacter",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\VicCharacter.csproj",
+              "RelativeDocumentMoniker": "VicCharacter.csproj",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\VicCharacter.csproj",
+              "RelativeToolTip": "VicCharacter.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-08T22:58:57.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VicSeekerSwarm.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicSeekerSwarm.cs",
+              "RelativeDocumentMoniker": "Cards\\VicSeekerSwarm.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicSeekerSwarm.cs",
+              "RelativeToolTip": "Cards\\VicSeekerSwarm.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwEMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T22:55:56.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ModEntry.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\ModEntry.cs",
+              "RelativeDocumentMoniker": "ModEntry.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\ModEntry.cs",
+              "RelativeToolTip": "ModEntry.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAIwKIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T22:50:11.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "en.json",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\i18n\\en.json",
+              "RelativeDocumentMoniker": "i18n\\en.json",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\i18n\\en.json",
+              "RelativeToolTip": "i18n\\en.json",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwGEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-08T22:48:56.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VicRowControl.cs",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicRowControl.cs",
+              "RelativeDocumentMoniker": "Cards\\VicRowControl.cs",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicRowControl.cs",
+              "RelativeToolTip": "Cards\\VicRowControl.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAwwHwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-08T22:45:55.309Z",
+              "EditorCaption": ""
             }
           ]
         }
