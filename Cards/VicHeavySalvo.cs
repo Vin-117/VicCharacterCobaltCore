@@ -32,7 +32,7 @@ public class VicHeavySalvo : Card, IRegisterable
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
             Name = ModEntry.Instance.AnyLocalizations.Bind(["card", "VicHeavySalvo", "name"]).Localize,
-            //Art = (helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/VicSeekerSwarm.png")).Sprite),
+            Art = (helper.Content.Sprites.RegisterSprite(package.PackageRoot.GetRelativeFile("assets/Card/Super Salvo.png")).Sprite),
         });
     }
 
@@ -47,28 +47,29 @@ public class VicHeavySalvo : Card, IRegisterable
                         cost = 2,
                         infinite = false,
                         flippable = true,
-                        artTint = "b40003",
-                        art = DoubleMissileArt.Sprite
+                        //artTint = "b40003",
+                        //art = DoubleMissileArt.Sprite
                     };
                 }
             case Upgrade.A:
                 {
                     return new CardData
                     {
-                        cost = 2,
+                        cost = 1,
                         flippable = true,
-                        artTint = "b40003",
-                        art = TripleMissileArt.Sprite
+                        //artTint = "b40003",
+                        //art = TripleMissileArt.Sprite
                     };
                 }
             case Upgrade.B:
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         infinite = true,
-                        artTint = "b40003",
-                        art = SingleMissileArt.Sprite
+                        retain = true,
+                        //artTint = "b40003",
+                        //art = SingleMissileArt.Sprite
                     };
                 }
             default:
@@ -129,14 +130,6 @@ public class VicHeavySalvo : Card, IRegisterable
                                 yAnimation = 0.0
                             },
                             offset = -3,
-                        },
-                        new ASpawn
-                        {
-                            thing = new VicHeavySeeker
-                            {
-                                yAnimation = 0.0
-                            },
-                            offset = -4,
                             dialogueSelector = ".VicHeavySeekerSwarm"
                         }
                     };
@@ -145,11 +138,13 @@ public class VicHeavySalvo : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AStatus
+                        new ASpawn
                         {
-                            status = Status.droneShift,
-                            statusAmount = 1,
-                            targetPlayer = true
+                            thing = new VicHeavySeeker
+                            {
+                                yAnimation = 0.0,
+                            },
+                            offset = -1
                         },
                         new ASpawn
                         {
@@ -157,6 +152,7 @@ public class VicHeavySalvo : Card, IRegisterable
                             {
                                 yAnimation = 0.0
                             },
+                            offset = 1,
                             dialogueSelector = ".VicHeavySeekerSwarm"
                         }
                     };

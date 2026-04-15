@@ -71,6 +71,12 @@ internal class ModEntry : SimpleMod
 
     internal ISpriteEntry SmallShip { get; }
 
+
+    //Card frame variables
+    internal readonly ISpriteEntry CommonCardFrame;
+    internal readonly ISpriteEntry BossCardFrame;
+
+
     //Memory related
     public Spr VicEnd { get; private set; }
     internal static INonPlayableCharacterEntryV2 vic_theclient { get; private set; } = null!;
@@ -129,8 +135,10 @@ internal class ModEntry : SimpleMod
         typeof(VicAux),
         typeof(VicPlan),
         typeof(VicThanix),
-        typeof(VicDrift),
-        //typeof(VicHeavySalvo)
+        typeof(VicDrift)
+    ];
+    private static List<Type> VicCharacterBossCardTypes = [
+        typeof(VicHeavySalvo)
     ];
     private static List<Type> VicCharacterEXECardTypes = [
         typeof(VicCatEXE)
@@ -149,6 +157,7 @@ internal class ModEntry : SimpleMod
             .Concat(VicCharacterUncommonCardTypes)
             .Concat(VicCharacterRareCardTypes)
             .Concat(VicCharacterSpecialCardTypes)
+            .Concat(VicCharacterBossCardTypes)
             .Concat(VicCharacterEXECardTypes);
 
     private static List<Type> VicCharacterFullModCommonArtifacts = [
@@ -160,7 +169,7 @@ internal class ModEntry : SimpleMod
         typeof(VicOverclockedMissileBay),
         typeof(VicLevelheaded),
         typeof(VicPowerReserve),
-        //typeof(VicSalvoUpgrade)
+        typeof(VicSalvoUpgrade)
     ];
     private static IEnumerable<Type> VicCharacterFullModArtifactTypes =
         VicCharacterFullModCommonArtifacts
@@ -251,13 +260,13 @@ internal class ModEntry : SimpleMod
             }
         };
 
-        //helper.Events.OnLoadStringsForLocale += (_, thing) =>
-        //{
-        //    foreach (KeyValuePair<string, string> entry in localDB.GetLocalizationResults())
-        //    {
-        //        thing.Localizations[entry.Key] = entry.Value;
-        //    }
-        //};
+
+        /*
+         * Define card sprites
+         */
+        CommonCardFrame = RegisterSprite(package, "assets/frame_vic.png");
+        BossCardFrame = RegisterSprite(package, "assets/boss_frame_vic.png");
+
 
         /*
          * Define character deck
@@ -274,9 +283,13 @@ internal class ModEntry : SimpleMod
 
                 titleColor = new Color("000000")
             },
-
-            DefaultCardArt = StableSpr.cards_colorless,
             BorderSprite = RegisterSprite(package, "assets/frame_vic.png").Sprite,
+            CardFrameOverride = args => GetBossRarity(args.Card.GetType()) switch
+            {
+                true => BossCardFrame.Sprite,
+                _ => CommonCardFrame.Sprite,
+            },
+            DefaultCardArt = StableSpr.cards_colorless,
             Name = AnyLocalizations.Bind(["character", "Vic", "name"]).Localize
         });
 
@@ -471,6 +484,19 @@ internal class ModEntry : SimpleMod
                 .ToImmutableList()
         });
     }
+
+
+    /*
+     * Function for determining if a card is boss rarity
+     */
+    internal static bool GetBossRarity(Type type)
+    {
+        if (VicCharacterBossCardTypes.Contains(type))
+            return true;
+        else 
+            return false;
+    }
+
 
     public static void RegisterAnimationClient(IPluginPackage<IModManifest> package, string tag, string dir, int frames)
     {
