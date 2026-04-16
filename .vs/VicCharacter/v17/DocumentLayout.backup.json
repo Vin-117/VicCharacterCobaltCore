@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:viccharacter.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\conversation\\victeranewdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -32,7 +32,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -52,6 +52,19 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VicCharacter.csproj",
+              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\VicCharacter.csproj",
+              "RelativeDocumentMoniker": "VicCharacter.csproj",
+              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\VicCharacter.csproj",
+              "RelativeToolTip": "VicCharacter.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-16T01:52:07.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CommonDefinitions.cs",
               "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Conversation\\DialogueFunctions\\CommonDefinitions.cs",
@@ -60,8 +73,7 @@
               "RelativeToolTip": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwC0AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:27:55.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:27:55.179Z"
             },
             {
               "$type": "Document",
@@ -73,8 +85,7 @@
               "RelativeToolTip": "..\\ZariMod\\Conversation\\DialogueFunctions\\CommonDefinitions.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:27:26.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:27:26.101Z"
             },
             {
               "$type": "Document",
@@ -86,8 +97,7 @@
               "RelativeToolTip": "..\\ZariMod\\Conversation\\ZariTeraDialogue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:27:11.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:27:11.969Z"
             },
             {
               "$type": "Document",
@@ -99,21 +109,7 @@
               "RelativeToolTip": "Conversation\\VicTeraNewDialogue.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:26:52.172Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ModEntry.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\ModEntry.cs",
-              "RelativeDocumentMoniker": "ModEntry.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\ModEntry.cs",
-              "RelativeToolTip": "ModEntry.cs",
-              "ViewState": "AgIAAAoBAAAAAAAAAAAcwB8BAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-08T22:50:11.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:26:52.172Z"
             },
             {
               "$type": "Document",
@@ -125,8 +121,7 @@
               "RelativeToolTip": "i18n\\en.json",
               "ViewState": "AgIAAEMAAAAAAAAAAAAgwGEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-08T22:48:56.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T22:48:56.116Z"
             }
           ]
         }

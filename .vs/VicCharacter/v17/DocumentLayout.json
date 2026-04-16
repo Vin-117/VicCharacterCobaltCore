@@ -53,7 +53,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VicCharacter",
+              "Title": "VicCharacter.csproj",
               "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\VicCharacter.csproj",
               "RelativeDocumentMoniker": "VicCharacter.csproj",
               "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\VicCharacter.csproj",
@@ -73,8 +73,7 @@
               "RelativeToolTip": "Conversation\\DialogueFunctions\\CommonDefinitions.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwC0AAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:27:55.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:27:55.179Z"
             },
             {
               "$type": "Document",
@@ -86,8 +85,7 @@
               "RelativeToolTip": "..\\ZariMod\\Conversation\\DialogueFunctions\\CommonDefinitions.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:27:26.101Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:27:26.101Z"
             },
             {
               "$type": "Document",
@@ -99,8 +97,7 @@
               "RelativeToolTip": "..\\ZariMod\\Conversation\\ZariTeraDialogue.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:27:11.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:27:11.969Z"
             },
             {
               "$type": "Document",
@@ -112,8 +109,7 @@
               "RelativeToolTip": "Conversation\\VicTeraNewDialogue.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAAACAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-16T01:26:52.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-16T01:26:52.172Z"
             },
             {
               "$type": "Document",
@@ -125,8 +121,7 @@
               "RelativeToolTip": "i18n\\en.json",
               "ViewState": "AgIAAEMAAAAAAAAAAAAgwGEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-08T22:48:56.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-08T22:48:56.116Z"
             }
           ]
         }
