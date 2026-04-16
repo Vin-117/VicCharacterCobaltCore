@@ -82,7 +82,7 @@ internal class VicJohnsonNewDialogue : IRegisterable
                 oncePerCombatTags = ["aboutToDie"],
                 oncePerRun = true,
                 dialogue = [
-                    new(AmVic, "annoyed", "Well, this run didn't pay off."),
+                    new(AmVic, "annoyed", "This run didn't pay off."),
                     new(AmJohnson, "It was a risky investment, certainly."),
                 ]
             }},
@@ -105,7 +105,7 @@ internal class VicJohnsonNewDialogue : IRegisterable
                 allPresent = [ AmVic, AmJohnson ],
                 lookup = [ "VicSatellite" ],
                 anyDronesFriendly = ["SignalAmplifierTag"],
-                oncePerCombatTags = [ "VicSatelliteOnce" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
                 oncePerRun = true,
                 oncePerCombat = true,
                 dialogue = [
@@ -119,7 +119,7 @@ internal class VicJohnsonNewDialogue : IRegisterable
                 allPresent = [ AmVic, AmJohnson ],
                 lookup = [ "VicSatellite" ],
                 anyDronesFriendly = ["SignalAmplifierTag"],
-                oncePerCombatTags = [ "VicSatelliteOnce" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
                 oncePerRun = true,
                 oncePerCombat = true,
                 dialogue = [
@@ -133,7 +133,7 @@ internal class VicJohnsonNewDialogue : IRegisterable
                 allPresent = [ AmVic, AmJohnson ],
                 lookup = [ "VicSatelliteUpgraded" ],
                 anyDronesFriendly = ["SignalAmplifierUpgradedTag"],
-                oncePerCombatTags = [ "VicSatelliteOnce" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
                 oncePerRun = true,
                 oncePerCombat = true,
                 dialogue = [
@@ -147,7 +147,7 @@ internal class VicJohnsonNewDialogue : IRegisterable
                 allPresent = [ AmVic, AmJohnson ],
                 oncePerRunTags = ["CrewYapAboutBarrier"],
                 lookup = [ "VicKineticBarrierUp" ],
-                oncePerCombatTags = [ "VicBarrierOnce" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
                 oncePerCombat = true,
                 dialogue = [
                     new(AmJohnson, "Let's hope that investment pays off."),

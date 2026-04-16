@@ -63,9 +63,7 @@ public class VicSeekerSwarm : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 2,
-                        exhaust = true,
-                        flippable = true,
+                        cost = 1,
                         artTint = "9944de",
                         art = DoubleMissileArt.Sprite
                     };
@@ -145,8 +143,7 @@ public class VicSeekerSwarm : Card, IRegisterable
                             thing = new Missile
                             {
                                 yAnimation = 0.0,
-                                missileType = MissileType.seeker,
-                                bubbleShield = true
+                                missileType = MissileType.seeker
                             },
                             offset = -1
                         },
@@ -156,15 +153,18 @@ public class VicSeekerSwarm : Card, IRegisterable
                             {
                                 yAnimation = 0.0,
                                 missileType = MissileType.seeker,
-                                bubbleShield = true
+                                targetPlayer = true
+                            }
+                        },
+                        new ASpawn
+                        {
+                            thing = new Missile
+                            {
+                                yAnimation = 0.0,
+                                missileType = MissileType.seeker
                             },
                             offset = 1,
                             dialogueSelector = ".VicSeekerSwarm"
-                        },
-                        new AMove
-                        {
-                           dir = -4,
-                           targetPlayer = true
                         }
                     };
                 }

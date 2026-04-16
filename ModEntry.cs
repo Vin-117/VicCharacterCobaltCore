@@ -150,6 +150,7 @@ internal class ModEntry : SimpleMod
         typeof(VicNewMultiDialogue),
         typeof(VicJohnsonNewDialogue),
         typeof(VicNibbsNewDialogue),
+        typeof(VicTeraNewDialogue),
         typeof(VicNewMemoryDialogue),
     ];
     private static IEnumerable<Type> VicCharacterFullModCardTypes =
@@ -283,7 +284,7 @@ internal class ModEntry : SimpleMod
 
                 titleColor = new Color("000000")
             },
-            BorderSprite = RegisterSprite(package, "assets/frame_vic.png").Sprite,
+            BorderSprite = CommonCardFrame.Sprite,
             CardFrameOverride = args => GetBossRarity(args.Card.GetType()) switch
             {
                 true => BossCardFrame.Sprite,

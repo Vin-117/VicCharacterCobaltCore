@@ -37,7 +37,7 @@ internal class VicNewMultiDialogue : IRegisterable
                 allPresent = [ AmVic, AmPeri ],
                 hasArtifacts = [ "PowerDiversion" ],
                 dialogue = [
-                    new(AmVic, "smug", "Give 'em hell, Hyperia."),
+                    new(AmVic, "pdasmile", "Give 'em hell, Hyperia."),
                     new(AmPeri, "vengeful", "Yessir."),
                 ]
             }},
@@ -264,7 +264,7 @@ internal class VicNewMultiDialogue : IRegisterable
                 oncePerCombat = true,
                 dialogue = [
                   new(AmPeri, "panic", "...That's definitely excessive force, sir."),
-                  new(AmVic, "pensive", "Yes. Yes it is.")
+                  new(AmVic, "pensive", "Yes it is.")
                 ]
             }},
              {"VicBiggerNukeLaunchMulti_2", new(){
@@ -397,7 +397,7 @@ internal class VicNewMultiDialogue : IRegisterable
                 whoDidThat = Deck.hacker,
                 minDamageDealtToEnemyThisAction = 2,
                 dialogue = [
-                    new(AmVic, "neutraltalk", "That was a good shot, Max."),
+                    new(AmVic, "neutraltalk", "Good shot, Max."),
                     new(AmDrake, "smile", "Thanks man.")
                 ]
             }},
@@ -458,7 +458,7 @@ internal class VicNewMultiDialogue : IRegisterable
                 oncePerRun = true,
                 dialogue = [
                     new(AmMax, "Eyyy, good one."),
-                    new(AmVic, "happyneutral", "All in a days work!")
+                    new(AmVic, "pensive", "Thank you.")
                 ]
             }},
 

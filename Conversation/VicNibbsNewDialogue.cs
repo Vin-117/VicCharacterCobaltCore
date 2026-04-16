@@ -139,7 +139,7 @@ internal class VicNibbsNewDialogue : IRegisterable
                 oncePerRun = true,
                 dialogue = [
                     new(AmNibbs, "Rawr, big attack!"),
-                    new(AmVic, "explains", "If it isn’t big, you shouldn’t bother.")
+                    new(AmVic, "pda", "If it isn’t big, you shouldn’t bother.")
                 ]
             }},
 
