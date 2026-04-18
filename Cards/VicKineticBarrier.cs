@@ -37,7 +37,8 @@ public class VicKineticBarrier : Card, IRegisterable
                     return new CardData
                     {
                         cost = 4,
-                        exhaust = true
+                        exhaust = true,
+                        artTint = "9fd0ff"
                     };
                 }
             case Upgrade.A:
@@ -45,15 +46,19 @@ public class VicKineticBarrier : Card, IRegisterable
                     return new CardData
                     {
                         cost = 3,
-                        exhaust = true
+                        exhaust = true,
+                        artTint = "9fd0ff"
                     };
                 }
             case Upgrade.B:
                 {
                     return new CardData
                     {
-                        cost = 5,
-                        exhaust = true
+                        cost = 4,
+                        exhaust = true,
+                        retain = true,
+                        buoyant = true,
+                        artTint = "9fd0ff"
                     };
                 }
             default:
@@ -109,18 +114,8 @@ public class VicKineticBarrier : Card, IRegisterable
                             {
                                 yAnimation = 0.0
                             },
-                            dialogueSelector = ".VicKineticBarrierUp",
-                            offset = -1
-                        },
-                        new ASpawn
-                        {
-                            thing = new KineticBarrier
-                            {
-                                yAnimation = 0.0
-                            },
-                            dialogueSelector = ".VicKineticBarrierUp",
-                            offset = 1
-                        },
+                            dialogueSelector = ".VicKineticBarrierUp"
+                        }
                     };
                 }
             default:

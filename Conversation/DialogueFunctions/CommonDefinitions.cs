@@ -45,6 +45,8 @@ static class CommonDefinitions
 
     internal readonly static string AmTera = "TeraTheTaxCollector::Tera";
 
+    internal readonly static string AmZari = "Vintage.ZariMod::ZariTheDragon";
+
     internal static Status MissingVic => ModEntry.VicPlayableCharacter.MissingStatus.Status;
 
 }

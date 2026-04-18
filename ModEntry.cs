@@ -151,6 +151,7 @@ internal class ModEntry : SimpleMod
         typeof(VicJohnsonNewDialogue),
         typeof(VicNibbsNewDialogue),
         typeof(VicTeraNewDialogue),
+        typeof(VicZariNewDialogue),
         typeof(VicNewMemoryDialogue),
     ];
     private static IEnumerable<Type> VicCharacterFullModCardTypes =

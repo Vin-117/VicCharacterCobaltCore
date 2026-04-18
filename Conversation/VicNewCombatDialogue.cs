@@ -206,6 +206,96 @@ internal class VicNewCombatDialogue : IRegisterable
                 ]
             }},
 
+            {"VicSeekerSwarmLaunchBack_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarmBack" ],
+                anyDronesHostile = [ "missile_seeker" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                dialogue = [
+                  new(AmVic, "pdapressured", "Wait...that's not right."),
+                ]
+            }},
+            {"VicSeekerSwarmLaunchBack_1", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarmBack" ],
+                anyDronesHostile = [ "missile_seeker" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                dialogue = [
+                  new(AmVic, "pdapressured", "How did...oh no."),
+                ]
+            }},
+            {"VicSeekerSwarmLaunchBack_2", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarmBack" ],
+                anyDronesHostile = [ "missile_seeker" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                dialogue = [
+                  new(AmVic, "pensive", "...I miscalculated."),
+                ]
+            }},
+            {"VicSeekerSwarmLaunchBack_3", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarmBack" ],
+                anyDronesHostile = [ "missile_seeker" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                dialogue = [
+                  new(AmVic, "pressured", "We may need to block that."),
+                ]
+            }},
+            {"VicSeekerSwarmLaunchBack_4", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic ],
+                lookup = [ "VicSeekerSwarmBack" ],
+                anyDronesHostile = [ "missile_seeker" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                dialogue = [
+                  new(AmVic, "pensive", "Sorry about that."),
+                ]
+            }},
+
+            {"VicSeekerSwarmLaunchBackIsaac_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmIsaac ],
+                oncePerRun = true,
+                lookup = [ "VicSeekerSwarmBack" ],
+                anyDronesHostile = [ "missile_seeker" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                dialogue = [
+                  new(AmIsaac, "shy", "Uh..."),
+                  new(AmVic, "pensive", "This one is on me."),
+                ]
+            }},
+
+            {"VicSeekerSwarmLaunchBackPeri_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmPeri ],
+                oncePerRun = true,
+                lookup = [ "VicSeekerSwarmBack" ],
+                anyDronesHostile = [ "missile_seeker" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                dialogue = [
+                  new(AmPeri, "panic", "...Why am I reading a lock on our ship?"),
+                  new(AmVic, "pensive", "I screwed up."),
+                ]
+            }},
+
+            {"VicSeekerSwarmLaunchBackDizzy_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmDizzy ],
+                oncePerRun = true,
+                lookup = [ "VicSeekerSwarmBack" ],
+                anyDronesHostile = [ "missile_seeker" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                dialogue = [
+                  new(AmVic, "pensive", "Sorry about that missile"),
+                  new(AmDizzy, "explains", "Nothing a shield couldn't fix.")
+                ]
+            }},
+
 
             {"VicHeavySeekerSwarmAntiAutoDodgeLeft_0", new(){
                 type = NodeType.combat,

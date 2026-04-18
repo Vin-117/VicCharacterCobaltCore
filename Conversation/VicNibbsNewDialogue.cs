@@ -58,7 +58,7 @@ internal class VicNibbsNewDialogue : IRegisterable
                 oncePerCombat = true,
                 dialogue = [
                   new(AmNibbs, "wowza", "New rocket? Gimme gimme!"),
-                  new(AmVic, "pressured", "Don't touch that. Seriously.")
+                  new(AmVic, "pressured", "Don't touch that.")
                 ]
             }},
 
@@ -92,7 +92,7 @@ internal class VicNibbsNewDialogue : IRegisterable
                 oncePerRun = true,
                 lookup = [ "VicSeekerSwarm" ],
                 anyDrones = [ "missile_seeker" ],
-                oncePerCombatTags = [ "VicSeekerOnce" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
                 oncePerRunTags = ["NibbsDoesNotLikeSeekers"],
                 oncePerCombat = true,
                 dialogue = [
@@ -107,7 +107,7 @@ internal class VicNibbsNewDialogue : IRegisterable
                 oncePerRun = true,
                 lookup = [ "VicSeekerSwarm" ],
                 anyDrones = [ "missile_seeker" ],
-                oncePerCombatTags = [ "VicSeekerOnce" ],
+                oncePerCombatTags = [ "VicMidrowYap" ],
                 oncePerRunTags = ["NibbsDoesNotLikeSeekers"],
                 oncePerCombat = true,
                 dialogue = [
@@ -193,7 +193,7 @@ internal class VicNibbsNewDialogue : IRegisterable
                 minDamageDealtToEnemyThisAction = 2,
                 dialogue = [
                     new(AmNibbs, "cheeky", "Nya! I got ‘em!"),
-                    new(AmVic, "happyneutral", "You certainly did, Nibbs.")
+                    new(AmVic, "happyneutral", "You certainly did.")
                 ]
             }},
 

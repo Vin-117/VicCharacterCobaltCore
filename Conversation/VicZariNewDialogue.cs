@@ -25,29 +25,29 @@ using static VicCharacter.Conversation.CommonDefinitions;
 
 namespace VicCharacter.Conversation;
 
-internal class VicTeraNewDialogue : IRegisterable
+internal class VicZariNewDialogue : IRegisterable
 {
     public static void Register(IPluginPackage<IModManifest> package, IModHelper helper)
     {
         LocalDB.DumpStoryToLocalLocale("en", "TeraTheTaxCollector", new Dictionary<string, DialogueMachine>(){
-            {"VicNukeLaunchTera_0", new(){
+            {"VicNukeLaunchZari_0", new(){
                 type = NodeType.combat,
                 priority = true,
                 oncePerRun = true,
                 oncePerRunTags = ["VicBigNukeMulti"],
-                allPresent = [ AmVic, AmTera ],
+                allPresent = [ AmVic, AmZari ],
                 lookup = [ "VicNuke" ],
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 anyDrones = ["VicHURT"],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmTera, "scared", "Is that a nuclear bomb?!"),
-                  new(AmVic, "neutraltalk", "Yes.")
+                  new(AmZari, "worried", "That missile reeks of death."),
+                  new(AmVic, "pensive", "Yes it does.")
                 ]
             }},
-            {"VicBiggerNukeLaunchTera_0", new(){
+            {"VicBiggerNukeLaunchZari_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmTera ],
+                allPresent = [ AmVic, AmZari ],
                 priority = true,
                 oncePerRun = true,
                 oncePerRunTags = ["VicBiggerNukeMulti"],
@@ -56,104 +56,119 @@ internal class VicTeraNewDialogue : IRegisterable
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmTera, "sad", "Is that a bigger nuclear bomb?!"),
-                  new(AmVic, "pensive", "Yes.")
+                  new(AmZari, "worried", "Are you mad?!"),
+                  new(AmVic, "pensive", "Perhaps.")
                 ]
             }},
 
-            {"VicSeekerSwarmLaunchTera_0", new(){
+            {"VicSeekerSwarmLaunchZari_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmTera ],
+                allPresent = [ AmVic, AmZari ],
                 oncePerRun = true,
                 lookup = [ "VicSeekerSwarm" ],
                 anyDrones = [ "missile_seeker" ],
                 oncePerCombatTags = [ "VicMidrowYap" ],
+                oncePerRunTags = ["ZariDoesNotLikeSeekers"],
+                oncePerCombat = true,
                 dialogue = [
-                  new(AmVic, "observe", "Are missiles a tax write off?"),
-                  new(AmTera, "squint", "...No.")
+                  new(AmZari, "arrogant", "Seeking bolts? Crude."),
+                  new(AmVic, "annoyed", "When did you care about fighting fair?"),
                 ]
             }},
 
-            {"VicSeekerSwarmLaunchBackTera_0", new(){
+            {"VicSeekerSwarmLaunchBackZari_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmTera ],
+                allPresent = [ AmVic, AmZari ],
                 oncePerRun = true,
                 lookup = [ "VicSeekerSwarmBack" ],
                 anyDronesHostile = [ "missile_seeker" ],
                 oncePerCombatTags = [ "VicMidrowYap" ],
                 dialogue = [
-                    new(AmTera, "lookawaynervous", "Why is that missile aiming at us?"), 
-                    new(AmVic, "pensive", "I screwed up."),
+                  new(AmZari, "annoyed", "Your missiles are committing mutiny."),
+                  new(AmVic, "pressured", "I know, I know."),
                 ]
             }},
 
-            {"VicHeavySeekerSwarmLaunch_Tera_0", new(){
+            {"VicHeavySeekerSwarmLaunch_Zari_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmTera ],
+                allPresent = [ AmVic, AmZari ],
                 lookup = [ "VicHeavySeekerSwarm" ],
                 anyDrones = [ "VicHeavySeekerTag" ],
                 oncePerCombatTags = [ "VicMidrowYap" ],
                 oncePerRun = true,
                 dialogue = [
-                  new(AmTera, "scared", "What are those missiles?"),
-                  new(AmZari, "pdasmile", "Better seekers.")
+                  new(AmVic, "pdasmile", "Heavy seekers online."),
+                  new(AmZari, "annoyed", "You are such a braggart.")
                 ]
             }},
 
-            {"VicWentMissing_Tera_0", new(){
+            {"VicWentMissing_Zari_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmTera ],
+                allPresent = [ AmZari ],
                 priority = true,
                 oncePerRun = true,
                 oncePerCombatTags = ["VicWentMissing"],
                 lastTurnPlayerStatuses = [MissingVic],
                 dialogue = [
-                    new(AmTera, "lookawaynervous", "Where did Garrus go?")
+                    new(AmZari, "arrogant", "Garrus is gone? Pity.")
                 ]
             }},
 
-            {"AquiredOverclockedMissileBay_VicTera", new(){
+            {"AquiredVicLevelheaded_Zari_2", new(){
                 type = NodeType.combat,
-                priority = false,
                 oncePerRun = true,
                 turnStart = true,
                 maxTurnsThisCombat = 1,
-                oncePerRunTags = [ "VicOverclockedMissileBay" ],
-                allPresent = [ AmVic, AmTera ],
-                hasArtifactTypes = [typeof(VicOverclockedMissileBay)],
+                oncePerRunTags = [ "VicLevelheaded" ],
+                allPresent = [ AmVic, AmZari ],
+                hasArtifactTypes = [typeof(VicLevelheaded)],
                 dialogue = [
-                    new(AmTera, "lookawaynervous", "What did you do to the missile bay?"),
-                    new(AmVic, "pressured", "Don't worry about it.")
+                    new(AmZari, "pondering", "You dabble in the occult? Curious."),
+                    new(AmVic, "pressured", "What are you talking about?")
                 ]
             }},
 
-            {"JustHitVic_TeraMulti_0", new(){
+            {"JustHitVic_ZariMulti_0", new(){
                 type = NodeType.combat,
-                allPresent = [ AmVic, AmTera ],
+                allPresent = [ AmVic, AmZari ],
                 lookup = [ "VicThanix" ],
                 oncePerCombatTags = [ "VicGetsComplimented" ],
                 minDamageDealtToEnemyThisAction = 3,
                 oncePerRun = true,
                 dialogue = [
-                    new(AmTera, "happy", "Great shot!"),
-                    new(AmVic, "happyneutral", "Only the best!")
+                    new(AmZari, "arrogant", "So you DO have an aggressive side."),
+                    new(AmVic, "annoyed", "You're not goading me into it.")
                 ]
             }},
 
-            {"JustHitTera_VicMulti_0", new(){
+            {"JustHitZari_VicMulti_0", new(){
                 type = NodeType.combat,
                 oncePerRun = true,
                 priority = true,
-                oncePerCombatTags = [ "TeraHitEmYo" ],
-                allPresent = [ AmVic, AmTera ],
+                oncePerCombatTags = [ "ZariHitEmYo" ],
+                allPresent = [ AmVic, AmZari ],
                 playerShotJustHit = true,
-                whoDidThatName = AmTera,
-                minDamageDealtToEnemyThisAction = 1,
+                whoDidThatName = AmZari,
+                minDamageDealtToEnemyThisAction = 3,
                 dialogue = [
-                    new(AmVic, "neutraltalk", "Good shot, Tera."),
-                    new(AmZari, "happy", "Thanks!")
+                    new(AmVic, "neutraltalk", "Good shot."),
+                    new(AmZari, "explains", "Why thank you!")
                 ]
             }},
+
+            {"VicZariEngineBoosterLaunch_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmZari ],
+                lookup = [ "VicEngineBooster" ],
+                anyDronesFriendly = ["VicEngineBoosterTag"],
+                oncePerCombatTags = [ "VicMidrowYap" ],
+                oncePerCombat = true,
+                dialogue = [
+                    new(AmZari, "arrogant", "Trying to mimic my flight?"),
+                    new(AmVic, "annoyed", "This isn't a competition, Zari.")
+                ]
+            }},
+
 
             // {"", new(){
 
