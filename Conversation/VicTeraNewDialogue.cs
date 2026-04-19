@@ -41,7 +41,7 @@ internal class VicTeraNewDialogue : IRegisterable
                 anyDrones = ["VicHURT"],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmTera, "scared", "Is that a nuclear bomb?!"),
+                  new(AmTera, "scared", "I-Is that a nuclear bomb?!"),
                   new(AmVic, "neutraltalk", "Yes.")
                 ]
             }},
@@ -56,7 +56,7 @@ internal class VicTeraNewDialogue : IRegisterable
                 oncePerCombatTags = [ "VicBigNukeOnce" ],
                 oncePerCombat = true,
                 dialogue = [
-                  new(AmTera, "sad", "Is that a bigger nuclear bomb?!"),
+                  new(AmTera, "sad", "I-Is that a B-bIGGER nuclear bomb?!"),
                   new(AmVic, "pensive", "Yes.")
                 ]
             }},
@@ -82,7 +82,7 @@ internal class VicTeraNewDialogue : IRegisterable
                 anyDronesHostile = [ "missile_seeker" ],
                 oncePerCombatTags = [ "VicMidrowYap" ],
                 dialogue = [
-                    new(AmTera, "lookawaynervous", "Why is that missile aiming at us?"), 
+                    new(AmTera, "lookawaynervous", "W-Why is that missile aiming at us?"), 
                     new(AmVic, "pensive", "I screwed up."),
                 ]
             }},
@@ -108,7 +108,7 @@ internal class VicTeraNewDialogue : IRegisterable
                 oncePerCombatTags = ["VicWentMissing"],
                 lastTurnPlayerStatuses = [MissingVic],
                 dialogue = [
-                    new(AmTera, "lookawaynervous", "Where did Garrus go?")
+                    new(AmTera, "lookawaynervous", "Where did G-Garrus go?")
                 ]
             }},
 
@@ -122,7 +122,7 @@ internal class VicTeraNewDialogue : IRegisterable
                 allPresent = [ AmVic, AmTera ],
                 hasArtifactTypes = [typeof(VicOverclockedMissileBay)],
                 dialogue = [
-                    new(AmTera, "lookawaynervous", "What did you do to the missile bay?"),
+                    new(AmTera, "lookawaynervous", "What did y-you do to the missile bay?"),
                     new(AmVic, "pressured", "Don't worry about it.")
                 ]
             }},
@@ -152,6 +152,51 @@ internal class VicTeraNewDialogue : IRegisterable
                 dialogue = [
                     new(AmVic, "neutraltalk", "Good shot, Tera."),
                     new(AmZari, "happy", "Thanks!")
+                ]
+            }},
+
+            {"Vic_AboutToDieAndLoop_Tera_0", new(){
+                type = NodeType.combat,
+                allPresent = [ AmVic, AmTera ],
+                enemyShotJustHit = true,
+                maxHull = 2,
+                oncePerCombatTags = ["aboutToDie"],
+                oncePerRun = true,
+                dialogue = [
+                    new(AmVic, "pensive", "It might be over for us."),
+                    new(AmTera, "lookawaynervous", "W-wait! You're giving up already?"),
+                ]
+            }},
+
+            {"Vic_Tera_Meet_0", new(){
+                type = NodeType.@event,
+                lookup = [ "zone_first" ],
+                once = false,
+                allPresent = [ AmVic, AmTera ],
+                requiredScenes = ["Vic_BeforeCobalt_1"],
+                bg = "BGRunStart",
+                dialogue = [
+                    new(AmTera, "H-hello? Anyone at the bridge?"),
+                    new(AmTera, "..."),
+                    new(AmTera, "Guess I'm early again."),
+                    new(AmVic, "determined", "Not so fast.", flipped: true),
+                    new(AmVic, "determined", "Who are you? I know you're not a member of the crew.", flipped: true),
+                    new(AmTera, "scared", "A-aah!"),
+                    new(AmTera, "lookawaynervous", "How long were you standing there?"),
+                    new(AmVic, "determined", "Long enough. Now answer the question.", flipped: true),
+                    new(AmVic, "determined", "Who are you?", flipped: true),
+                    new(AmTera, "lookawaynervous", "I...I'm Tera. I'm a tax collector."),
+                    new(AmVic, "pressuredneutral", "A tax collector?", flipped: true),
+                    new(AmVic, "observe", "Well, that would explain the documents.", flipped: true),
+                    new(AmTera, "lookawaynervous", "You were going through my things?"),
+                    new(AmVic, "neutraltalk", "No. Just glanced at a few 1040s you dropped in the hall.", flipped: true),
+                    new(AmVic, "annoyed", "Speaking of, please clean those up.", flipped: true),
+                    new(AmTera, "lookawaynervous", "Oh, uh...s-sorry. I'll get to that."),
+                    new(AmVic, "neutraltalk", "Thank you.", flipped: true),
+                    new(AmVic, "neutraltalk", "Now, can you handle yourself in a fight?", flipped: true),
+                    new(AmVic, "neutraltalk", "There's a ship nearby powering up its weapons.", flipped: true),
+                    new(AmTera, "lookawaynervous", ""),
+
                 ]
             }},
 
