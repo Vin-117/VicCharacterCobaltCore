@@ -15,10 +15,6 @@
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:conversation\\vicnewstorydialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\cards\\vicheavysalvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicheavysalvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
@@ -58,8 +54,7 @@
               "RelativeToolTip": "Conversation\\VicNewStoryDialogue.cs",
               "ViewState": "AgIAAKoAAAAAAAAAAAAIwKQAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-19T02:36:45.503Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-19T02:36:45.503Z"
             },
             {
               "$type": "Document",
@@ -69,22 +64,9 @@
               "RelativeDocumentMoniker": "Conversation\\VicTeraNewDialogue.cs",
               "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Conversation\\VicTeraNewDialogue.cs",
               "RelativeToolTip": "Conversation\\VicTeraNewDialogue.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAswMUAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAswK0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-19T02:27:38.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VicHeavySalvo.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicHeavySalvo.cs",
-              "RelativeDocumentMoniker": "Cards\\VicHeavySalvo.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicHeavySalvo.cs",
-              "RelativeToolTip": "Cards\\VicHeavySalvo.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowEUAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T19:49:32.426Z",
               "EditorCaption": ""
             },
             {
@@ -97,12 +79,11 @@
               "RelativeToolTip": "ModEntry.cs",
               "ViewState": "AgIAADABAAAAAAAAAAAcwE0BAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T17:52:09.865Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T17:52:09.865Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "en.json",
               "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\i18n\\en.json",
               "RelativeDocumentMoniker": "i18n\\en.json",

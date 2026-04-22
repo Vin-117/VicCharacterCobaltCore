@@ -47,7 +47,7 @@ public class VicHeavySalvo : Card, IRegisterable
                         cost = 2,
                         infinite = false,
                         flippable = true,
-                        artTint = "FF0000",
+                        //artTint = "FF0000",
                         //art = DoubleMissileArt.Sprite
                     };
                 }
@@ -57,7 +57,7 @@ public class VicHeavySalvo : Card, IRegisterable
                     {
                         cost = 1,
                         flippable = true,
-                        artTint = "FF0000",
+                        //artTint = "FF0A0A",
                         //art = TripleMissileArt.Sprite
                     };
                 }
@@ -65,10 +65,10 @@ public class VicHeavySalvo : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
                         infinite = true,
                         retain = true,
-                        artTint = "FF0000",
+                        //artTint = "FF381D",
                         //art = SingleMissileArt.Sprite
                     };
                 }
@@ -143,7 +143,17 @@ public class VicHeavySalvo : Card, IRegisterable
                             thing = new VicHeavySeeker
                             {
                                 yAnimation = 0.0,
-                            }
+                            },
+                            offset = -1
+                        },
+                        new ASpawn
+                        {
+                            thing = new VicHeavySeeker
+                            {
+                                yAnimation = 0.0,
+                            },
+                            offset = 1,
+                            dialogueSelector = ".VicHeavySeekerSwarm"
                         },
                     };
                 }
