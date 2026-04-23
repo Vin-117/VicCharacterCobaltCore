@@ -47,7 +47,7 @@ public class VicHeavySalvo : Card, IRegisterable
                         cost = 2,
                         infinite = false,
                         flippable = true,
-                        artTint = "FF381D",
+                        artTint = "FFC8C8",
                         //art = DoubleMissileArt.Sprite
                     };
                 }
@@ -57,7 +57,7 @@ public class VicHeavySalvo : Card, IRegisterable
                     {
                         cost = 1,
                         flippable = true,
-                        artTint = "FF381D",
+                        artTint = "FFC8C8",
                         //art = TripleMissileArt.Sprite
                     };
                 }
@@ -68,7 +68,7 @@ public class VicHeavySalvo : Card, IRegisterable
                         cost = 2,
                         infinite = true,
                         retain = true,
-                        artTint = "FF381D",
+                        artTint = "FFC8C8",
                         //art = SingleMissileArt.Sprite
                     };
                 }
