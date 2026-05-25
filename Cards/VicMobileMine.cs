@@ -51,8 +51,8 @@ public class VicMobileMine : Card, IRegisterable
                         {
                             thing = new SpaceMine
                             {
-                                yAnimation = 0.0,
-                                bigMine = true
+                                yAnimation = 0.0
+                                //bigMine = true
                             },
                             dialogueSelector = ".VicMobileMine"
                         }
@@ -65,7 +65,7 @@ public class VicMobileMine : Card, IRegisterable
                         new AStatus
                         {
                             status = Status.droneShift,
-                            statusAmount = 3,
+                            statusAmount = 2,
                             targetPlayer = true
                         },
                         new ASpawn
@@ -99,8 +99,8 @@ public class VicMobileMine : Card, IRegisterable
                         {
                             thing = new SpaceMine
                             {
-                                yAnimation = 0.0,
-                                bigMine = true
+                                yAnimation = 0.0
+                                //bigMine = true
                             },
                             dialogueSelector = ".VicMobileMine"
                         }

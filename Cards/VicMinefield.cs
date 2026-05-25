@@ -17,7 +17,7 @@ public class VicMinefield : Card, IRegisterable
             Meta = new CardMeta
             {
                 deck = ModEntry.Instance.VicCharacter.Deck,
-                rarity = Rarity.common,
+                rarity = Rarity.uncommon,
                 dontOffer = false,
                 upgradesTo = [Upgrade.A, Upgrade.B]
             },
@@ -43,15 +43,15 @@ public class VicMinefield : Card, IRegisterable
                     return new CardData
                     {
                         cost = 2,
-                        flippable = false
+                        retain = true
                     };
                 }
             case Upgrade.B:
                 {
                     return new CardData
                     {
-                        cost = 2,
-                        flippable = true
+                        cost = 3,
+                        flippable = false
                     };
                 }
             default:
@@ -99,12 +99,6 @@ public class VicMinefield : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        new AStatus
-                        {
-                            status = Status.droneShift,
-                            statusAmount = 1,
-                            targetPlayer = true
-                        },
                         new ASpawn
                         {
                             thing = new VicSmallSpaceMine
@@ -128,6 +122,15 @@ public class VicMinefield : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
+
+                        new ASpawn
+                        {
+                            thing = new VicSmallSpaceMine
+                            {
+                                yAnimation = 0.0
+                            },
+                            offset = 1
+                        },
                         new ASpawn
                         {
                             thing = new VicSmallSpaceMine
@@ -135,19 +138,16 @@ public class VicMinefield : Card, IRegisterable
                                 yAnimation = 0.0
                             }
                         },
-                        new AMove
-                        {
-                            dir = 2,
-                            targetPlayer = true
-                        },
                         new ASpawn
                         {
                             thing = new VicSmallSpaceMine
                             {
                                 yAnimation = 0.0
                             },
+                            offset = -1,
                             dialogueSelector = ".VicSmallMinefield"
-                        },
+                        }
+
                     };
                 }
             default:

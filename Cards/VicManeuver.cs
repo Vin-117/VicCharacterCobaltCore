@@ -42,7 +42,7 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 0,
+                        cost = 1,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicManeuver", "descA"]))
                     };
                 }
@@ -94,6 +94,7 @@ public class VicManeuver : Card, IRegisterable
                         {
                             card = new VicGlide()
                             {
+                                upgrade = Upgrade.A
                             },
                             destination = CardDestination.Hand,
                             amount = 1,
@@ -104,6 +105,14 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
+                        new AAddCard()
+                        {
+                            card = new VicGlide()
+                            {
+                            },
+                            destination = CardDestination.Hand,
+                            amount = 1
+                        },
                         new AAddCard()
                         {
                             card = new VicGlide()

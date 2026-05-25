@@ -98,17 +98,9 @@ public class VicTrapCharge : Card, IRegisterable
                         {
                             thing = new SpaceMine
                             {
-                                yAnimation = 0.0
-                            },
-                            offset = -1
-                        },
-                        new ASpawn
-                        {
-                            thing = new SpaceMine
-                            {
-                                yAnimation = 0.0
-                            },
-                            offset = 1
+                                yAnimation = 0.0,
+                                bigMine = true
+                            }
                         }
                     };
                 }

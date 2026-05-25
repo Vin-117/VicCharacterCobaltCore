@@ -93,7 +93,7 @@ public class VicPlan : Card, IRegisterable
                     {
                         new ADrawCard
                         {
-                            count = 4
+                            count = 3
                         }
                     };
                 }

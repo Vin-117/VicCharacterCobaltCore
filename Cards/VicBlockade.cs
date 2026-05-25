@@ -93,17 +93,11 @@ public class VicBlockade : Card, IRegisterable
                 {
                     return new List<CardAction>
                     {
-                        
-                        new AStatus()
-                        {
-                            status = Status.droneShift,
-                            statusAmount = 2,
-                            targetPlayer = true
-                        },
                         new AAddCard()
                         {
                             card = new VicTrapCharge()
                             {
+                                upgrade = Upgrade.A
                             },
                             destination = CardDestination.Hand,
                             amount = 3,

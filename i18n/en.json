@@ -34,8 +34,8 @@
         "VicManeuver": {
             "name": "Maneuver",
 			"desc": "Add a <c=card>Glide</c> to your hand.",
-			"descA": "Add a <c=card>Glide</c> to your hand.",
-            "descB": "Add a <c=card>Glide B</c> to your hand."
+			"descA": "Add a <c=card>Glide A</c> to your hand.",
+            "descB": "Add a <c=card>Glide</c> and a <c=card>Glide B</c> to your hand."
         },
         "VicMobileMine": {
             "name": "Mobile Mine"
@@ -94,8 +94,8 @@
 		"VicBlockade": {
             "name": "Blockade",
 			"desc": "Add 3 <c=card>Trap Charges</c> to your hand.",
-			"descA": "Add 3 <c=card>Trap Charges</c> to your hand and gain 2 <c=status>droneshift</c>.",
-            "descB": "Add 2 <c=card>Trap Charge B</c>s to your hand."
+			"descA": "Add 3 <c=card>Trap Charge As</c> to your hand.",
+            "descB": "Add 2 <c=card>Trap Charge Bs</c> to your hand."
 		},
 		"VicSiphon": {
             "name": "Siphon Power",

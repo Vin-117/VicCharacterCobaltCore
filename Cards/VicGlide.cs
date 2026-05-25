@@ -55,7 +55,7 @@ public class VicGlide : Card, IRegisterable
                     {
                         cost = 0,
                         temporary = true,
-                        exhaust = false,
+                        exhaust = true,
                         retain = true,
                         flippable = true,
                         art = flipped ? GlideArtFlipped.Sprite : GlideArtNormal.Sprite
@@ -69,7 +69,7 @@ public class VicGlide : Card, IRegisterable
                         temporary = true,
                         exhaust = true,
                         retain = true,
-                        flippable = true,
+                        flippable = false,
                         art = flipped ? GlideArtFlipped.Sprite : GlideArtNormal.Sprite
                     };
                 }
@@ -109,12 +109,7 @@ public class VicGlide : Card, IRegisterable
                     {
                         new AMove
                         {
-                            dir = -1,
-                            targetPlayer = true
-                        },
-                        new AMove
-                        {
-                            dir = -1,
+                            dir = -2,
                             targetPlayer = true
                         }
                     };
@@ -125,7 +120,7 @@ public class VicGlide : Card, IRegisterable
                     {
                         new AMove
                         {
-                            dir = -2,
+                            dir = -1,
                             targetPlayer = true
                         }
                     };
