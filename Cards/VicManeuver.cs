@@ -34,7 +34,8 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
+                        exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicManeuver", "desc"]))
                     };
                 }
@@ -42,7 +43,8 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
+                        exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicManeuver", "descA"]))
                     };
                 }
@@ -50,9 +52,9 @@ public class VicManeuver : Card, IRegisterable
                 {
                     return new CardData
                     {
-                        cost = 1,
+                        cost = 2,
+                        exhaust = true,
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicManeuver", "descB"])),
-                        exhaust = false
                     };
                 }
             default:
@@ -121,7 +123,7 @@ public class VicManeuver : Card, IRegisterable
                             },
                             destination = CardDestination.Hand,
                             amount = 1
-                        }
+                        },
                     };
                 }
             default:

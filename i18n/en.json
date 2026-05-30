@@ -43,6 +43,9 @@
 		"VicGlide": {
             "name": "Glide"
         },
+        "VicShuffleSilo": {
+            "name": "Silo Shuffle"
+        },
 		"VicCalmUnderPressure": {
             "name": "Battle Analysis",
 			"desc": "Add a <c=card>Plan</c> to your hand.",
@@ -99,9 +102,9 @@
 		},
 		"VicSiphon": {
             "name": "Siphon Power",
-			"desc": "Exhaust a card in hand. Gain an <c=card>Auxiliary A</c>.",
+			"desc": "Exhaust a card in hand. Gain an <c=card>Auxiliary</c>.",
 			"descA": "Exhaust a card in hand. Gain an <c=card>Auxiliary A</c>.",
-            "descB": "Exhaust a card in draw or discard. Gain an <c=card>Auxiliary A</c>."
+            "descB": "Exhaust a card in draw or discard. Gain an <c=card>Auxiliary</c>."
 		},
 		"VicPoisonMissile": {
             "name": "Acid Missile"

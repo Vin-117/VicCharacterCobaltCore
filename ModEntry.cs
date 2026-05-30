@@ -110,7 +110,8 @@ internal class ModEntry : SimpleMod
         typeof(VicCrisisManagement),
         typeof(VicMobileMine),
         typeof(VicSignalAmplifierCard),
-        typeof(VicShifterDroneCard)
+        typeof(VicShuffleSilo)
+        //typeof(VicShifterDroneCard)
     ];
     private static List<Type> VicCharacterUncommonCardTypes = [
         typeof(VicSensorOverload),

@@ -45,7 +45,7 @@ public class VicSiphon : Card, IRegisterable
                     return new CardData
                     {
                         description = string.Format(ModEntry.Instance.Localizations.Localize(["card", "VicSiphon", "descA"])),
-                        cost = 0,
+                        cost = 1,
                         retain = false
                     };
                 }
@@ -87,7 +87,6 @@ public class VicSiphon : Card, IRegisterable
                                 {
                                     card = new VicAux()
                                     {
-                                        upgrade = Upgrade.A
                                     },
                                     destination = CardDestination.Hand,
                                     amount = 1
@@ -99,7 +98,6 @@ public class VicSiphon : Card, IRegisterable
                         {
                             card = new VicAux()
                             {
-                                upgrade = Upgrade.A
                             },
                             destination = CardDestination.Hand,
                             amount = 1
@@ -155,7 +153,6 @@ public class VicSiphon : Card, IRegisterable
                                 {
                                     card = new VicAux()
                                     {
-                                        upgrade = Upgrade.A
                                     },
                                     destination = CardDestination.Hand,
                                     amount = 1
@@ -167,7 +164,6 @@ public class VicSiphon : Card, IRegisterable
                         {
                             card = new VicAux()
                             {
-                                upgrade = Upgrade.A
                             },
                             destination = CardDestination.Hand,
                             amount = 1
