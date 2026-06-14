@@ -3,32 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:nickel.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\cards\\vicheavysalvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicheavysalvo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\cards\\vicshufflesilo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicshufflesilo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\cards\\vicglide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicglide.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:i18n\\en.json||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:modentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|c:\\users\\conce\\desktop\\cobalt core mods\\mine\\viccharacter\\cards\\vicmaneuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A94F28-9D37-4A72-9E06-CF1297E7CB57}|VicCharacter.csproj|solutionrelative:cards\\vicmaneuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,92 +35,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "nickel.json",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\nickel.json",
-              "RelativeDocumentMoniker": "nickel.json",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\nickel.json",
-              "RelativeToolTip": "nickel.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-30T23:01:42.996Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "VicShuffleSilo.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicShuffleSilo.cs",
-              "RelativeDocumentMoniker": "Cards\\VicShuffleSilo.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicShuffleSilo.cs",
-              "RelativeToolTip": "Cards\\VicShuffleSilo.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAwwIgAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T22:20:26.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "VicManeuver.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicManeuver.cs",
-              "RelativeDocumentMoniker": "Cards\\VicManeuver.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicManeuver.cs",
-              "RelativeToolTip": "Cards\\VicManeuver.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowDcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T18:36:40.678Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VicGlide.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicGlide.cs",
-              "RelativeDocumentMoniker": "Cards\\VicGlide.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicGlide.cs",
-              "RelativeToolTip": "Cards\\VicGlide.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADAAAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:50:22.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VicHeavySalvo.cs",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicHeavySalvo.cs",
-              "RelativeDocumentMoniker": "Cards\\VicHeavySalvo.cs",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\Cards\\VicHeavySalvo.cs",
-              "RelativeToolTip": "Cards\\VicHeavySalvo.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAkwFAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-30T17:46:30.35Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "ModEntry.cs",
               "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\ModEntry.cs",
               "RelativeDocumentMoniker": "ModEntry.cs",
               "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\ModEntry.cs",
               "RelativeToolTip": "ModEntry.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAgwHAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAA2wC8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-18T17:52:09.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "en.json",
-              "DocumentMoniker": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\i18n\\en.json",
-              "RelativeDocumentMoniker": "i18n\\en.json",
-              "ToolTip": "C:\\Users\\conce\\Desktop\\Cobalt Core Mods\\Mine\\VicCharacter\\i18n\\en.json",
-              "RelativeToolTip": "i18n\\en.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAgwC4AAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-04-08T22:48:56.116Z",
+              "WhenOpened": "2026-06-14T19:10:18.772Z",
               "EditorCaption": ""
             }
           ]

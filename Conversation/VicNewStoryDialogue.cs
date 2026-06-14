@@ -244,7 +244,7 @@ internal class VicNewStoryDialogue : IRegisterable
                     new(AmJumbo, "Oh hey Garrus. Fancy meeting you here.", flipped: true),
                     new(AmVic, "happyneutral", "Small universe, isn't it? What have you been up to?"),
                     new(AmJumbo, "Oh you know, hunting a bounty.", flipped: true),
-                    new(AmVic, "happyneutral", "As one does. Who's ship has a bounty?"),
+                    new(AmVic, "happyneutral", "As one does. Whose ship has a bounty?"),
                     new(AmJumbo, "Yours.", flipped: true),
                     new(AmVic, "panic", "Wait what?"),
                 ]

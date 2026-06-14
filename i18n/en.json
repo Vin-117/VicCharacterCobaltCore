@@ -159,7 +159,7 @@
 	"artifact": {
 		"VicRadioSystem" : {
 			"name" : "SPARE SATELLITE",
-			"desc": "Start each combat with a bubbled <c=midrow>Signal Amplifier</c> near your ship."
+			"desc": "Start each combat with a bubbled <c=midrow>signal amplifier</c> near your ship."
 		},
         "VicSidelink" : {
 			"name" : "SIDELINK",

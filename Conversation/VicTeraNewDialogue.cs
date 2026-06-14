@@ -96,7 +96,7 @@ internal class VicTeraNewDialogue : IRegisterable
                 oncePerRun = true,
                 dialogue = [
                   new(AmTera, "scared", "What are those missiles?"),
-                  new(AmZari, "pdasmile", "Better seekers.")
+                  new(AmVic, "pdasmile", "Better seekers.")
                 ]
             }},
 
@@ -151,7 +151,7 @@ internal class VicTeraNewDialogue : IRegisterable
                 minDamageDealtToEnemyThisAction = 1,
                 dialogue = [
                     new(AmVic, "neutraltalk", "Good shot, Tera."),
-                    new(AmZari, "happy", "Thanks!")
+                    new(AmTera, "happy", "Thanks!")
                 ]
             }},
 
